@@ -1,21 +1,21 @@
 <template>
 <div>
   <b-navbar toggleable="lg" type="dark" variant="dark">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar-brand><router-link to="/">Pic</router-link></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-nav-item>Home</b-nav-item>
+        <b-nav-item><router-link to="/">Home</router-link></b-nav-item>
         <b-nav-item-dropdown text="Our Work" right>
-          <b-dropdown-item href="#">Success Stories</b-dropdown-item>
-          <b-dropdown-item href="#">Prescriptive Analytics</b-dropdown-item>
-          <b-dropdown-item href="#">Predictive Analytics</b-dropdown-item>
-          <b-dropdown-item href="#">Custom Solution Deployment</b-dropdown-item>
+          <b-dropdown-item><router-link to="/services">Success Stories</router-link></b-dropdown-item>
+          <b-dropdown-item><router-link to="/prescriptiveAnalytics">Prescriptive Analytics</router-link></b-dropdown-item>
+          <b-dropdown-item><router-link to="/predictiveAnalytics">Predictive Analytics</router-link></b-dropdown-item>
+          <b-dropdown-item><router-link to="/customSolutionDeployment">Custom Solution Deployment</router-link></b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item>Products & Services</b-nav-item>
-        <b-nav-item>About</b-nav-item>
-        <b-nav-item>Contact</b-nav-item>
+        <b-nav-item><router-link to="/productsServices">Products & Services</router-link></b-nav-item>
+        <b-nav-item><router-link to="/about">About</router-link></b-nav-item>
+        <b-nav-item><router-link to="/contact">Contact</router-link></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
