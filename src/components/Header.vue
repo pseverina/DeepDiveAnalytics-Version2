@@ -1,7 +1,6 @@
 <template>
-<div>
-  <b-navbar toggleable="lg" type="dark" variant="dark">
-    <b-navbar-brand><router-link to="/">Pic</router-link></b-navbar-brand>
+  <b-navbar class="navbar" sticky="true" toggleable="lg" type="dark">
+    <b-navbar-brand><router-link to="/"><img class="logo-brand" src="../assets/img/logo_img/helmet.png"></router-link></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
@@ -19,7 +18,6 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-</div>
 </template>
 
 <script>
