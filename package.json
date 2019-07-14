@@ -12,7 +12,10 @@
     "bootstrap-vue": "^2.0.0-rc.25",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.7"
+    "vue-fancybox": "^1.0.3",
+    "vue-owl-carousel": "^2.0.3",
+    "vue-router": "^3.0.7",
+    "vue-socialmedia-share": "^1.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",

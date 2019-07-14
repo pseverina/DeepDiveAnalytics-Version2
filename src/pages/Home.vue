@@ -47,7 +47,50 @@
         </div>
         <!--  Third Section -->
         <div class="section-3__head"> Our work </div>
-        <div style="height: 400px;"></div>
+        <carousel
+         :nav="false"
+         class="section-3__carousel"> 
+          <div class="section-3__img-story" style="margin-left: 5% !important;"> 
+              <a target="_blank" href="..//assets/img/services_img/capital_ investment.jpg">
+                  <img src="..//assets/img/services_img_2/capital_investment_thumbnail.jpg" alt="cap_invest"/>
+                  <h4 class="section-3__img-story__label"> Decision Support Tool for Capital Investment</h4>
+                  <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling</h5>
+                  <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+              </a>
+          </div>
+          <div class="section-3__img-story">
+            <a target="_blank" href="../assets/img/services_img/Inventory_Optimization.jpg">
+              <img src="../assets/img/services_img_2/inventory_thumbnail.jpg" alt="inventory"/>
+              <h4 class="section-3__img-story__label"> Inventory Optimization <br> Support Tool </h4>
+              <h5 class="section-3__img-story__label-2"> Technique: NLP Optimization Modeling </h5>
+              <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+            </a>
+          </div>
+           <div class="section-3__img-story">
+             <a target="_blank" href="../assets/img/services_img/Materials_Harmonization.jpg">
+              <img src="../assets/img/services_img_2/common_parts_thumbnail.png" alt="common_parts"/>
+              <h4 class="section-3__img-story__label"> Material Hamonization <br> Matching Tool </h4>
+              <h5 class="section-3__img-story__label-2"> Technique: Machine <br> Learning/Natural Language </h5>
+              <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+             </a>
+           </div>
+           <div class="section-3__img-story">
+             <a target="_blank" href="../assets/img/services_img/Production_Scheduling.jpg">
+                <img src="../assets/img/services_img_2/production_sched_thumbnail.jpg" alt="production_sched"/> 
+                <h4 class="section-3__img-story__label"> Production Scheduling <br> Planning Tool </h4>
+                <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling </h5>
+                <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+              </a>
+           </div>
+           <div class="section-3__img-story">
+            <a target="_blank" href="../assets/img/services_img/Radiology_Scheduling.jpg"> 
+              <img src="../assets/img/services_img_2/rads_scheduling_thumbnail.jpg" alt="rads_scheduling"/> 
+              <h4 class="section-3__img-story__label"> Radiology Residency Scheduling Solution </h4>
+              <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling </h5>
+              <h5 class="section-3__img-story__label-2"> Client: UM Hospital / Jackson <br> Memorial Hospital </h5>
+            </a>
+           </div>
+        </carousel>
         <!-- Fourth Section -->
         <div class="section-4">
           <b-row>
@@ -59,9 +102,7 @@
               <img class="section-4__clients" alt="client_2" src="../assets/img/cllients_img/uhealth.png"/>
             </b-col>
           </b-row>
-          <b-row>
-            <hr class="section-4__hr_1">
-          </b-row>
+          <hr class="section-4__hr_1">
           <b-row>
             <b-col sm="4"> 
               <div class="section-4__head-2"> Testimonials</div>
@@ -109,11 +150,15 @@
 </template>
 
 <script>
+import carousel from 'vue-owl-carousel'
+import fancyBox from 'vue-fancybox'
+
 export default {
   name: 'Home',
   data() {
     return { }
-  }
+  },
+  components: { carousel }
 }
 </script>
 
