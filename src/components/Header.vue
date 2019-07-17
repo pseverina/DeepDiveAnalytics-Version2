@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="navbar" sticky="true" toggleable="lg" type="dark">
+  <b-navbar class="navbar font" sticky=true toggleable="lg" type="dark">
     <b-navbar-brand><router-link to="/"><img class="logo-brand" src="../assets/img/logo_img/helmet.png"></router-link></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>

@@ -47,49 +47,65 @@
         </div>
         <!--  Third Section -->
         <div class="section-3__head"> Our work </div>
-        <carousel
-         :nav="false"
-         class="section-3__carousel"> 
-          <div class="section-3__img-story" style="margin-left: 5% !important;"> 
-              <a target="_blank" href="..//assets/img/services_img/capital_ investment.jpg">
-                  <img src="..//assets/img/services_img_2/capital_investment_thumbnail.jpg" alt="cap_invest"/>
-                  <h4 class="section-3__img-story__label"> Decision Support Tool for Capital Investment</h4>
-                  <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling</h5>
-                  <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+        <carousel 
+          :perPageCustom="[[600, 2], [830, 3], [1130, 4], [1430, 5]]" 
+          class="section-3__carousel">
+          <slide>
+            <div class="section-3__img-story p-3 mb-5 rounded"> 
+              <a target="_blank" href="..//assets/img/services_img/capital_ investment.jpg" class="section-3__img-story__link"> 
+                <img src="..//assets/img/services_img_2/capital_investment_thumbnail.jpg" class="section-3__img-story__img" alt="cap_invest"/>
+                <h4 class="section-3__img-story__label"> Decision Support Tool for Capital Investment</h4>
+                <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling</h5>
+                <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+                <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
               </a>
-          </div>
-          <div class="section-3__img-story">
-            <a target="_blank" href="../assets/img/services_img/Inventory_Optimization.jpg">
-              <img src="../assets/img/services_img_2/inventory_thumbnail.jpg" alt="inventory"/>
-              <h4 class="section-3__img-story__label"> Inventory Optimization <br> Support Tool </h4>
-              <h5 class="section-3__img-story__label-2"> Technique: NLP Optimization Modeling </h5>
-              <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
-            </a>
-          </div>
-           <div class="section-3__img-story">
-             <a target="_blank" href="../assets/img/services_img/Materials_Harmonization.jpg">
-              <img src="../assets/img/services_img_2/common_parts_thumbnail.png" alt="common_parts"/>
+            </div>
+           </slide>
+           <slide>
+            <div class="section-3__img-story p-3 mb-5 rounded">
+              <a target="_blank" href="../assets/img/services_img/Inventory_Optimization.jpg" class="section-3__img-story__link">
+                <img src="../assets/img/services_img_2/inventory_thumbnail.jpg" class="section-3__img-story__img" alt="inventory"/>
+                <h4 class="section-3__img-story__label"> Inventory Optimization <br> Support Tool </h4>
+                <h5 class="section-3__img-story__label-2"> Technique: NLP Optimization Modeling </h5>
+                <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+                <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+              </a>
+            </div>
+           </slide>
+          <slide>
+            <div class="section-3__img-story p-3 mb-5 rounded">
+             <a target="_blank" href="../assets/img/services_img/Materials_Harmonization.jpg" class="section-3__img-story__link">
+               <img src="../assets/img/services_img_2/common_parts_thumbnail.png" class="section-3__img-story__img" alt="common_parts"/>
               <h4 class="section-3__img-story__label"> Material Hamonization <br> Matching Tool </h4>
               <h5 class="section-3__img-story__label-2"> Technique: Machine <br> Learning/Natural Language </h5>
               <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+              <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
              </a>
            </div>
-           <div class="section-3__img-story">
-             <a target="_blank" href="../assets/img/services_img/Production_Scheduling.jpg">
-                <img src="../assets/img/services_img_2/production_sched_thumbnail.jpg" alt="production_sched"/> 
+          </slide>
+           <slide>
+            <div class="section-3__img-story p-3 mb-5 rounded">
+              <a target="_blank" href="../assets/img/services_img/Production_Scheduling.jpg" class="section-3__img-story__link">
+                <img src="../assets/img/services_img_2/production_sched_thumbnail.jpg" class="section-3__img-story__img" alt="production_sched"/>
                 <h4 class="section-3__img-story__label"> Production Scheduling <br> Planning Tool </h4>
                 <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling </h5>
                 <h5 class="section-3__img-story__label-2"> Client: Confidential</h5>
+                <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
               </a>
-           </div>
-           <div class="section-3__img-story">
-            <a target="_blank" href="../assets/img/services_img/Radiology_Scheduling.jpg"> 
-              <img src="../assets/img/services_img_2/rads_scheduling_thumbnail.jpg" alt="rads_scheduling"/> 
-              <h4 class="section-3__img-story__label"> Radiology Residency Scheduling Solution </h4>
-              <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling </h5>
-              <h5 class="section-3__img-story__label-2"> Client: UM Hospital / Jackson <br> Memorial Hospital </h5>
-            </a>
-           </div>
+            </div> 
+           </slide>
+           <slide>
+            <div class="section-3__img-story p-3 mb-5 rounded">
+              <a target="_blank" href="../assets/img/services_img/Radiology_Scheduling.jpg" class="section-3__img-story__link"> 
+                <img src="../assets/img/services_img_2/rads_scheduling_thumbnail.jpg" class="section-3__img-story__img" alt="rads_scheduling"/>
+                <h4 class="section-3__img-story__label"> Radiology Residency Scheduling Solution </h4>
+                <h5 class="section-3__img-story__label-2"> Technique: Optimization Modeling </h5>
+                <h5 class="section-3__img-story__label-2"> Client: UM Hospital / Jackson <br> Memorial Hospital
+                <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+                 </h5>
+              </a>
+            </div> 
+           </slide>
         </carousel>
         <!-- Fourth Section -->
         <div class="section-4">
@@ -150,15 +166,19 @@
 </template>
 
 <script>
-import carousel from 'vue-owl-carousel'
-import fancyBox from 'vue-fancybox'
+import { Carousel, Slide } from 'vue-carousel'
+import { EvaIcon } from 'vue-eva-icons'
 
 export default {
   name: 'Home',
   data() {
-    return { }
+    return {}
   },
-  components: { carousel }
+  components: {
+    Carousel,
+    Slide,
+    [EvaIcon.name]: EvaIcon
+  }
 }
 </script>
 
