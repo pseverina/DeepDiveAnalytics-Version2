@@ -1,6 +1,29 @@
 <template>
- <div>
-   <h1> About Page</h1>
+ <div class="stars font">
+  <div class="twinkling">
+    <h1 class="header">About</h1>
+    <hr class="hr about__hr">
+    <div class="about__main">
+      <img src="../assets/img/aboutus_img/aboutus_methodical.png" alt="image" class="about__main-img"/>
+      <img src="../assets/img/aboutus_img/aboutus_analytical.png" alt="image" class="about__main-img"/>
+      <img src="../assets/img/aboutus_img/aboutus_impactful.png" alt="image" class="about__main-img"/>
+      <div class="about__main-text"><span style="color: #58F86F">Our expertise</span>
+        is&nbsp;in&nbsp;two main pillars of&nbsp;Advanced analytics&nbsp;&mdash; Prespective
+        and Predictive analytics. Our team is&nbsp;comprised of&nbsp;experienced digital and 
+        data science professionals that specialize in&nbsp;these key area&rsquo;s.
+      </div>
+      <div class="about__main-text"><span style="color: #58F86F"> Our passion</span>
+        is&nbsp;being able to&nbsp;apply these advanced analytics methodologies towards 
+        your specific business problems, making a&nbsp;tangible impact and transforming 
+        your business.
+      </div>
+      <div class="about__main-text"><span style="color: #58F86F"> Our focus</span> 
+        is&nbsp;on&nbsp;you, our customer. Our analytical solutions are buil custom towards
+        your specific business needs. Every business has unique problems and constraints, 
+        so&nbsp;our solutions are tailored specifically for you.
+      </div>
+    </div>
+  </div>
  </div>
 </template>
 
@@ -12,8 +35,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass" scoped>
-  body
-    background-color: green
-</style>

@@ -2,6 +2,9 @@
 
 .navbar
   background-color: #222222 !important
+  box-shadow: 0 2px 15px rgba(71, 120, 120, 0.5)
+  transform: translate3d(0, 0, 0)
+  transition: 0.1s all ease-out
 
   .logo-brand
     margin-left: 10px 
@@ -12,15 +15,27 @@
     font-size: 18px
 
   .navbar-nav .dropdown-menu
-    background-color: black
+    background-color: #222222 
 
   a
     color: whitesmoke
     text-decoration: none
     background-color: transparent
   
-  
   a:hover
     text-decoration: none
     color: #58f86e
-    background-color: black
+    background-color: #222222
+
+.nav-link
+  color: whitesmoke !important
+
+.nav-link:hover
+   color: #58f86e !important
+
+.router-link-exact-active
+  color: #58f86e !important
+
+.navbar.navbar__hidden
+  box-shadow: none
+  transform: translate3d(0, -100%, 0)

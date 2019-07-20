@@ -2,21 +2,23 @@
   <div>
     <div class="footer">
       <span>© Deep Dive Analytics. 2019 All Rights Reserved</span>
-      <Facebook scale="2" url="https://www.facebook.com/deepdiveanalytics.io" class="footer__icon"/>
-      <Twitter scale="2" url="https://twitter.com/deepdiveAI" class="footer__icon"/>
-      <Linkedin scale="2" url="https://www.linkedin.com/company/deepdiveanalytics" class="footer__icon"/>
+      <a href="https://www.facebook.com/deepdiveanalytics.io"><eva-icon name="facebook-outline" animation="pulse" fill="whitesmoke" class="footer__icon"></eva-icon></a>
+      <a href="https://twitter.com/deepdiveAI"><eva-icon name="twitter-outline" animation="pulse" fill="whitesmoke" class="footer__icon"></eva-icon></a>
+      <a href="https://www.linkedin.com/company/deepdiveanalytics"><eva-icon name="linkedin-outline" animation="pulse" fill="whitesmoke" class="footer__icon"></eva-icon></a>
     </div>
   </div>
 </template>
 
 <script>
-import { Facebook, Twitter, Linkedin } from 'vue-socialmedia-share'
+import { EvaIcon } from 'vue-eva-icons'
 
 export default {
   name: 'Footer',
   data() {
     return { }
   },
-  components: { Facebook, Linkedin, Twitter }
+  components: {
+    [EvaIcon.name]: EvaIcon
+  } 
 }
 </script>
