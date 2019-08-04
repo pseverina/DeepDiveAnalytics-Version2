@@ -3,15 +3,21 @@ import App from '@/App.vue'
 import router from '@/router'
 import BootstrapVue from 'bootstrap-vue'
 import EvaIcons from 'vue-eva-icons'
-import Lingallery from 'lingallery'
+import VueCarousel from '@chenfengyuan/vue-carousel'
+import Lightbox from 'vue-easy-lightbox'
+import Viewer from 'v-viewer'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'viewerjs/dist/viewer.css'
  
 Vue.use(BootstrapVue)
 Vue.use(EvaIcons)
-Vue.component('lingallery', Lingallery)
+Vue.use(VueCarousel)
+Vue.use(Lightbox)
+Vue.use(Viewer)
 Vue.config.productionTip = false
+
 
 new Vue({
   el: '#app',

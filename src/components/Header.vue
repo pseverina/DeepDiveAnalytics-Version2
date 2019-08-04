@@ -4,7 +4,7 @@
     :class="{ 'navbar__hidden': !showNavbar }"
     :sticky="true" 
     toggleable="lg">
-    <b-navbar-brand><router-link to="/"><img class="logo-brand" src="../assets/img/logo_img/helmet.png"></router-link></b-navbar-brand>
+    <b-navbar-brand><router-link to="/"><img class="logo-brand" src="../img/logo_img/helmet.png"></router-link></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->

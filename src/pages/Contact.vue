@@ -64,7 +64,7 @@
           </form> 
         </b-col>
         <b-col>
-          <img src="../assets/img/logo_img/helmet.png" alt="logo" class="contact__brand"/>
+          <img src="../img/logo_img/helmet.png" alt="logo" class="contact__brand"/>
         </b-col>
       </b-row>
       </div>
