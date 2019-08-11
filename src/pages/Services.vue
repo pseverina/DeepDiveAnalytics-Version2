@@ -29,7 +29,7 @@
             <label for="all">All
             <input type="radio" id="all" 
               name="filters" checked
-              v-on:click="all_stories"/>
+              v-on:click="allStories"/>
             </label>
           </span>
           </b-col>        
@@ -41,7 +41,7 @@
               <label for="Optimization Modeling">Optimization Modeling
               <input type="radio" id="animals"
                   name="filters" 
-                  v-on:click="optimization_modeling"/>
+                  v-on:click="optimizationModeling"/>
               </label>
             </span>
           </b-col>
@@ -50,7 +50,7 @@
               <label for="Machine Learning">Machine Learning
               <input type="radio" id="natue" 
                 name="filters" 
-                v-on:click="machine_learning" />
+                v-on:click="machineLearning" />
               </label>
             </span>
           </b-col>
@@ -59,7 +59,7 @@
               <label for="NLP Optimization Modeling">NLP Optimization Modeling
               <input type="radio" id="natue" 
                 name="filters" 
-                v-on:click="nlp_optimization_modeling" />
+                v-on:click="nlpOptimizationModeling" />
               </label>
             </span>
           </b-col>
@@ -147,7 +147,29 @@
       <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox>
       <div class="section-2">
         <h2 class="section-2__header">Testimonials</h2>
-        <carousel :data="data" :controls="true" class="section-2__carousel"></carousel>
+        <p style="color: whitesmoke;">Things are coming shortly</p>
+        <!-- 
+        <b-carousel
+          class="section-2__carousel"
+          v-model="slide"
+          controls
+          @sliding-start="onSlideStart"
+          @sliding-end="onSlideEnd"
+        >
+          <b-carousel-slide
+            caption="First slide"
+            text="Things are coming shortly"
+            img-src="https://picsum.photos/1024/480/?image=52"
+          >
+          </b-carousel-slide>
+
+          <b-carousel-slide
+            img-blank
+           >
+           <p>Things are coming shortly</p>
+          </b-carousel-slide>
+        </b-carousel>
+        -->
       </div>
       <div class="section-3">
         <b-row>
@@ -179,6 +201,8 @@ export default {
       radilogy_residency: true,
       selected_tech: null,
       selected_ind: null,
+      slide: 0,
+      sliding: null,
       options_tech: [
         { input: null, text: 'Technique' },
         { input: 'ALL', text: 'All' },
@@ -216,33 +240,39 @@ export default {
       this.visible = false
       this.index = 0
     },
-    all_stories() {
+    allStories() {
       this.decision_support = true,
       this.inventory_optimization = true,
       this.material_harmonization = true,
       this.production_scheduling = true,
       this.radilogy_residency = true
     },
-    optimization_modeling() {
+    optimizationModeling() {
       this.decision_support = true,
       this.inventory_optimization = true,
       this.material_harmonization = false,
       this.production_scheduling = true,
       this.radilogy_residency = false
     }, 
-    nlp_optimization_modeling() {
+    nlpOptimizationModeling() {
       this.decision_support = false,
       this.inventory_optimization = true,
       this.material_harmonization = false,
       this.production_scheduling = false,
       this.radilogy_residency = false
     },
-    machine_learning() {
+    machineLearning() {
       this.decision_support = false,
       this.inventory_optimization = false,
       this.material_harmonization = true,
       this.production_scheduling = false,
       this.radilogy_residency = false
+    },
+    onSlideStart(slide) {
+      this.sliding = true
+    },
+    onSlideEnd(slide) {
+      this.sliding = false
     }
   }
 }

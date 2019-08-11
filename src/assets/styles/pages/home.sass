@@ -18,8 +18,7 @@
   text-align: center
   
   &__pic-1
-    margin-top: 5%
-    margin-left: 8%
+    margin: 5% 0% 3% 8%
     width: 15%
     height: 80%
 
@@ -216,4 +215,9 @@
       transform: rotate(0deg)
     to 
       transform: rotate(359deg)
+
+  .slide-fade-enter, .slide-fade-leave-to
+    transform: translateX(10px)
+    opacity: 0
+    transition: all 0.4s ease
 

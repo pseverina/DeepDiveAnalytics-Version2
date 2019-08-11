@@ -10,7 +10,7 @@
            <div class="section-2__head">We&nbsp;drive business advantage by<br>delivering
             industry leading analytical capabilities</div>
             <b-row>
-              <b-col sm="3" class="section-2__pic-1"> 
+              <b-col sm="3" class="section-2__pic-1" style="width:60%;"> 
                 <router-link tag="li" to="/predictiveAnalytics">
                     <img src="../img/icons_img/icon_machinelearning.png" alt="img_icon1" class="section-2__img">
                     <h2 class="section-2__head-3">Predictive<br>Analytics</h2>
@@ -23,7 +23,7 @@
                     </h5>
                 </router-link>
               </b-col>
-               <b-col sm="3" class="section-2__pic-2">
+               <b-col sm="3" class="section-2__pic-2" style="width:60%;">
                   <router-link tag="li" to="/prescriptiveAnalytics">
                     <img src="../img/icons_img/icon_mathmodeling.png" alt="img_icon2" class="section-2__img-2">
                     <h2 class="section-2__head-3">Prespriptive<br>Analytics</h2>
@@ -35,7 +35,7 @@
                     </h5>  
                   </router-link>
                </b-col>
-               <b-col sm="3" class="section-2__pic-3">
+               <b-col sm="3" class="section-2__pic-3" style="width:60%;">
                  <router-link tag="li" to="/customSolutionDeployment">
                     <img src="../img/icons_img/icon_nlp.png" alt="img_icon3" class="section-2__img-3">
                     <h2 class="section-2__head-3">End-to-End<br>Solutions</h2>
@@ -126,9 +126,15 @@
             </b-col>
             <b-col sm="6">
               <div class="section-4__quotes">
-                <transition name="fade" mode="out-in">
-                  <div v-if="quotesMove">
-                    <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>{{ quotes[0]}}
+                <transition  name="slide-fade">
+                  <!-- <div v-for="quote in quotes" :key="quote.id">
+                    {{ quote.id }}
+                  </div> -->
+                  <div v-if="quote1">
+                    <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>{{ quotes[0].id }}
+                  </div>
+                  <div v-if="quote2">
+                    <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>{{ quotes[1].id }}
                   </div>
                 </transition>
               </div>
@@ -173,12 +179,13 @@ export default {
   data() {
     return {
       visible: false,
-      quotesMove: false,
+      quote1: false,
+      quote2: false,
       count: 0,
       words: ['BETTER', 'SMARTER', 'QUICKER', 'TRUSTED'],
-      quotes:[ 
-        '“More of these data-driven projects should take place throughout J&J” - Everyone , President at Company Name 1 !',
-        '“More of these data-driven projects should take place throughout J&J” - Everyone , President at Company Name 2 !'
+      quotes:[
+        { id: '“More of these data-driven projects should take place throughout J&J” - Everyone , President at Company Name 1 !' },
+        { id: '“More of these data-driven projects should take place throughout J&J” - Everyone , President at Company Name 2 !' }
       ],
       index: 0,
       images: [
@@ -197,27 +204,20 @@ export default {
     VueEasyLightbox
   },
   mounted(){
-    window.setInterval(()=>{
+   window.setInterval(()=>{
       this.changeWords()
-    }, 2000),
-     window.setInterval(()=>{
-      
-      if (this.quotesMove == false){
-        this.quotesMove = true
-        this.count += 1
-      } 
-
-      if (this.count == 5){
-        this.quotesMove = false
+      this.count += 1
+      if(this.count % 2 == 0){
+        this.quote1 = true
+        this.quote2 = false
+      } else {
+        this.quote1 = false
+        this.quote2 = true
       }
-    }, 2500)
+    }, 2000)
   },
   methods: {
     changeWords(){
-      const first = this.quotes.shift()
-      this.quotes = this.quotes.concat(first)
-    },
-    changeQuotes(){
       const first = this.words.shift()
       this.words = this.words.concat(first)
     },
