@@ -126,9 +126,11 @@
             </b-col>
             <b-col sm="6">
               <div class="section-4__quotes">
-                <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>
-                “More of these data-driven projects should take place throughout J&J”<br>
-                - Everyone , President at Company Name 1 !
+                <transition name="fade" mode="out-in">
+                  <div v-if="quotesMove">
+                    <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>{{ quotes[0]}}
+                  </div>
+                </transition>
               </div>
             </b-col> 
           </b-row>
@@ -171,7 +173,13 @@ export default {
   data() {
     return {
       visible: false,
+      quotesMove: false,
+      count: 0,
       words: ['BETTER', 'SMARTER', 'QUICKER', 'TRUSTED'],
+      quotes:[ 
+        '“More of these data-driven projects should take place throughout J&J” - Everyone , President at Company Name 1 !',
+        '“More of these data-driven projects should take place throughout J&J” - Everyone , President at Company Name 2 !'
+      ],
       index: 0,
       images: [
         require('../img/services_img/capital_ investment.jpg'),
@@ -191,10 +199,25 @@ export default {
   mounted(){
     window.setInterval(()=>{
       this.changeWords()
-    }, 2000)
+    }, 2000),
+     window.setInterval(()=>{
+      
+      if (this.quotesMove == false){
+        this.quotesMove = true
+        this.count += 1
+      } 
+
+      if (this.count == 5){
+        this.quotesMove = false
+      }
+    }, 2500)
   },
   methods: {
     changeWords(){
+      const first = this.quotes.shift()
+      this.quotes = this.quotes.concat(first)
+    },
+    changeQuotes(){
       const first = this.words.shift()
       this.words = this.words.concat(first)
     },
@@ -209,5 +232,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+</style>
+
 
 

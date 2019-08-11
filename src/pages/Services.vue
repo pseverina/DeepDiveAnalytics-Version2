@@ -3,72 +3,140 @@
     <div class="twinkling">
       <h1 class="header">Success Stories</h1>
       <hr class="hr service__hr">
+      <!--
       <div class="header-2"> Filter by 
-        <b-form-select v-model="selected_tech" :options="options_tech" class="selected-tech"></b-form-select>
+        <b-form-select 
+          v-model="selected_tech" 
+          :options="options_tech"
+          class="selected-tech"
+          >
+        </b-form-select>
         or
-        <b-form-select v-model="selected_ind" :options="options_ind" class="selected-ind"></b-form-select>
+        <b-form-select 
+          v-model="selected_ind" 
+          :options="options_ind" 
+          class="selected-ind"
+          >
+        </b-form-select>
       </div>
+      -->
+      <form class="services__form">
+        <fieldset class="services__form-fieldset">
+        <legend class="services__form-legend">Filter by</legend>
+        <b-row>
+          <b-col class="services__form-span">
+            <span>
+            <label for="all">All
+            <input type="radio" id="all" 
+              name="filters" checked
+              v-on:click="all_stories"/>
+            </label>
+          </span>
+          </b-col>        
+        </b-row>
+        <hr style="background-color: white; width:  70%">
+        <b-row>
+          <b-col class="services__form-span">
+            <span>
+              <label for="Optimization Modeling">Optimization Modeling
+              <input type="radio" id="animals"
+                  name="filters" 
+                  v-on:click="optimization_modeling"/>
+              </label>
+            </span>
+          </b-col>
+          <b-col class="services__form-span">
+            <span>
+              <label for="Machine Learning">Machine Learning
+              <input type="radio" id="natue" 
+                name="filters" 
+                v-on:click="machine_learning" />
+              </label>
+            </span>
+          </b-col>
+          <b-col class="services__form-span">
+            <span>
+              <label for="NLP Optimization Modeling">NLP Optimization Modeling
+              <input type="radio" id="natue" 
+                name="filters" 
+                v-on:click="nlp_optimization_modeling" />
+              </label>
+            </span>
+          </b-col>
+        </b-row>
+      </fieldset>
+      </form>
       <div class="carousel slide services-carousel" data-interval="false">
       <div class="carousel-inner">
           <div class="item active" >
             <b-row>
               <b-col>
-                <div class="services-carousel__img-story p-3 mb-5 rounded OM SCH" @click="() => show(index)"> 
-                  <a class="section-3__img-story__link" target="_blank">
-                    <img src="../img/services_img_2/capital_investment_thumbnail.jpg" class="services-carousel__img-story__img" alt="cap_invest"/>
-                    <h4 class="services-carousel__img-story__label">Decision Support Tool for Capital Investment</h4>
-                    <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
-                    <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
-                    <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
-                  </a>
-                </div>
+                <transition name="slide-fade">
+                  <div v-show="decision_support" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index)"> 
+                    <a class="section-3__img-story__link" target="_blank">
+                      <img src="../img/services_img_2/capital_investment_thumbnail.jpg" class="services-carousel__img-story__img" alt="cap_invest"/>
+                      <h4 class="services-carousel__img-story__label">Decision Support Tool for Capital Investment</h4>
+                      <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
+                      <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
+                      <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+                    </a>
+                  </div>
+                </transition>
               </b-col>
               <b-col>
-                <div md="4" offset-md="4" class="services-carousel__img-story p-3 mb-5 rounded NLP SCH" @click="() => show(index + 1)">
-                  <a class="section-3__img-story__link" target="_blank">
-                    <img src="../img/services_img_2/inventory_thumbnail.jpg" class="services-carousel__img-story__img" alt="inventory"/>
-                    <h4 class="services-carousel__img-story__label">Inventory Optimization<br>Support Tool</h4>
-                    <h5 class="services-carousel__img-story__label-2">Technique: NLP Optimization Modeling</h5>
-                    <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
-                    <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
-                  </a>
-                </div>
+                <transition name="slide-fade">
+                  <div v-show="inventory_optimization" md="4" offset-md="4" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 1)">
+                    <a class="section-3__img-story__link" target="_blank">
+                      <img src="../img/services_img_2/inventory_thumbnail.jpg" class="services-carousel__img-story__img" alt="inventory"/>
+                      <h4 class="services-carousel__img-story__label">Inventory Optimization<br>Support Tool</h4>
+                      <h5 class="services-carousel__img-story__label-2">Technique: NLP Optimization Modeling</h5>
+                      <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
+                      <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+                    </a>
+                  </div>
+                </transition>
               </b-col>
               <b-col>
-                <div class="services-carousel__img-story p-3 mb-5 rounded ML SCH" @click="() => show(index + 2)">
-                  <a class="section-3__img-story__link" target="_blank">
-                    <img src="../img/services_img_2/common_parts_thumbnail.png" class="services-carousel__img-story__img" alt="common_parts"/>
-                    <h4 class="services-carousel__img-story__label">Material Hamonization<br>Matching Tool</h4>
-                    <h5 class="services-carousel__img-story__label-2">Technique: Machine<br>Learning/Natural Language</h5>
-                    <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
-                    <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
-                  </a>
-                </div>
+                <transition name="slide-fade">
+                  <div v-show="material_harmonization" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 2)">
+                    <a class="section-3__img-story__link" target="_blank">
+                      <img src="../img/services_img_2/common_parts_thumbnail.png" class="services-carousel__img-story__img" alt="common_parts"/>
+                      <h4 class="services-carousel__img-story__label">Material Harmonization<br>Matching Tool</h4>
+                      <h5 class="services-carousel__img-story__label-2">Technique: Machine<br>Learning/Natural Language</h5>
+                      <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
+                      <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+                    </a>
+                  </div>
+                </transition>
               </b-col>
             </b-row>
             <b-row>
               <b-col>
-                <div class="services-carousel__img-story p-3 mb-5 rounded OM SCH" @click="() => show(index + 3)"> 
-                  <a class="section-3__img-story__link" target="_blank">
-                    <img src="../img/services_img_2/production_sched_thumbnail.jpg" class="services-carousel__img-story__img" alt="production_sched"/> 
-                    <h4 class="services-carousel__img-story__label">Production Scheduling<br>Planning Tool</h4>
-                    <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
-                    <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
-                    <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
-                  </a>
-                </div>
+                <transition name="slide-fade">
+                  <div v-show="production_scheduling" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 3)"> 
+                    <a class="section-3__img-story__link" target="_blank">
+                      <img src="../img/services_img_2/production_sched_thumbnail.jpg" class="services-carousel__img-story__img" alt="production_sched"/> 
+                      <h4 class="services-carousel__img-story__label">Production Scheduling<br>Planning Tool</h4>
+                      <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
+                      <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
+                      <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+                    </a>
+                  </div>
+                </transition>
               </b-col>
               <b-col>
-                <div class="services-carousel__img-story p-3 mb-5 rounded OM HC" @click="() => show(index + 4)">
-                  <a class="section-3__img-story__link" target="_blank"> 
-                    <img src="../img/services_img_2/rads_scheduling_thumbnail.jpg" class="services-carousel__img-story__img" alt="rads_scheduling"/>
-                    <h4 class="services-carousel__img-story__label">Radiology Residency Scheduling Solution</h4>
-                    <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
-                    <h5 class="services-carousel__img-story__label-2">Client: UM Hospital / Jackson<br>Memorial Hospital
-                    <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
-                    </h5>
-                  </a>
-                </div>
+                <transition name="slide-fade">
+                  <div v-show="radilogy_residency" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 4)">
+                    <a class="section-3__img-story__link" target="_blank"> 
+                      <img src="../img/services_img_2/rads_scheduling_thumbnail.jpg" class="services-carousel__img-story__img" alt="rads_scheduling"/>
+                      <h4 class="services-carousel__img-story__label">Radiology Residency Scheduling Solution</h4>
+                      <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
+                      <h5 class="services-carousel__img-story__label-2">Client: UM Hospital / Jackson<br>Memorial Hospital
+                      <eva-icon class="section-3__img-story__arrow" name="arrow-forward" animation="shake" fill="limegreen"></eva-icon>
+                      </h5>
+                    </a>
+                  </div>
+                </transition>
               </b-col>
               <b-col>
               </b-col>
@@ -104,20 +172,25 @@ export default {
   name: 'Services',
   data() {
     return { 
+      decision_support: true,
+      inventory_optimization: true,
+      material_harmonization: true,
+      production_scheduling: true,
+      radilogy_residency: true,
       selected_tech: null,
       selected_ind: null,
       options_tech: [
-        { value: null, text: 'Technique' },
-        { value: 'ALL', text: 'All' },
-        { value: 'OM', text: 'Optimization Modeling' },
-        { value: 'NLP', text: 'NLP Optimization Modeling' },
-        { value: 'ML', text: 'Machine Learning' }
+        { input: null, text: 'Technique' },
+        { input: 'ALL', text: 'All' },
+        { input: 'OM', text: 'Optimization Modeling' },
+        { input: 'NLP', text: 'NLP Optimization Modeling' },
+        { input: 'ML', text: 'Machine Learning' }
       ],
       options_ind: [
-        { value: null, text: 'Industry' },
-        { value: 'ALL', text: 'All' },
-        { value: 'OM', text: 'Supply Chain' },
-        { value: 'NLP', text: 'Healthcare' }
+        { input: null, text: 'Industry' },
+        { input: 'ALL', text: 'All' },
+        { input: 'OM', text: 'Supply Chain' },
+        { input: 'NLP', text: 'Healthcare' }
       ],
       visible: false,
       index: 0,
@@ -142,6 +215,34 @@ export default {
     handleHide() {
       this.visible = false
       this.index = 0
+    },
+    all_stories() {
+      this.decision_support = true,
+      this.inventory_optimization = true,
+      this.material_harmonization = true,
+      this.production_scheduling = true,
+      this.radilogy_residency = true
+    },
+    optimization_modeling() {
+      this.decision_support = true,
+      this.inventory_optimization = true,
+      this.material_harmonization = false,
+      this.production_scheduling = true,
+      this.radilogy_residency = false
+    }, 
+    nlp_optimization_modeling() {
+      this.decision_support = false,
+      this.inventory_optimization = true,
+      this.material_harmonization = false,
+      this.production_scheduling = false,
+      this.radilogy_residency = false
+    },
+    machine_learning() {
+      this.decision_support = false,
+      this.inventory_optimization = false,
+      this.material_harmonization = true,
+      this.production_scheduling = false,
+      this.radilogy_residency = false
     }
   }
 }
