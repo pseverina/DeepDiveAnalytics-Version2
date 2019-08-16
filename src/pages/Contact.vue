@@ -10,28 +10,31 @@
             <b-row>
               <b-col lg="6">
                 <label for="input__first-name">First Name <span style="color:red">*</span></label>
-                  <b-form-input 
-                    v-model="form.first_name" 
-                    placeholder="First Name" 
-                    class="contact__form-input"
-                    required
-                  ></b-form-input>
+                <b-form-input 
+                  v-model="form.first_name" 
+                  :invalid-feedback="invalidFeedback"
+                  placeholder="First Name" 
+                  class="contact__form-input"
+                  required
+                ></b-form-input>
               </b-col>
               <b-col lg="6">
                 <label for="input__last-name">Last Name <span style="color:red">*</span></label>
-                  <b-form-input 
-                    v-model="form.last_name" 
-                    placeholder="Last Name"
-                    class="contact__form-input"
-                    required
-                  ></b-form-input>
+                <b-form-input 
+                  v-model="form.last_name"
+                  :invalid-feedback="invalidFeedback"
+                  placeholder="Last Name"
+                  class="contact__form-input"
+                  required
+                ></b-form-input>
               </b-col>
             </b-row>
              <b-row>
                <b-col lg="6">
                 <label for="input__email">Email <span style="color:red">*</span></label>
                 <b-form-input 
-                  v-model="form.email" 
+                  v-model="form.email"
+                  :invalid-feedback="invalidFeedback"
                   placeholder="name@example.com"
                   class="contact__form-input"
                   type="email"
@@ -40,12 +43,13 @@
                </b-col>
                 <b-col lg="6">
                   <label for="input__company">Company <span style="color:red">*</span></label>
-                    <b-form-input 
-                      v-model="form.company" 
-                      placeholder="Google.com" 
-                      class="contact__form-input"
-                      required
-                    ></b-form-input>
+                  <b-form-input 
+                    v-model="form.company"
+                    :invalid-feedback="invalidFeedback"
+                    placeholder="Google.com" 
+                    class="contact__form-input"
+                    required
+                  ></b-form-input>
                </b-col>
              </b-row>
             <b-form-group>
@@ -82,6 +86,13 @@ export default {
         email: '',
         company: '',
         text: 'I am interested  to learn more about your services. We have a particular business problem where we need help getting insights and answers from our data. Can we schedule a call to discuss further?'
+      }
+    }
+  },
+  computed: {
+    invalidFeedback() {
+      if (this.first_name == 0) {
+        return "need to be included"
       }
     }
   }

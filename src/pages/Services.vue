@@ -24,42 +24,45 @@
         <fieldset class="services__form-fieldset">
         <legend class="services__form-legend">Filter by</legend>
         <b-row>
-          <b-col class="services__form-span">
+          <b-col style="text-align:center;">
             <span>
             <label for="all">All
-            <input type="radio" id="all" 
-              name="filters" checked
-              v-on:click="allStories"/>
+              <input v-on:click="allStories" checked type="radio" name="filters"/>
             </label>
           </span>
           </b-col>        
         </b-row>
-        <hr style="background-color: white; width:  70%">
+        <hr class="services__form-hr">
         <b-row>
           <b-col class="services__form-span">
             <span>
               <label for="Optimization Modeling">Optimization Modeling
-              <input type="radio" id="animals"
-                  name="filters" 
-                  v-on:click="optimizationModeling"/>
+                <input v-on:click="optimizationModeling" type="radio" name="filters"/>
               </label>
             </span>
-          </b-col>
-          <b-col class="services__form-span">
+            <br>
             <span>
               <label for="Machine Learning">Machine Learning
-              <input type="radio" id="natue" 
-                name="filters" 
-                v-on:click="machineLearning" />
+                <input v-on:click="machineLearning" type="radio" name="filters"/>
+              </label>
+            </span>
+            <br>
+             <span>
+              <label for="NLP Optimization Modeling">NLP Optimization Modeling
+                <input v-on:click="nlpOptimizationModeling" type="radio" name="filters"/>
               </label>
             </span>
           </b-col>
           <b-col class="services__form-span">
             <span>
-              <label for="NLP Optimization Modeling">NLP Optimization Modeling
-              <input type="radio" id="natue" 
-                name="filters" 
-                v-on:click="nlpOptimizationModeling" />
+              <label for="Supply Chain">Supply Chain
+                <input v-on:click="supplyChain" type="radio" name="filters"/>
+              </label>
+            </span>
+            <br>
+            <span>
+              <label for="Healthcare">Healthcare
+                <input v-on:click="healthcare" type="radio" name="filters"/>
               </label>
             </span>
           </b-col>
@@ -147,7 +150,6 @@
       <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox>
       <div class="section-2">
         <h2 class="section-2__header">Testimonials</h2>
-        <p style="color: whitesmoke;">Things are coming shortly</p>
         <!-- 
         <b-carousel
           class="section-2__carousel"
@@ -159,15 +161,15 @@
           <b-carousel-slide
             caption="First slide"
             text="Things are coming shortly"
-            img-src="https://picsum.photos/1024/480/?image=52"
+            style="backgroud-color: whitesmoke"
+            img src="none"
           >
           </b-carousel-slide>
 
-          <b-carousel-slide
-            img-blank
-           >
-           <p>Things are coming shortly</p>
+          <b-carousel-slide>
+            <span style="color: whitesmoke;"> Hello</span>
           </b-carousel-slide>
+
         </b-carousel>
         -->
       </div>
@@ -267,6 +269,20 @@ export default {
       this.material_harmonization = true,
       this.production_scheduling = false,
       this.radilogy_residency = false
+    },
+    supplyChain() {
+      this.decision_support = true,
+      this.inventory_optimization = true,
+      this.material_harmonization = true,
+      this.production_scheduling = true,
+      this.radilogy_residency = false
+    },
+    healthcare() {
+      this.decision_support = false,
+      this.inventory_optimization = false,
+      this.material_harmonization = false,
+      this.production_scheduling = false,
+      this.radilogy_residency = true
     },
     onSlideStart(slide) {
       this.sliding = true

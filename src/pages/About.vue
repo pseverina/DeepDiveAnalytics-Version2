@@ -4,9 +4,17 @@
     <h1 class="header">About</h1>
     <hr class="hr about__hr">
     <div class="about__main">
-      <img src="../img/aboutus_img/aboutus_methodical.png" alt="image" class="about__main-img"/>
-      <img src="../img/aboutus_img/aboutus_analytical.png" alt="image" class="about__main-img"/>
-      <img src="../img/aboutus_img/aboutus_impactful.png" alt="image" class="about__main-img"/>
+      <b-row class="justify-content-md-center">
+        <b-col>
+          <img src="../img/aboutus_img/aboutus_methodical.png" alt="image" class="about__main-img"/>
+        </b-col>
+        <b-col>
+          <img src="../img/aboutus_img/aboutus_analytical.png" alt="image" class="about__main-img"/>
+        </b-col>
+        <b-col>
+          <img src="../img/aboutus_img/aboutus_impactful.png" alt="image" class="about__main-img"/>
+        </b-col>
+      </b-row>
       <div class="about__main-text"><span style="color: #58F86F">Our expertise</span>
         is&nbsp;in&nbsp;two main pillars of&nbsp;Advanced analytics&nbsp;&mdash; Prespective
         and Predictive analytics. Our team is&nbsp;comprised of&nbsp;experienced digital and 
