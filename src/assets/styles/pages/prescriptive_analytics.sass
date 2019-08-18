@@ -1,4 +1,4 @@
-.pres-analytics
+.presAnalytics
   &__hr
     width: 25%
 
@@ -26,3 +26,33 @@
     text-align: center
     color: whitesmoke
     width: 60%
+
+// Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8 
+@media screen and (max-width: 414px) and (max-height: 823px)
+  .presAnalytics
+    &__header
+      font-size: 20px 
+    
+    &__header-2
+      text-align: center
+      width: 80%
+      font-size: 18px
+      margin: 2% auto
+
+    &__text
+      font-size: 18px
+
+// Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8  (landscapes)
+@media screen and (min-width: 415px) and (max-width: 823px) and (max-height: 414px)
+  .presAnalytics
+    &__header
+      font-size: 20px 
+    
+    &__header-2
+      text-align: center
+      width: 80%
+      font-size: 18px
+      margin: 2% auto
+
+    &__text
+      font-size: 18px

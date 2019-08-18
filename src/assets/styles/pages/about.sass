@@ -1,5 +1,4 @@
 .about
-
   &__hr
     width: 7%
 
@@ -17,4 +16,36 @@
       margin: 2% auto
       color: whitesmoke
       width: 95%
+
+      &-hidden
+         display: none
+
+  // Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8 
+@media screen and (max-width: 414px) and (max-height: 823px)
+  .about
+    &__header
+      font-size: 18px
+
+    &__main
+      margin-bottom: 5%
+
+      &-img
+        width: 70%
+        height: 50%
+        margin: 5% 15%
+
+      &-text
+        display: none
+        
+        &-hidden
+          display: inline
+          color: whitesmoke
+          font-size: 14px
+
+          
+
+      
+
+
+
       
