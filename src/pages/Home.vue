@@ -1,5 +1,5 @@
 <template>
-   <div class="stars font">
+   <div class="container-fluid stars font">
      <div class="twinkling">
         <!-- First section -->
         <img src="../img/home_page_img/deepdive_logo_landing.png" id="head_name">
@@ -12,7 +12,7 @@
             <b-row>
               <b-col sm="3" class="section-2__pic-1" style="width:60%;"> 
                 <router-link tag="li" to="/predictiveAnalytics">
-                    <img src="../img/icons_img/icon_machinelearning.png" alt="img_icon1" class="section-2__img">
+                    <img src="../img/icons_img/icon_machinelearning.png" alt="img_icon1" class="section-2__img-1">
                     <h2 class="section-2__head-3">Predictive<br>Analytics</h2>
                     <h3 class="section-2__head-4">Sense the future</h3>
                     <h5 class="section-2__text-1">
@@ -130,10 +130,10 @@
                   <!-- <div v-for="quote in quotes" :key="quote.id">
                     {{ quote.id }}
                   </div> -->
-                  <div v-if="quote1">
+                  <div  v-if="quote1" class="change">
                     <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>{{ quotes[0].id }}
                   </div>
-                  <div v-if="quote2">
+                  <div v-if="quote2" class="change">
                     <img class="section-4__quotes-img" alt="quote" src="../img/icons_img/quotation.svg"/>{{ quotes[1].id }}
                   </div>
                 </transition>
