@@ -1,11 +1,22 @@
 <template>
   <div>
     <div class="footer">
-      <span>© Deep Dive Analytics. 2019 All Rights Reserved</span>
-      <br>
-      <a href="https://www.facebook.com/deepdiveanalytics.io"><eva-icon name="facebook-outline" animation="pulse" fill="whitesmoke" class="footer__icon"></eva-icon></a>
-      <a href="https://twitter.com/deepdiveAI"><eva-icon name="twitter-outline" animation="pulse" fill="whitesmoke" class="footer__icon"></eva-icon></a>
-      <a href="https://www.linkedin.com/company/deepdiveanalytics"><eva-icon name="linkedin-outline" animation="pulse" fill="whitesmoke" class="footer__icon"></eva-icon></a>      
+      <hr class="footer__hr">
+      <ul class="footer__list">
+        <li class="footer__list-rights"> © Deep Dive Analytics. 2019 All Rights Reserved</li>
+        <li class="footer__list-icon">
+          <a href="https://www.facebook.com/deepdiveanalytics.io"><eva-icon name="facebook-outline" animation="pulse" fill="whitesmoke"></eva-icon>
+          </a>
+        </li>
+        <li class="footer__list-icon">
+          <a href="https://twitter.com/deepdiveAI"><eva-icon name="twitter-outline" animation="pulse" fill="whitesmoke"></eva-icon>
+          </a>
+        </li>
+        <li class="footer__list-icon">
+          <a href="https://www.linkedin.com/company/deepdiveanalytics"><eva-icon name="linkedin-outline" animation="pulse" fill="whitesmoke"></eva-icon>
+          </a>
+        </li>
+      </ul>     
     </div>
   </div>
 </template>
