@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="footer">
-      <hr class="footer__hr">
       <ul class="footer__list">
+        <hr class="footer__list-hr"/>
         <li class="footer__list-rights"> © Deep Dive Analytics. 2019 All Rights Reserved</li>
         <li class="footer__list-icon">
           <a href="https://www.facebook.com/deepdiveanalytics.io"><eva-icon name="facebook-outline" animation="pulse" fill="whitesmoke"></eva-icon>

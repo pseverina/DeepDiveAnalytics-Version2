@@ -10,12 +10,23 @@
     margin-left: 10px 
     height: 40px
     width: 40px
+
+  .navbar-nav  
+    margin: 0% auto
   
   .nav-item
-    font-size: 18px
+    font-size: 20px
+    margin: 0px 15px
+    border-bottom: 2px solid transparent
+
+  .nav-item:hover
+    border-bottom: 2px solid #58f86e 
 
   .navbar-nav .dropdown-menu
     background-color: #222222 
+
+    a:hover
+      color: #58f86e
 
   a
     color: whitesmoke
@@ -24,14 +35,11 @@
   
   a:hover
     text-decoration: none
-    color: #58f86e
+    color: whitesmoke
     background-color: #222222
 
 .nav-link
   color: whitesmoke !important
-
-.nav-link:hover
-   color: #58f86e !important
 
 .router-link-exact-active
   color: #58f86e !important
@@ -39,3 +47,24 @@
 .navbar.navbar__hidden
   box-shadow: none
   transform: translate3d(0, -100%, 0)
+
+.navbar-toggler
+  background-color: #58f86e !important
+
+@media screen and (max-width: 991px)
+  .navbar
+
+    .nav-item:hover
+      border-bottom: 2px solid transparent
+    
+    a:hover
+      text-decoration: none
+      color: #58f86e
+
+    .nav-link:hover
+      color: #58f86e !important
+
+
+
+
+
