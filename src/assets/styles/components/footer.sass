@@ -4,31 +4,85 @@
   padding-bottom: 0.5%
   color: whitesmoke
   background-color: black
-  
-  &__list
-    list-style: none
-    width: 95%
-    margin: 2% 0% 2% 2%
-
-    &-hr
-      background-color: grey
-      width: 100%
-
-    &-rights
-      display: inline-block
     
-    &-icon
-      display: inline-block
-      float: right 
-      margin: 0 15px
+  &__mainlist
+    margin: 5% 3% 5% 10%
+    list-style: none
 
-  &__icon:hover
-    cursor: pointer
+    &-leftside
+      vertical-align: top
+      display: inline-block
+      width: 30%
+      margin-right: 2%
+      margin-left: 2%
+
+      &-img
+        width: 85%
+        margin-bottom: 5%
+      
+      &-text
+        margin-top: 5%
+        width: 90%
+        color: #808080
+
+    &-products
+      vertical-align: top
+      display: inline-block
+      margin-right: 2%
+      margin-left: 5%
+
+      &-header
+        border-bottom: 1px solid #57F86F 
+
+      &-services
+        list-style: none
+        color: #808080
+        padding-left: 0%
+    
+    &-info
+      vertical-align: top
+      display: inline-block
+      margin-right: 2%
+      margin-left: 2%
+
+      &-header
+        border-bottom: 1px solid #57F86F
+
+      &-details
+        list-style: none
+        color: #808080
+        padding-left: 0%
+
+    &-follow
+      vertical-align: top
+      display: inline-block
+      margin-right: 2%
+      margin-left: 2%
+
+      &-header
+        border-bottom: 1px solid #57F86F
+
+      &-media
+        list-style: none
+        padding-left: 0%
+
+        &-icon
+          display: inline-block
 
 // Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8 
 @media screen  and (max-width: 414px) and (max-height: 823px)
   .footer
     font-size: 12px
+
+    &__list
+      width: 90%
+      text-align: center
+      margin-bottom: 15%
+
+      &-icon
+        margin-top: 5%
+        margin-left: 0%
+        margin-right: 20%
 
 // Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8  (landscapes)
 @media screen and (min-width: 415px) and (max-width: 823px) and (max-height: 414px)

@@ -1,8 +1,7 @@
 <template>
-  <div class="stars font">
+  <div class="container-fluid stars font">
     <div class="twinkling">
       <h1 class="header">Products & Services</h1>
-      <hr class="hr prodServ__hr-1">
       <b-row class="justify-content-md-center">
         <b-col>
           <div class="prodServ__item">

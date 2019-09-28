@@ -1,98 +1,20 @@
-#head_name
-  width: 60%
-  margin: 17% 20%
-
-#dive_in
-  color: #58F86F
-  margin: 0% 40% 0% 47%
-  font-size: 14px
-
-#arrow_down
-  color: white
-  margin: 0.5% 44% 5% 48%
-  height: 15px
-  width: 15px
-
-.section-2
+.section-1
   text-align: center
-  
-  &__pic-1
-    margin: 5% 0% 3% 8%
-    width: 15%
-    height: 80%
+  color: whitesmoke
 
   &__head
-    font-size: 32px
-    color: whitesmoke
-    text-align: center
-
-  &__img-1
-    position: relative
-    z-index: 2
-    width: 35%
-    margin: 5% auto
-    padding-top: 10%
-
-  &__head-3
-    font-size: 26px
-    position: relative
-    z-index: 2
-    color: #0CA8FC
-
-  &__head-4
-    position: relative
-    font-size: 24px
-    z-index: 2
-    color: whitesmoke
-
-  &__text-1
-    position: relative
-    font-size: 18px
-    z-index: 2
-    color: whitesmoke
-    margin-bottom: 15%
-
-  &__pic-1:after, &__pic-2:after, &__pic-3:after
-    content: ''
-    position: absolute
-    top: 0px
-    left: 0px
-    width: 100%
-    height: 100%
-    z-index: 1
-    background-color: #222222
-    border: 1px solid black
-    opacity: 0.8
-
-  &__pic-1:hover, &__pic-2:hover, &__pic-3:hover
-    border: 1px solid #58F86F
-    transform: scale(1.1)
-    transition: 0.5s
-    cursor: pointer
-    
-  &__pic-2
-    margin-top: 5%
-    margin-left: 5%
-    width: 22%
-    height: 90%
-    
-  &__pic-3
-    margin-top: 5%
-    margin-left: 5%
-    width: 22%
-    height: 90%
+    padding-top: 5%
+    font-size: 52px
+    font-weight: bold
   
-  &__img-2
-    position: relative
-    width: 45%
-    z-index: 2
-    margin: 20% 25% 10% 15%
-    
-  &__img-3
-    position: relative
-    width: 40%
-    z-index: 2
-    margin: 10% 30% 5% 20%
+  &__text
+    font-size: 32px
+
+  &__img
+    width: 35%
+
+.section-2
+  
 
 .section-3
   &__head
@@ -188,23 +110,24 @@
 
 .section-5
   &__head
-    font-size: 42px
+    font-size: 48px
     color: whitesmoke
-    text-align: center
-    margin-top: 10%
+    font-weight: bold
+    margin-top: 5%
+    margin-left: 2%
   
   &__text
-    margin-top: 15%
+    margin-top: 5%
     margin-left: 5%
     color: whitesmoke
-    text-align: center
-    font-size: 25px
+    font-size: 32px
 
   &__black_hole   
     position: relative
-    height: 100%
-    width: 75%
+    height: 120%
+    width: 85%
     margin-left: 20%
+    margin-top: -20%
     z-index: 1
     -webkit-animation: rotation 20s infinite linear
 
@@ -245,40 +168,6 @@
 
 // Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8 
 @media screen and (max-width: 414px) and (max-height: 823px)
-  #head_name
-    width: 70%
-    margin: 12% 12%
-
-  #dive_in
-    margin: 0% 35% 0% 45%
-
-  .section-2
-    &__head
-      font-size: 18px
-    
-    &__pic-1,  &__pic-2,  &__pic-3
-      margin-left: 20%
-    
-    &__img-1, &__img-3
-      margin: 10% 20% 10% 10%
-      width: 45%
-    
-    &__img-2
-      margin: 15% 20% 10% 10%
-      width: 45%
-    
-    &__head-3
-      font-size: 20px
-    
-    &__head-4
-      font-size: 18px
-    
-    &__text-1
-      font-size: 16px
-  
-  .section-3
-    &__head
-      font-size: 18px
 
   .section-4
     &__head-1, &__head-2
@@ -304,49 +193,7 @@
       margin-left: 55%
 
 // Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8  (landscapes)
-@media screen and (min-width: 415px) and (max-width: 823px) and (max-height: 414px)
-  #head_name
-  width: 70%
-  margin: 12% 12%
-
-  #dive_in
-    margin: 0% 35% 0% 45%
-
-  .section-2
-    &__head
-      font-size: 18px
-    
-    &__pic-1
-      margin-left: 8%
-
-    &__pic-2,  &__pic-3
-      margin-left: 5%
-    
-    &__img-1, &__img-3
-      margin: 10% 20% 10% 10%
-      width: 45%
-    
-    &__img-2
-      margin: 15% 20% 10% 10%
-      width: 45%
-    
-    &__head-3
-      font-size: 20px
-    
-    &__head-4
-      font-size: 18px
-    
-    &__text-1
-      font-size: 16px
-  
-  .section-3
-    &__head
-      font-size: 18px
-
-  .section-4
-    &__head-1, &__head-2
-      font-size: 18px
-    
+@media screen and (min-width: 415px) and (max-width: 823px) and (max-height: 414px)    
   .section-5
     &__head
       width: 85%
@@ -371,56 +218,7 @@
 
 
 // Adjust for Ipad and Ipad Pro
-@media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 1366px)
-  #head_name
-    width: 70%
-    margin: 12% 15%
-
-  #dive_in
-    font-size: 24px
-    margin: 0% 35% 0% 48%
-  
-  #arrow_down
-    height: 25px
-    width: 35px
-    margin: auto 50%
-
-  .section-2
-    &__head
-      margin-top: 4%
-      font-size: 24px
-    
-    &__pic-1,  
-      margin-left: 8%
-    
-    &__pic-2,  &__pic-3
-      margin-left: 5%
-    
-    &__img-1, &__img-3
-      margin: 10% 20% 10% 10%
-      width: 45%
-    
-    &__img-2
-      margin: 25% 20% 20% 10%
-      width: 45%
-    
-    &__head-3
-      font-size: 20px
-    
-    &__head-4
-      font-size: 18px
-    
-    &__text-1
-      font-size: 16px
-  
-  .section-3
-    &__head
-      font-size: 24px
-
-  .section-4
-    &__head-1, &__head-2
-      font-size: 24px
-    
+@media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 1366px)  
   .section-5
     &__head
       width: 85%
@@ -441,61 +239,7 @@
       margin-left: 55%
 
 // Adjust for resposive website
-@media screen and (min-width: 569px) and (max-width: 768px) and (min-height: 1023px) and (max-height: 1116px)
-  #head_name
-    width: 70%
-    margin: 12% 15%
-
-  #dive_in
-    font-size: 24px
-    margin: 0% 35% 0% 48%
-  
-  #arrow_down
-    height: 20px
-    width: 30px
-    margin: auto 5% 
-
-  .section-2
-    &__head
-      background-color: pink
-      margin-top: 4%
-      font-size: 24px
-    
-    &__pic-1,  
-      margin-left: 8%
-    
-    &__pic-2,  &__pic-3
-      margin-left: 5%
-    
-    &__img-1
-      margin: 10% 20% 10% 10%
-      width: 45%
-    
-    &__img-2
-      margin: 25% 20% 20% 10%
-      width: 45%
-    
-    &__img-3
-      margin: 10% 20% 15% 10%
-      width: 45%
-    
-    &__head-3
-      font-size: 20px
-    
-    &__head-4
-      font-size: 18px
-    
-    &__text-1
-      font-size: 16px
-  
-  .section-3
-    &__head
-      font-size: 24px
-
-  .section-4
-    &__head-1, &__head-2
-      font-size: 24px
-    
+@media screen and (min-width: 569px) and (max-width: 768px) and (min-height: 1023px) and (max-height: 1116px) 
   .section-5
     &__head
       width: 80%

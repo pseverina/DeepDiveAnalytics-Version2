@@ -2,7 +2,6 @@
  <div class="container-fluid stars font">
     <div class="twinkling">
       <h1 class="presAnalytics__header header">Prescriptive Analytics</h1>
-      <hr class="hr presAnalytics__hr">
       <div class="presAnalytics__header-2">
         Given what's happened / what we think will happen,<br>
          what is the best action to take?

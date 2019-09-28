@@ -1,25 +1,7 @@
 <template>
- <div class="stars font">
+ <div class="container-fluid stars font">
     <div class="twinkling">
       <h1 class="header">Success Stories</h1>
-      <hr class="hr service__hr">
-      <!--
-      <div class="header-2"> Filter by 
-        <b-form-select 
-          v-model="selected_tech" 
-          :options="options_tech"
-          class="selected-tech"
-          >
-        </b-form-select>
-        or
-        <b-form-select 
-          v-model="selected_ind" 
-          :options="options_ind" 
-          class="selected-ind"
-          >
-        </b-form-select>
-      </div>
-      -->
       <form class="services__form">
         <fieldset class="services__form-fieldset">
         <legend class="services__form-legend">Filter by</legend>
@@ -283,13 +265,13 @@ export default {
       this.material_harmonization = false,
       this.production_scheduling = false,
       this.radilogy_residency = true
-    },
-    onSlideStart(slide) {
+    }
+    /*onSlideStart(slide) {
       this.sliding = true
     },
     onSlideEnd(slide) {
       this.sliding = false
-    }
+    }*/
   }
 }
 </script>

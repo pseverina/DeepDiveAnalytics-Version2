@@ -1,8 +1,7 @@
 <template>
- <div class="stars font">
+ <div class="container-fluid stars font">
     <div class="twinkling">
       <h1 class="predAnalytics__header header">Predictive Analytics</h1>
-      <hr class="hr predAnalytics__hr">
       <div class="predAnalytics__header-2"> 
         What is the difference between AI,
         Machine Learning, & Deep Learning ?

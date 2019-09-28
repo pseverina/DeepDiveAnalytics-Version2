@@ -1,18 +1,20 @@
 <template>
-  <div class="stars font">
+  <div class="container-fluid stars font">
     <div class="twinkling">
       <h1 class="header">Contact Us</h1>
-      <hr class="hr contact__hr">
       <b-row>
-        <b-col class="col-lg-6">
-          <form class="contact__form" :model="form" v-on:submit="validateForm">
-            <h2 class="contact__form-h2">Let's go on this journey together!</h2>
+        <b-col md="6">
+          <form
+            ref="contactInfo"
+            class="contact__form"
+            :model="form" 
+            >
+            <h3 class="contact__form-header">Let's go on this journey together!</h3>
             <b-row>
               <b-col lg="6">
                 <label for="input__first-name">First Name <span style="color:red">*</span></label>
                 <b-form-input 
                   v-model="form.first_name" 
-                  :invalid-feedback="invalidFeedback"
                   placeholder="First Name" 
                   class="contact__form-input"
                   required
@@ -22,7 +24,6 @@
                 <label for="input__last-name">Last Name <span style="color:red">*</span></label>
                 <b-form-input 
                   v-model="form.last_name"
-                  :invalid-feedback="invalidFeedback"
                   placeholder="Last Name"
                   class="contact__form-input"
                   required
@@ -34,7 +35,6 @@
                 <label for="input__email">Email <span style="color:red">*</span></label>
                 <b-form-input 
                   v-model="form.email"
-                  :invalid-feedback="invalidFeedback"
                   placeholder="name@example.com"
                   class="contact__form-input"
                   type="email"
@@ -45,7 +45,6 @@
                   <label for="input__company">Company <span style="color:red">*</span></label>
                   <b-form-input 
                     v-model="form.company"
-                    :invalid-feedback="invalidFeedback"
                     placeholder="Google.com" 
                     class="contact__form-input"
                     required
@@ -62,13 +61,34 @@
               >
               </b-form-textarea>
             </b-form-group>
-            <div class="form-group col-md-12">
-              <b-button class="contact__form-btn" block variant="outline-light" size="lg">Submit</b-button>
-            </div>
+            <b-form-group class="form-group">
+              <b-row>
+                <b-button 
+                  class="contact__form-btn" 
+                  size="lg"
+                  variant="outline-light"
+                  @click="submitForm('contactInfo')"
+                >
+                  Submit
+                </b-button>
+                <b-button 
+                  class="contact__form-btn" 
+                  size="lg"
+                  variant="outline-light"
+                  @click="clearForm('contactInfo')"
+                >
+                  Clear form
+                </b-button>
+              </b-row>   
+            </b-form-group>
           </form> 
         </b-col>
-        <b-col>
-          <img src="../img/logo_img/helmet.png" alt="logo" class="contact__brand"/>
+        <b-col md="6">
+          <div class="contact__info">
+            <img src="../img/logo_img/helmet.png" alt="logo" class="contact__info-brand"/><br>
+            <span class="contact__info-header">Partner with DeepDiveAnalytics</span><br>
+            <span class="contact__info-details">Enter your details & we'll be in touch with you to discuss your project</span>
+          </div>
         </b-col>
       </b-row>
       </div>
@@ -89,11 +109,18 @@ export default {
       }
     }
   },
-  computed: {
-    invalidFeedback() {
-      if (this.first_name == 0) {
-        return "need to be included"
-      }
+  asyncMethods: {
+    async submitForm (formName) {
+      this.clearForm()
+    }
+  },
+  methods: {
+    clearForm () {
+      this.form.first_name = ''
+      this.form.last_name = ''
+      this.form.email = ''
+      this.form.company = ''
+      this.form.text = ''
     }
   }
 }
