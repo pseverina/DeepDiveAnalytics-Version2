@@ -7,8 +7,8 @@
          <p class="section-1__text">Advanced analytics for health care providers. <br>
             Automated provider scheduling solution based on unique rules and requirerements. <br>
             Custom, Accurate, and Modular.<br>
-            <span style="color: #1C75BC;">Learn more > </span>
-            <span style="color: #1C75BC;">Contact us ></span>
+            <span class="blue">Learn more > </span>
+            <span class="blue">Contact us ></span>
          </p>
          <img class="section-1__img" src="../img/home_page_img/codemd_logo.png"/>
        </div>
@@ -16,16 +16,35 @@
         <div class="section-2">
           <b-row>
             <b-col>
-
+              <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/>
             </b-col>
-            <b-col style="backhround-color: whitesmoke;">
-              
+            <b-col>
+              <div class="section-2__rightside">
+                <h1 class="section-2__rightside-head">Driving Performance for Supply Chain</h1>
+                <p class="section-2__rightside-text">
+                  Make the system smarter with Deep Dive Analytics.<br>
+                  End-to-End supply chain solutions.<br>
+                  Data-drive.Custom.<br>
+                  <span class="blue">Learn more > </span>
+                  <span class="blue">Contact us ></span>
+                </p>
+              </div>
             </b-col>
           </b-row>
         </div>
-        <!--  Third Section -->
-        <div class="section-3__head">Our work</div>
-      <!--  <carousel 
+        <!-- Third Section -->
+        <div class="section-3">
+          <h1 class="section-3__head">Industry Agnostic</h1>
+          <p class="section-3__text">
+            Any industry. Any business.<br>
+            We drive business advantage by delivering<br>
+            cutting edge analytical capabilities and technologies.<br>
+            <span class="blue">Learn more > </span>
+            <span class="blue">Contact us ></span>
+          </p>
+          <img class="section-3__img" src="../img/home_page_img/industry_agnostic.png"/>
+        </div>
+      <!-- <carousel 
           :perPageCustom="[[600, 2], [830, 3], [1130, 4], [1430, 5]]"
           class="section-3__carousel"
           >
@@ -89,31 +108,75 @@
         <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox> -->
         <!-- Fourth Section -->
         <div class="section-4">
- 
+          <h1 class="section-4__head">Agile Project Management</h1>
+          <p class="section-4__text">
+            Innovate and deliver faster with Deep Dive Analytics.<br>
+            Experience a professional and effecient working engagement.<br>
+            <span class="blue">Contact us ></span>
+          </p>
+          <b-row style="margin: 0 auto;  width: 70%;">
+            <b-col class="section-4-col">
+              <div class="section-4__img-left">
+                <img class="section-4__img-left-img" src="../img/home_page_img/strategy.png"/><br><br>
+                <span class="section-4__img-left-head blue">Define a Strategy</span>
+                <p class="section-4__img-left-text">
+                  Assess the opportunity, 
+                  thinking strategically and
+                  holistically when defining the plan
+                  to help your organization.
+                </p>
+              </div>
+            </b-col>
+            <b-col class="section-4-col">
+              <div class="section-4__img-middle">
+                <img class="section-4__img-middle-img" src="../img/home_page_img/iterative_development.png"/><br><br>
+                <span class="section-4__img-middle-head blue">Iterative Development</span>
+                <p class="section-4__img-middle-text">
+                  Working in agile sprints to
+                  define, build, and deploy your
+                  solution so your business can
+                  reap the benefits quickly.
+                </p>
+              </div>
+            </b-col>
+            <b-col class="section-4-col">
+              <div class="section-4__img-right">
+                <img class="section-4__img-right-img" src="../img/home_page_img/business_impact.png"/><br><br>
+                <span class="section-4__img-right-head blue">Deliver Business Impact</span>
+                <p class="section-4__img-right-text">
+                  Driving performance and
+                  efficiency across your
+                  organization through advanced
+                  analytics and automation.
+                </p>
+              </div>
+            </b-col>
+          </b-row>
         </div>
         <!--  Fifth Section -->
-        <div class="section-5__head">
-          <span style="color: #58F86F;">Deep Dive</span> into your data <br> to make <span style="color: #58F86F;">Smarter Decisions</span>.
-        </div> 
-        <b-row>
-          <b-col sm="6">
-            <p class="section-5__text">
-              We&nbsp;combine business knowledge with advanced 
-              analytics, building custom analytical solutions based 
-              on&nbsp;your unique business needs. We&nbsp;have a&nbsp;proven 
-              track record of&nbsp;delivering business value.
-            </p>
-            <p class="section-5__text">
-              Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.
-              <span style="color: #1C75BC;">Contact us ></span>
-            </p>
-          </b-col>
-          <b-col sm="6">
-            <img class="section-5__black_hole" alt="black_hole" src="../img/bg_img/black_hole.png"/> 
-            <img class="section-5__spaceman" alt="spaceman" src="../img/home_page_img/blackhole_spaceman.png"/>
-          </b-col>
-        </b-row>
-      
+        <div class="section-5">
+          <div class="section-5__head">
+            <span style="color: #58F86F;">Deep Dive</span> into your data <br> to make <span style="color: #58F86F;">Smarter Decisions</span>.
+          </div> 
+          <b-row>
+            <b-col sm="6">
+              <p class="section-5__text">
+                We&nbsp;combine business knowledge with advanced 
+                analytics, building custom analytical solutions based 
+                on&nbsp;your unique business needs. We&nbsp;have a&nbsp;proven 
+                track record of&nbsp;delivering business value.
+              </p>
+              <p class="section-5__text">
+                Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.
+                <span class="blue">Contact us ></span>
+              </p>
+            </b-col>
+            <b-col sm="6">
+              <img class="section-5__black_hole" alt="black_hole" src="../img/bg_img/black_hole.png"/> 
+              <img class="section-5__spaceman" alt="spaceman" src="../img/home_page_img/blackhole_spaceman.png"/>
+            </b-col>
+          </b-row>
+        </div>
       </div>
     </div>
 </template>

@@ -32,20 +32,20 @@ const router = new Router({
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/Products_Services')
     },
     {
-      path: '/predictiveAnalytics',
-      name: 'PredAnalytics',
-      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/Predictive_Analytics')
+      path: '/codeMd',
+      name: 'CodeMD',
+      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/CodeMD')
     },
     {
-      path: '/prescriptiveAnalytics',
-      name: 'PresAnalytics',
-      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/Prescriptive_Analytics')
+      path: '/supplyChain',
+      name: 'SupplyChain',
+      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/SupplyChain')
     },
     {
-      path: '/customSolutionDeployment',
-      name: 'CusSolDeployment',
-      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/Custom_Solution_Deployment')
-    }  
+      path: '/customServices',
+      name: 'CustomServices',
+      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/CustomServices')
+    }
   ]
 })
 

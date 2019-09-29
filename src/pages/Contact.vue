@@ -1,7 +1,6 @@
 <template>
   <div class="container-fluid stars font">
     <div class="twinkling">
-      <h1 class="header">Contact Us</h1>
       <b-row>
         <b-col md="6">
           <form
@@ -91,7 +90,7 @@
           </div>
         </b-col>
       </b-row>
-      </div>
+    </div>
   </div>
 </template>
 
