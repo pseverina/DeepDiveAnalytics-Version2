@@ -108,6 +108,8 @@
             CodeMD's analytical capabilites differentiate it from the competition.<br>
             Don't settle for less. Get more productive with CodeMD.
           </p>
+          <img class="codeMd-3__img" src="../img/code_md/codemd_performance.png"/><br>
+          <span class="blue">Contact us ></span>
         </div>
         <!-- section 4 -->
         <div class="codeMd-4">
@@ -116,7 +118,7 @@
             Customize to your needs beyond scheduling.
             Add tailored modules to reduce manual tasks,
             driving efficiency across your organization.<br>
-            <span class="blue">Contacs us ></span>
+            <span class="blue">Contact us ></span>
           </p>
         </div>
         <!-- section 5 -->
@@ -130,7 +132,7 @@
               <p class="codeMd-5__rightside-text">
                 Visualize your data. Modify your schedule.<br>
                 Run your custom functions on demand.<br>
-                <span class="blue">Contacts us ></span>
+                <span class="blue">Contact us ></span>
               </p>
             </b-col>
           </b-row>
@@ -142,8 +144,8 @@
             style="text-shadow: 1px 1px 2px #333; font-size: 26px;"
             fade
             controls
-            img-width="926"
-            img-height="320"
+            img-width="900"
+            img-height="300"
           >
             <b-carousel-slide
               caption="What CodeMD customers are saying"

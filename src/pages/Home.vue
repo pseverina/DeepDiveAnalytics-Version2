@@ -7,8 +7,8 @@
          <p class="section-1__text">Advanced analytics for health care providers. <br>
             Automated provider scheduling solution based on unique rules and requirerements. <br>
             Custom, Accurate, and Modular.<br>
-            <span class="blue">Learn more > </span>
-            <span class="blue">Contact us ></span>
+            <span><router-link to="/codeMd" class="link_home">Learn more > </router-link></span>
+            <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
          </p>
          <img class="section-1__img" src="../img/home_page_img/codemd_logo.png"/>
        </div>
@@ -16,7 +16,49 @@
         <div class="section-2">
           <b-row>
             <b-col>
-              <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/>
+              <!-- <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/> -->
+              <div>
+                <svg height="100" width="100">
+                  <line x1="50" y1="100" x2="100" y2="0" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="-100" y1="0" x2="100" y2="0" style="stroke: #1C75BC; stroke-width:3" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="50" y1="100" x2="0" y2="0" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                <br>
+                <svg height="100" width="100">
+                  <line x1="50" y1="0" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="-100" y1="100" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:3" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="0" y1="100" x2="50" y2="0" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+              </div>
+              <!-- 
+                                <svg height="100" width="100">
+                  <line x1="50" y1="100" x2="100" y2="0" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="-100" y1="0" x2="100" y2="000" style="stroke: #1C75BC; stroke-width:3" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="50" y1="100" x2="0" y2="0" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                <br>
+                <svg height="100" width="100">
+                  <line x1="50" y1="0" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="-100" y1="100" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:3" />
+                </svg>
+                <svg height="100" width="100">
+                  <line x1="0" y1="100" x2="50" y2="0" style="stroke: #1C75BC; stroke-width:2" />
+                </svg>
+                -->
             </b-col>
             <b-col>
               <div class="section-2__rightside">
@@ -25,8 +67,8 @@
                   Make the system smarter with Deep Dive Analytics.<br>
                   End-to-End supply chain solutions.<br>
                   Data-drive.Custom.<br>
-                  <span class="blue">Learn more > </span>
-                  <span class="blue">Contact us ></span>
+                  <span><router-link to="/supplyChain" class="link_home">Learn more > </router-link></span>
+                  <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
                 </p>
               </div>
             </b-col>
@@ -39,8 +81,8 @@
             Any industry. Any business.<br>
             We drive business advantage by delivering<br>
             cutting edge analytical capabilities and technologies.<br>
-            <span class="blue">Learn more > </span>
-            <span class="blue">Contact us ></span>
+            <span><router-link to="/customServices" class="link_home">Learn more > </router-link></span>
+            <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
           <img class="section-3__img" src="../img/home_page_img/industry_agnostic.png"/>
         </div>
@@ -112,7 +154,7 @@
           <p class="section-4__text">
             Innovate and deliver faster with Deep Dive Analytics.<br>
             Experience a professional and effecient working engagement.<br>
-            <span class="blue">Contact us ></span>
+            <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
           <b-row style="margin: 0 auto;  width: 70%;">
             <b-col class="section-4-col">
@@ -168,7 +210,7 @@
               </p>
               <p class="section-5__text">
                 Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.
-                <span class="blue">Contact us ></span>
+                <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
               </p>
             </b-col>
             <b-col sm="6">
