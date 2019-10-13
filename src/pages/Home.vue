@@ -16,49 +16,7 @@
         <div class="section-2">
           <b-row>
             <b-col>
-              <!-- <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/> -->
-              <div>
-                <svg height="100" width="100">
-                  <line x1="50" y1="100" x2="100" y2="0" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="-100" y1="0" x2="100" y2="0" style="stroke: #1C75BC; stroke-width:3" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="50" y1="100" x2="0" y2="0" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                <br>
-                <svg height="100" width="100">
-                  <line x1="50" y1="0" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="-100" y1="100" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:3" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="0" y1="100" x2="50" y2="0" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-              </div>
-              <!-- 
-                                <svg height="100" width="100">
-                  <line x1="50" y1="100" x2="100" y2="0" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="-100" y1="0" x2="100" y2="000" style="stroke: #1C75BC; stroke-width:3" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="50" y1="100" x2="0" y2="0" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                <br>
-                <svg height="100" width="100">
-                  <line x1="50" y1="0" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="-100" y1="100" x2="100" y2="100" style="stroke: #1C75BC; stroke-width:3" />
-                </svg>
-                <svg height="100" width="100">
-                  <line x1="0" y1="100" x2="50" y2="0" style="stroke: #1C75BC; stroke-width:2" />
-                </svg>
-                -->
+              <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/>
             </b-col>
             <b-col>
               <div class="section-2__rightside">
@@ -209,7 +167,7 @@
                 track record of&nbsp;delivering business value.
               </p>
               <p class="section-5__text">
-                Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.
+                Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.<br>
                 <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
               </p>
             </b-col>
