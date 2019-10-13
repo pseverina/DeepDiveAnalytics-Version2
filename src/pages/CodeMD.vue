@@ -14,7 +14,7 @@
               <p class="codeMd-1__leftside-text">
                 Industry leading advanced analytics<br>
                 for health care providers.<br>
-                <span class="blue no_underline"><router-link to="/contact">Contact us ></router-link></span>
+                <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
               </p>
             </b-col>
             <b-col class="codeMd-1__rightside">
@@ -109,17 +109,18 @@
             Don't settle for less. Get more productive with CodeMD.
           </p>
           <img class="codeMd-3__img" src="../img/code_md/codemd_performance.png"/><br>
-          <span class="blue">Contact us ></span>
+          <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
         </div>
         <!-- section 4 -->
         <div class="codeMd-4">
           <h1 class="codeMd-4__head">Simplify your Workflow</h1>
           <p class="codeMd-4__text">
-            Customize to your needs beyond scheduling.
-            Add tailored modules to reduce manual tasks,
+            Customize to&nbsp;your needs beyond scheduling. 
+            Add tailored modules to&nbsp;reduce manual tasks, 
             driving efficiency across your organization.<br>
-            <span class="blue">Contact us ></span>
+            <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
           </p>
+          <img class="codeMd-4__img" src="../img/code_md/codemd_ai.png"/>
         </div>
         <!-- section 5 -->
         <div class="codeMd-5">
@@ -132,44 +133,61 @@
               <p class="codeMd-5__rightside-text">
                 Visualize your data. Modify your schedule.<br>
                 Run your custom functions on demand.<br>
-                <span class="blue">Contact us ></span>
+                <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
               </p>
             </b-col>
           </b-row>
         </div>
         <!-- section 6 -->
-        <div>
+        <div class="codeMd-6">
           <b-carousel
             id="carousel-fade"
-            style="text-shadow: 1px 1px 2px #333; font-size: 26px;"
             fade
-            controls
-            img-width="900"
-            img-height="300"
+            indicators
           >
-            <b-carousel-slide
-              caption="What CodeMD customers are saying"
-              text="With CodeMD, Deep Dive Analytics brought a degree of service to our department’s 
-              complex schedule which was very obviously on an engineering level. CodeMD took historical 
-              data and the complex educational requirements for residents into account, intelligently 
-              producing a schedule which was far beyond what a human could produce. What really stood 
-              out though was Deep Dive’s commitment to tailor every aspect to the nuances of our department 
-              and the professionalism with which they did it. It seems that CodeMD is a generation beyond 
-              what is offered by other firms. - Dr. Edilberto Alvarez Neuroradiology at the University 
-              of Miami Hospital"
-              img-src="https://picsum.photos/1024/480/?image=10"
-            ></b-carousel-slide>
-            <b-carousel-slide
-              caption="What CodeMD customers are saying"
-              text="CodeMD was able to quickly and accurately provide a solution to an extremely complex 
-              problem that had become too complex for our group to solve in a reasonable time. The Deep 
-              Dive Analytics team was able to program a better, more tailored, solution that was even 
-              better than the industry standard. It ultimately consolidated months of work into a weekend. 
-              During the development, the staff was timely and professional; whereas other companies had
-               set false expectations and had mislead our team. I can recommend CodeMD without reserve.
-               - Dr. Mohammed Ezuddin Vascular & Interventional Radiology the University of Miami Hospital"
-              img-src="https://picsum.photos/1024/480/?image=12"
-            ></b-carousel-slide>
+            <b-carousel-slide>
+              <img class="d-block w-100" src="../img/code_md/codemd_testimonial_background.jpg" alt="First slide">
+              <div class="carousel-caption  d-none d-md-block">
+                <h1 class="codeMd-6__header">What CodeMD customers are saying</h1>
+                <h3 class="codeMd-6__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+                <p class="codeMd-6__text">
+                    &laquo;With CodeMD, Deep Dive Analytics brought a&nbsp;degree of&nbsp;service 
+                    to&nbsp;our department&rsquo;s complex schedule which was very obviously 
+                    on&nbsp;an&nbsp;engineering level. CodeMD took historical data and 
+                    the complex educational requirements for residents into account, 
+                    intelligently producing a&nbsp;schedule which was far beyond what a&nbsp;human 
+                    could produce. What really stood out though was Deep Dive&rsquo;s commitment 
+                    to&nbsp;tailor every aspect to&nbsp;the nuances of&nbsp;our department 
+                    and the professionalism with which they did&nbsp;it. It&nbsp;seems 
+                    that CodeMD&nbsp;is a&nbsp;generation beyond what is&nbsp;offered by&nbsp;other 
+                    firms. &mdash;&nbsp;Dr. Edilberto Alvarez Neuroradiology at&nbsp;the University 
+                    of&nbsp;Miami Hospital.&raquo;
+                  </p>
+                  <span class="codeMd-6__author">
+                    - Dr. Edilberto Alvarez <br> Neuroradiology at the University of Miami Hospital
+                  </span>
+              </div>  
+            </b-carousel-slide>
+            <b-carousel-slide>
+              <img class="d-block w-100" src="../img/code_md/codemd_testimonial_background.jpg" alt="Second slide">
+              <div class="carousel-caption  d-none d-md-block">
+                <h1 class="codeMd-6__header">What CodeMD customers are saying</h1>
+                <h3 class="codeMd-6__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+                <p class="codeMd-6__text">
+                    &laquo;CodeMD was able to&nbsp;quickly and accurately provide a&nbsp;solution 
+                    to&nbsp;an&nbsp;extremely complex problem that had become too complex for our 
+                    group to&nbsp;solve in&nbsp;a&nbsp;reasonable time. The Deep Dive Analytics 
+                    team was able to&nbsp;program a&nbsp;better, more tailored, solution that was 
+                    even better than the industry standard. It&nbsp;ultimately consolidated months 
+                    of&nbsp;work into a&nbsp;weekend. During the development, the staff was timely 
+                    and professional; whereas other companies had set false expectations and had 
+                    mislead our team. I&nbsp;can recommend CodeMD without reserve.&raquo;
+                  </p>
+                  <span class="codeMd-6__author">
+                    - Dr. Mohammed Ezuddin <br> Vascular & Interventional Radiology the University of Miami Hospital
+                  </span>
+              </div> 
+            </b-carousel-slide>
           </b-carousel>
         </div>
       </div>
