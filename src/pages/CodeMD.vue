@@ -3,12 +3,12 @@
      <div class="twinkling">
         <!-- section 1 -->
         <div class="codeMd-1">
-          <b-row>
+          <b-row class="flex-column flex-md-row">
             <b-col class="codeMd-1__leftside">
               <h1 class="codeMd-1__leftside-head">
-                The New Standard.<br>
-                Custom Scheduling.<br>
-                Smart Automation.<br>
+                The New Standard.
+                Custom Scheduling.
+                Smart Automation.
                 Tailored Algorithms.<br>
               </h1>
               <p class="codeMd-1__leftside-text">
@@ -31,9 +31,9 @@
           </p>
           <!-- Description boxes-->
           <!-- Rules-Based Scheduling -->
-          <b-row class="codeMd-2__info">
-            <b-col class="codeMd-2__info-img">
-              <img src="../img/code_md/schedule_rules.png" style="width: 100%;"/>
+          <b-row class="codeMd-2__info flex-column flex-md-row">
+            <b-col>
+              <img class="codeMd-2__info-img" src="../img/code_md/schedule_rules.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="blue codeMd-2__info-text-head">Rules-Based Scheduling</span>
@@ -45,9 +45,9 @@
             </b-col>
           </b-row>
           <!-- Balanced Schedules -->
-          <b-row class="codeMd-2__info">
-            <b-col class="codeMd-2__info-img">
-              <img src="../img/code_md/balanced.png" style="width: 100%;"/>
+          <b-row class="codeMd-2__info flex-column flex-md-row">
+            <b-col>
+              <img class="codeMd-2__info-img" src="../img/code_md/balanced.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="blue codeMd-2__info-text-head">Balanced Schedules</span>
@@ -59,9 +59,9 @@
             </b-col>
           </b-row>
           <!-- Automated, Reuseable, Scientific -->
-          <b-row class="codeMd-2__info">
-            <b-col class="codeMd-2__info-img">
-              <img src="../img/code_md/reuseable_scientific.png" style="width: 100%;"/>
+          <b-row class="codeMd-2__info flex-column flex-md-row">
+            <b-col>
+              <img class="codeMd-2__info-img" src="../img/code_md/reuseable_scientific.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="blue codeMd-2__info-text-head">Automated, Reuseable, Scientific</span>
@@ -73,9 +73,9 @@
             </b-col>
           </b-row>
           <!-- Comprehensive Scheduling -->
-          <b-row class="codeMd-2__info">
-            <b-col class="codeMd-2__info-img">
-              <img src="../img/code_md/codemd_comprehensive.png" style="width: 100%;"/>
+          <b-row class="codeMd-2__info flex-column flex-md-row">
+            <b-col>
+              <img class="codeMd-2__info-img" src="../img/code_md/codemd_comprehensive.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="blue codeMd-2__info-text-head">Comprehensive Scheduling</span>
@@ -87,9 +87,9 @@
             </b-col>
           </b-row>
           <!-- Improved Service to Patients -->
-          <b-row class="codeMd-2__info">
-            <b-col class="codeMd-2__info-img">
-              <img src="../img/code_md/patient_impact.png" style="width: 100%;"/>
+          <b-row class="codeMd-2__info flex-column flex-md-row">
+            <b-col>
+              <img class="codeMd-2__info-img" src="../img/code_md/patient_impact.png" />
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="blue codeMd-2__info-text-head">Improved Service to Patients</span>
@@ -124,7 +124,7 @@
         </div>
         <!-- section 5 -->
         <div class="codeMd-5">
-          <b-row>
+          <b-row class="flex-column-reverse flex-md-row">
             <b-col class="codeMd-5__leftside">
               <img class="codeMd-5__leftside-img" src="../img/code_md/codemd_app.png"/>
             </b-col>
