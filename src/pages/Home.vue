@@ -4,8 +4,9 @@
        <!-- First section -->
        <div class="section-1">
          <h1 class="section-1__head">CodeMD is here.</h1>
-         <p class="section-1__text">Advanced analytics for health care providers. <br>
-            Automated provider scheduling solution based on unique rules and requirerements. <br>
+         <p class="section-1__text">
+            Advanced analytics for health care providers.
+            Automated provider scheduling solution based on unique rules and requirerements.
             Custom, Accurate, and Modular.<br>
             <span><router-link to="/codeMd" class="link_home">Learn more > </router-link></span>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
@@ -13,8 +14,8 @@
          <img class="section-1__img" src="../img/home_page_img/codemd_logo.png"/>
        </div>
         <!--  Second Section -->
-        <div class="section-2">
-          <b-row>
+        <div class="section-2 homepage-row">
+          <b-row class="flex-column-reverse flex-md-row">
             <b-col>
               <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/>
             </b-col>
@@ -22,8 +23,8 @@
               <div class="section-2__rightside">
                 <h1 class="section-2__rightside-head">Driving Performance for Supply Chain</h1>
                 <p class="section-2__rightside-text">
-                  Make the system smarter with Deep Dive Analytics.<br>
-                  End-to-End supply chain solutions.<br>
+                  Make the system smarter with Deep Dive Analytics.
+                  End-to-End supply chain solutions.
                   Data-drive.Custom.<br>
                   <span><router-link to="/supplyChain" class="link_home">Learn more > </router-link></span>
                   <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
@@ -33,11 +34,11 @@
           </b-row>
         </div>
         <!-- Third Section -->
-        <div class="section-3">
+        <div class="section-3 homepage-row">
           <h1 class="section-3__head">Industry Agnostic</h1>
           <p class="section-3__text">
-            Any industry. Any business.<br>
-            We drive business advantage by delivering<br>
+            Any industry. Any business.
+            We drive business advantage by delivering
             cutting edge analytical capabilities and technologies.<br>
             <span><router-link to="/customServices" class="link_home">Learn more > </router-link></span>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
@@ -107,10 +108,10 @@
         </carousel> 
         <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox> -->
         <!-- Fourth Section -->
-        <div class="section-4">
+        <div class="section-4 homepage-row">
           <h1 class="section-4__head">Agile Project Management</h1>
           <p class="section-4__text">
-            Innovate and deliver faster with Deep Dive Analytics.<br>
+            Innovate and deliver faster with Deep Dive Analytics.
             Experience a professional and effecient working engagement.<br>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>

@@ -10,6 +10,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav>
         <b-navbar-brand><router-link to="/"><img class="logo-brand" src="../img/footer/deepdive.png"></router-link></b-navbar-brand>
+        <b-navbar-brand><router-link to="/" class="link-home">Home</router-link></b-navbar-brand>
         <b-nav-item><router-link to="/codeMd">CodeMD</router-link></b-nav-item>
         <!-- <b-nav-item-dropdown class="dropdownLabel" text="Our Work" right>
           <b-dropdown-item><router-link to="/services">Success Stories</router-link></b-dropdown-item>
