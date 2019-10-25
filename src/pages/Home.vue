@@ -8,13 +8,13 @@
             Advanced analytics for health care providers.
             Automated provider scheduling solution based on unique rules and requirerements.
             Custom, Accurate, and Modular.<br>
-            <span><router-link to="/codeMd" class="link_home">Learn more > </router-link></span>
+            <span><router-link to="/codeMd" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
          </p>
          <img class="section-1__img" src="../img/home_page_img/codemd_logo.png"/>
        </div>
         <!--  Second Section -->
-        <div class="section-2 homepage-row">
+        <div class="section-2">
           <b-row class="flex-column-reverse flex-md-row">
             <b-col>
               <img class="section-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/>
@@ -26,7 +26,7 @@
                   Make the system smarter with Deep Dive Analytics.
                   End-to-End supply chain solutions.
                   Data-drive.Custom.<br>
-                  <span><router-link to="/supplyChain" class="link_home">Learn more > </router-link></span>
+                  <span><router-link to="/supplyChain" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
                   <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
                 </p>
               </div>
@@ -34,13 +34,13 @@
           </b-row>
         </div>
         <!-- Third Section -->
-        <div class="section-3 homepage-row">
+        <div class="section-3">
           <h1 class="section-3__head">Industry Agnostic</h1>
           <p class="section-3__text">
             Any industry. Any business.
             We drive business advantage by delivering
             cutting edge analytical capabilities and technologies.<br>
-            <span><router-link to="/customServices" class="link_home">Learn more > </router-link></span>
+            <span><router-link to="/customServices" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
           <img class="section-3__img" src="../img/home_page_img/industry_agnostic.png"/>
@@ -108,15 +108,15 @@
         </carousel> 
         <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox> -->
         <!-- Fourth Section -->
-        <div class="section-4 homepage-row">
+        <div class="section-4">
           <h1 class="section-4__head">Agile Project Management</h1>
           <p class="section-4__text">
             Innovate and deliver faster with Deep Dive Analytics.
             Experience a professional and effecient working engagement.<br>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
-          <b-row style="margin: 0 auto;  width: 70%;">
-            <b-col class="section-4-col">
+          <b-row class="section-4__row">
+            <b-col class="section-4__col">
               <div class="section-4__img-left">
                 <img class="section-4__img-left-img" src="../img/home_page_img/strategy.png"/><br><br>
                 <span class="section-4__img-left-head blue">Define a Strategy</span>
@@ -128,7 +128,7 @@
                 </p>
               </div>
             </b-col>
-            <b-col class="section-4-col">
+            <b-col class="section-4__col">
               <div class="section-4__img-middle">
                 <img class="section-4__img-middle-img" src="../img/home_page_img/iterative_development.png"/><br><br>
                 <span class="section-4__img-middle-head blue">Iterative Development</span>
@@ -140,7 +140,7 @@
                 </p>
               </div>
             </b-col>
-            <b-col class="section-4-col">
+            <b-col class="section-4__col">
               <div class="section-4__img-right">
                 <img class="section-4__img-right-img" src="../img/home_page_img/business_impact.png"/><br><br>
                 <span class="section-4__img-right-head blue">Deliver Business Impact</span>
@@ -157,7 +157,9 @@
         <!--  Fifth Section -->
         <div class="section-5">
           <div class="section-5__head">
-            <span style="color: #58F86F;">Deep Dive</span> into your data <br> to make <span style="color: #58F86F;">Smarter Decisions</span>.
+            <span class="section-5__head-green">Deep Dive </span>
+            <span class="section-5__head-white">into your data <br> to make </span>
+            <span class="section-5__head-green">Smarter Decisions</span>.
           </div> 
           <b-row>
             <b-col sm="6">
