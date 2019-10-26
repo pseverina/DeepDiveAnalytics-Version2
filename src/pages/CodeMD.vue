@@ -4,7 +4,7 @@
         <!-- section 1 -->
         <div class="codeMd-1">
           <b-row class="flex-column flex-md-row">
-            <b-col class="codeMd-1__leftside">
+            <b-col  cols="7" class="codeMd-1__leftside">
               <h1 class="codeMd-1__leftside-head">
                 The New Standard.
                 Custom Scheduling.
@@ -27,7 +27,7 @@
           <h1 class="codeMd-2__head">Revolutionize your Scheduling</h1>
           <p class="codeMd-2__text">
             Simplify your scheduling process and generate the most accurate schedule <br>
-            to drive performance and efficiency across your organization.
+            to&nbsp;drive performance and efficiency across your organization.
           </p>
           <!-- Description boxes-->
           <!-- Rules-Based Scheduling -->
@@ -36,7 +36,7 @@
               <img class="codeMd-2__info-img" src="../img/code_md/schedule_rules.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
-              <span class="blue codeMd-2__info-text-head">Rules-Based Scheduling</span>
+              <span class="codeMd-2__info-text-head">Rules-Based Scheduling</span>
               <p class="codeMd-2__info-text-description">
                 CodeMD&rsquo;s automated scheduling algorithm can be&nbsp;customized around
                 your rules and requirements with high accuracy and performance. The
@@ -50,7 +50,7 @@
               <img class="codeMd-2__info-img" src="../img/code_md/balanced.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
-              <span class="blue codeMd-2__info-text-head">Balanced Schedules</span>
+              <span class="codeMd-2__info-text-head">Balanced Schedules</span>
               <p class="codeMd-2__info-text-description">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;evenly distribute 
                 your schedule, while still taking into account all your custom rules 
@@ -64,7 +64,7 @@
               <img class="codeMd-2__info-img" src="../img/code_md/reuseable_scientific.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
-              <span class="blue codeMd-2__info-text-head">Automated, Reuseable, Scientific</span>
+              <span class="codeMd-2__info-text-head">Automated, Reuseable, Scientific</span>
               <p class="codeMd-2__info-text-description">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;generate new &amp;&nbsp;
                 updated schedules quickly. Need to&nbsp;refresh your schedule? No&nbsp;problem. 
@@ -78,7 +78,7 @@
               <img class="codeMd-2__info-img" src="../img/code_md/codemd_comprehensive.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
-              <span class="blue codeMd-2__info-text-head">Comprehensive Scheduling</span>
+              <span class="codeMd-2__info-text-head">Comprehensive Scheduling</span>
               <p class="codeMd-2__info-text-description">
                 CodeMD&nbsp;is for all healthcare institutions, staff, and specialties. From 
                 private groups to&nbsp;large health systems, CodeMD can successfully create 
@@ -92,7 +92,7 @@
               <img class="codeMd-2__info-img" src="../img/code_md/patient_impact.png" />
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
-              <span class="blue codeMd-2__info-text-head">Improved Service to Patients</span>
+              <span class="codeMd-2__info-text-head">Improved Service to Patients</span>
               <p class="codeMd-2__info-text-description">
                 CodeMD dramatically improves your organization&rsquo;s efficiency. Reduce the 
                 time and side-effects of&nbsp;inefficient scheduling. Dedicate more time to&nbsp;your 
@@ -105,8 +105,8 @@
         <div class="codeMd-3">
           <h1 class="codeMd-3__head">Industry Leading Performance and Accuracy.</h1>
           <p class="codeMd-3__text">
-            CodeMD's analytical capabilites differentiate it from the competition.<br>
-            Don't settle for less. Get more productive with CodeMD.
+            CodeMD&rsquo;s analytical capabilites differentiate it&nbsp;from the competition.<br>
+            Don&rsquo;t settle for less. Get more productive with CodeMD.
           </p>
           <img class="codeMd-3__img" src="../img/code_md/codemd_performance.png"/><br>
           <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
@@ -132,7 +132,7 @@
               <h1 class="codeMd-5__rightside-head">Get the CodeMD App</h1>
               <p class="codeMd-5__rightside-text">
                 Visualize your data. Modify your schedule.<br>
-                Run your custom functions on demand.<br>
+                Run your custom functions on&nbsp;demand.<br>
                 <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
               </p>
             </b-col>
@@ -147,7 +147,7 @@
           >
             <b-carousel-slide>
               <img class="d-block w-100" src="../img/code_md/codemd_testimonial_background.jpg" alt="First slide">
-              <div class="carousel-caption  d-none d-md-block">
+              <div class="carousel-caption d-md-block">
                 <h1 class="codeMd-6__header">What CodeMD customers are saying</h1>
                 <h3 class="codeMd-6__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
                 <p class="codeMd-6__text">
@@ -170,7 +170,7 @@
             </b-carousel-slide>
             <b-carousel-slide>
               <img class="d-block w-100" src="../img/code_md/codemd_testimonial_background.jpg" alt="Second slide">
-              <div class="carousel-caption  d-none d-md-block">
+              <div class="carousel-caption d-md-block">
                 <h1 class="codeMd-6__header">What CodeMD customers are saying</h1>
                 <h3 class="codeMd-6__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
                 <p class="codeMd-6__text">
