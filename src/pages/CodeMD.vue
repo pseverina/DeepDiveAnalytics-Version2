@@ -4,7 +4,7 @@
         <!-- section 1 -->
         <div class="codeMd-1">
           <b-row class="flex-column flex-md-row">
-            <b-col  cols="7" class="codeMd-1__leftside">
+            <b-col class="codeMd-1__leftside">
               <h1 class="codeMd-1__leftside-head">
                 The New Standard.
                 Custom Scheduling.
@@ -108,7 +108,41 @@
             CodeMD&rsquo;s analytical capabilites differentiate it&nbsp;from the competition.<br>
             Don&rsquo;t settle for less. Get more productive with CodeMD.
           </p>
-          <img class="codeMd-3__img" src="../img/code_md/codemd_performance.png"/><br>
+          <b-row class="codeMd-3__bar">
+            <b-col sm>
+              <el-progress 
+                :width="220" 
+                :height="200" 
+                class="codeMd-3__bar-circle" 
+                type="circle" 
+                :percentage="percentage_leftbar" 
+                color="#58f86e">
+              </el-progress>
+              <span class="codeMd-3__bar-text">Adherence to Schedule Rules & Requirements</span>
+            </b-col>
+            <b-col sm>
+              <el-progress 
+                :width="220" 
+                :height="200" 
+                class="codeMd-3__bar-circle" 
+                type="circle" 
+                :percentage="percentage_middlebar" 
+                color="#58f86e">
+              </el-progress>
+              <span class="codeMd-3__bar-text">Reducation in Time to Create Schedules</span>
+            </b-col>
+            <b-col sm>
+              <el-progress 
+                :width="220" 
+                :height="200" 
+                class="codeMd-3__bar-circle" 
+                type="circle" 
+                :percentage="percentage_rightbar" 
+                color="#58f86e">
+              </el-progress>
+              <span class="codeMd-3__bar-text">Reducation in Time Changing Schedules</span>
+            </b-col>
+          </b-row>
           <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
         </div>
         <!-- section 4 -->
@@ -198,6 +232,45 @@
 
 export default {
   name: 'CodeMD',
+  data() {
+    return {
+      percentage_leftbar: 100,
+      percentage_middlebar: 80,
+      percentage_rightbar: 70
+    }
+  },
+  created() {
+    this.automatedCircles()
+  },
+  methods: {
+    async automatedCircles() {
+      let infinityCircles = setInterval(() => {
+        if (this.percentage_leftbar >= 100) {
+          this.percentage_leftbar = 0
+        } else {
+          this.percentage_leftbar += 5
+        }
+
+        if (this.percentage_middlebar >= 100) {
+          this.percentage_middlebar = 0
+        } else {
+          this.percentage_middlebar += 5
+        }
+
+        if (this.percentage_rightbar >= 100) {
+          this.percentage_rightbar = 0
+        } else {
+          this.percentage_rightbar += 5
+        }
+        console.log('kek')
+      }, 2000)
+
+    // Дописать переменную для остановки setInterval
+     /*  setTimeout(() => { 
+        clearInterval(infinityCircles)
+      }, 15000) */
+    }
+  }
 }
 
 </script>

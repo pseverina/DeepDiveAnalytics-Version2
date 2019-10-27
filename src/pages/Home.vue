@@ -37,8 +37,8 @@
         <div class="section-3">
           <h1 class="section-3__head">Industry Agnostic</h1>
           <p class="section-3__text">
-            Any industry. Any business.
-            We drive business advantage by delivering
+            Any industry. Any business.<br>
+            We drive business advantage by delivering<br>
             cutting edge analytical capabilities and technologies.<br>
             <span><router-link to="/customServices" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
@@ -116,7 +116,7 @@
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
           <b-row class="section-4__row">
-            <b-col class="section-4__col">
+            <b-col class="section-4__col" sm>
               <div class="section-4__img-left">
                 <img class="section-4__img-left-img" src="../img/home_page_img/strategy.png"/><br><br>
                 <span class="section-4__img-left-head blue">Define a Strategy</span>
@@ -128,7 +128,7 @@
                 </p>
               </div>
             </b-col>
-            <b-col class="section-4__col">
+            <b-col class="section-4__col" sm>
               <div class="section-4__img-middle">
                 <img class="section-4__img-middle-img" src="../img/home_page_img/iterative_development.png"/><br><br>
                 <span class="section-4__img-middle-head blue">Iterative Development</span>
@@ -140,7 +140,7 @@
                 </p>
               </div>
             </b-col>
-            <b-col class="section-4__col">
+            <b-col class="section-4__col" sm>
               <div class="section-4__img-right">
                 <img class="section-4__img-right-img" src="../img/home_page_img/business_impact.png"/><br><br>
                 <span class="section-4__img-right-head blue">Deliver Business Impact</span>

@@ -7,24 +7,30 @@
   &__leftside
     color: white
     text-align: center
+    margin-left: 10%
 
     &-head
       font-size: 40px
       width: 100%
       max-width: 400px
       font-weight: 900
-      text-shadow: 2px 0 white
+      text-shadow: 1px 0 white
       letter-spacing: 2px
-      margin: 0px auto
+      margin-top: 40px
+      margin-left: auto
+      margin-right: auto
     
     &-text
       font-size: 22px
+      margin-top: 10px
 
   &__rightside 
     &-img
-      margin: 20px auto
+      margin-top: 20px
+      margin-left: auto
+      margin-right: auto
       width: 100%
-      max-width: 400px
+      max-width: 450px
 
 .codeMd-2
   padding-top: 96px
@@ -37,7 +43,7 @@
     color: white
     font-size: 40px
     font-weight: 900
-    text-shadow: 2px 0 white
+    text-shadow: 1px 0 white
     letter-spacing: 2px
     margin: 0px auto
   
@@ -64,7 +70,7 @@
         color: #1C75BC
         font-size: 26px
         font-weight: 900
-        text-shadow: 2px 0 #1C75BC
+        text-shadow: 1px 0 #1C75BC
         letter-spacing: 2px
       
       &-description
@@ -82,7 +88,7 @@
     color: white
     font-size: 40px
     font-weight: 900
-    text-shadow: 2px 0 white
+    text-shadow: 1px 0 white
     letter-spacing: 2px
     margin: 0px auto
   
@@ -90,10 +96,19 @@
     color: white
     font-size: 26px
 
-  &__img
-    width: 100%
-    max-width: 800px
-    margin: 2% auto
+  &__bar
+    width: 80%
+    margin-top: 20px 
+    margin-left: auto !important
+    margin-right: auto !important
+    margin-bottom: 20px
+
+    &-text
+      color: white
+      font-size: 26px
+
+.el-progress__text
+  color: white !important
 
 .codeMd-4
   padding-top: 96px
@@ -106,20 +121,21 @@
     color: white
     font-size: 40px
     font-weight: 900
-    text-shadow: 2px 0 white
+    text-shadow: 1px 0 white
     letter-spacing: 2px
     margin: 0px auto
 
   &__text
+    max-width: 420px
     margin: 0 auto
     text-align: center
     color: white
-    font-size: 22px
+    font-size: 20px
     width: 50%
   
   &__img
     width: 100%
-    max-width: 700px
+    max-width: 600px
     display: block
     margin: 2% auto
 
@@ -136,13 +152,14 @@
   &__rightside
     &-head
       margin-top: 10%
+      margin-left: auto
+      margin-right: auto
       text-align: center
       color: white
       font-size: 40px
       font-weight: 900
-      text-shadow: 2px 0 white
+      text-shadow: 1px 0 white
       letter-spacing: 2px
-      margin: 0px auto
     
     &-text
       text-align: center
@@ -158,7 +175,7 @@
   &__header
     font-size: 40px
     font-weight: 900
-    text-shadow: 2px 0 white
+    text-shadow: 1px 0 white
     letter-spacing: 2px
     margin: 0px auto
     
@@ -202,13 +219,15 @@
   .codeMd-1
     padding-top: 48px
     &__leftside
+      margin-left: 0%
       &-head
+        margin-top: 0px
         font-size: 22px
-        min-width: 330px !important
+        width: 300px
       
       &-text
-        font-size: 16px
-        min-width: 320px !important
+        font-size: 10px
+        min-width: 300px
     
     &__rightside
       &-img
@@ -221,17 +240,22 @@
       font-size: 22px
     
     &__text
-      font-size: 16px
-      width: 80%
+      font-size: 12px
+      width: 200px
       margin: auto
     
     &__info
-      width: 80%
+      width: 100%
+      padding: 0%
+
       &-img 
-        width: 50%
+        width: 45%
+        margin-left: 25%
         padding-top: 5%
 
       &-text
+        padding-top: 10px
+        padding-right: 0px !important
         &-head
           font-size: 20px
 
@@ -247,9 +271,10 @@
       width: 80%
       margin: auto
       font-size: 16px
-    
-    &__img
-      width: 80%
+
+    &__bar
+      &-text
+        font-size: 16px
     
   .codeMd-4
     padding-top: 48px
@@ -269,9 +294,10 @@
     &__rightside
       &-head
         font-size: 22px
+        margin-top: 0%
 
       &-text
-        font-size: 16px
+        font-size: 14px
 
   .codeMd-6
     padding: 48px 0px
@@ -296,14 +322,14 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 1366px)
   .codeMd-1
     &__leftside
-      margin: auto
       &-head
         font-size: 26px
         margin: auto
-        width: 90%
+        width: 300px
       
       &-text
-        width: 90%
+        padding-top: 10px
+        width: 100%
         margin: auto
         font-size: 20px
     
@@ -325,7 +351,7 @@
       width: 80%
 
       &-img
-        padding-top: 100%
+        padding-top: 20%
   
   .codeMd-3
     &__head
@@ -336,8 +362,9 @@
       width: 90%
       margin: auto
     
-    &__img 
-      width: 70%
+    &__bar
+      &-text
+        font-size: 20px
   
   .codeMd-4
     &__head
@@ -357,7 +384,6 @@
         font-size: 26px
 
       &-text
-        width: 90%
         margin: auto
         font-size: 18px
   
