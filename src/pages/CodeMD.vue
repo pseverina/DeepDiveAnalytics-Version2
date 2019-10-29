@@ -234,8 +234,8 @@ export default {
   name: 'CodeMD',
   data() {
     return {
-      percentage_leftbar: 100,
-      percentage_middlebar: 80,
+      percentage_leftbar: 30,
+      percentage_middlebar: 50,
       percentage_rightbar: 70
     }
   },
@@ -244,31 +244,26 @@ export default {
   },
   methods: {
     async automatedCircles() {
-      let infinityCircles = setInterval(() => {
+      setInterval(() => {
         if (this.percentage_leftbar >= 100) {
           this.percentage_leftbar = 0
         } else {
-          this.percentage_leftbar += 5
+          this.percentage_leftbar += 1
         }
 
         if (this.percentage_middlebar >= 100) {
           this.percentage_middlebar = 0
         } else {
-          this.percentage_middlebar += 5
+          this.percentage_middlebar += 1
         }
 
         if (this.percentage_rightbar >= 100) {
           this.percentage_rightbar = 0
         } else {
-          this.percentage_rightbar += 5
+          this.percentage_rightbar += 1
         }
-        console.log('kek')
-      }, 2000)
 
-    // Дописать переменную для остановки setInterval
-     /*  setTimeout(() => { 
-        clearInterval(infinityCircles)
-      }, 15000) */
+      }, 100)
     }
   }
 }

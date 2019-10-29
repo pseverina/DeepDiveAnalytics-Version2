@@ -5,7 +5,7 @@
        <div class="section-1">
          <h1 class="section-1__head">CodeMD is here.</h1>
          <p class="section-1__text">
-            Advanced analytics for health care providers.
+            Advanced analytics for health care providers.<br>
             Automated provider scheduling solution based on unique rules and requirerements.
             Custom, Accurate, and Modular.<br>
             <span><router-link to="/codeMd" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
@@ -111,7 +111,7 @@
         <div class="section-4">
           <h1 class="section-4__head">Agile Project Management</h1>
           <p class="section-4__text">
-            Innovate and deliver faster with Deep Dive Analytics.
+            Innovate and deliver faster with Deep Dive Analytics.<br>
             Experience a professional and effecient working engagement.<br>
             <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
