@@ -6,11 +6,13 @@
          <h1 class="section-1__head">CodeMD is here.</h1>
          <p class="section-1__text">
             Advanced analytics for health care providers.<br>
-            Automated provider scheduling solution based on unique rules and requirerements.
+            Automated provider scheduling solution based on unique rules and requirerements.<br>
             Custom, Accurate, and Modular.<br>
-            <span><router-link to="/codeMd" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
-            <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
          </p>
+         <span class="section-1__btn">
+           <router-link to="/codeMd" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
+           <router-link to="/contact" class="link_home">Contact us ></router-link>
+         </span><br>
          <img class="section-1__img" src="../img/home_page_img/codemd_logo.png"/>
        </div>
         <!--  Second Section -->
@@ -26,9 +28,11 @@
                   Make the system smarter with Deep Dive Analytics.
                   End-to-End supply chain solutions.
                   Data-drive.Custom.<br>
-                  <span><router-link to="/supplyChain" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
-                  <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
                 </p>
+                <span class="section-2__rightside-btn">
+                  <router-link to="/supplyChain" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
+                  <router-link to="/contact" class="link_home">Contact us ></router-link>
+                </span>
               </div>
             </b-col>
           </b-row>
@@ -40,9 +44,12 @@
             Any industry. Any business.<br>
             We drive business advantage by delivering<br>
             cutting edge analytical capabilities and technologies.<br>
-            <span><router-link to="/customServices" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link></span>
-            <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
           </p>
+          <span class="section-3__btn">
+            <router-link to="/customServices" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
+            <router-link to="/contact" class="link_home">Contact us ></router-link>
+          </span>
+          <br>
           <img class="section-3__img" src="../img/home_page_img/industry_agnostic.png"/>
         </div>
       <!-- <carousel 
@@ -113,7 +120,9 @@
           <p class="section-4__text">
             Innovate and deliver faster with Deep Dive Analytics.<br>
             Experience a professional and effecient working engagement.<br>
-            <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
+          </p>
+          <p class="section-4__btn">
+            <router-link to="/contact" class="link_home">Contact us ></router-link>
           </p>
           <b-row class="section-4__row">
             <b-col class="section-4__col" sm>
@@ -171,7 +180,9 @@
               </p>
               <p class="section-5__text">
                 Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.<br>
-                <span><router-link to="/contact" class="link_home">Contact us ></router-link></span>
+              </p>
+              <p class="section-5__btn">
+                <router-link to="/contact" class="link_home">Contact us ></router-link>
               </p>
             </b-col>
             <b-col sm="6">

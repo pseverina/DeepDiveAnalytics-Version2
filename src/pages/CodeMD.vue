@@ -14,7 +14,9 @@
               <p class="codeMd-1__leftside-text">
                 Industry leading advanced analytics<br>
                 for health care providers.<br>
-                <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
+              </p>
+              <p class="codeMd-1__leftside-btn">
+                <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
               </p>
             </b-col>
             <b-col class="codeMd-1__rightside">
@@ -143,7 +145,9 @@
               <span class="codeMd-3__bar-text">Reducation in Time Changing Schedules</span>
             </b-col>
           </b-row>
-          <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
+          <p class="codeMd-3__btn">
+            <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
+          </p>
         </div>
         <!-- section 4 -->
         <div class="codeMd-4">
@@ -152,14 +156,16 @@
             Customize to&nbsp;your needs beyond scheduling. 
             Add tailored modules to&nbsp;reduce manual tasks, 
             driving efficiency across your organization.<br>
-            <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
+          </p>
+          <p class="codeMd-4__btn">
+            <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
           </p>
           <img class="codeMd-4__img" src="../img/code_md/codemd_ai.png"/>
         </div>
         <!-- section 5 -->
         <div class="codeMd-5">
           <b-row class="flex-column-reverse flex-md-row">
-            <b-col class="codeMd-5__leftside">
+            <b-col cols="7" class="codeMd-5__leftside">
               <img class="codeMd-5__leftside-img" src="../img/code_md/codemd_app.png"/>
             </b-col>
             <b-col class="codeMd-5__rightside">
@@ -167,7 +173,9 @@
               <p class="codeMd-5__rightside-text">
                 Visualize your data. Modify your schedule.<br>
                 Run your custom functions on&nbsp;demand.<br>
-                <span><router-link to="/contact" class="link_codeMd">Contact us ></router-link></span>
+              </p>
+              <p class="codeMd-5__rightside-btn">
+                <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
               </p>
             </b-col>
           </b-row>
