@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap')
+// url('https://fonts.googleapis.com/css?family=Roboto:b&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap')
 
 .stars
-  width: 100%
-  height: 100%
-  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat 5% 5%
   background-attachment: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
   z-index: 0
 
 .font
@@ -26,15 +29,17 @@ a
   -webkit-transition: .9s
 
 .twinkling 
-  width: 100%
-  height: 100%
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat 20% 20%
+  background-attachment: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
   z-index: 1
-
-  -moz-animation: move-twink-back 5s ease infinite
-  -ms-animation: move-twink-back 5s ease infinite
-  -o-animation: move-twink-back 5s ease infinite
-  -webkit-animation: move-twink-back 5s ease infinite
+  -moz-animation: move-twink-back 3s linear 1s infinite running
+  -ms-animation: move-twink-back 3s linear 1s infinite running
+  -o-animation: move-twink-back 3s linear 1s infinite running
+  -webkit-animation: move-twink-back 3s linear 1s infinite running
   animation-duration: 80s
 
 @keyframes move-twink-back 

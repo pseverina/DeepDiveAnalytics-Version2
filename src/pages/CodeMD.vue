@@ -6,9 +6,9 @@
           <b-row class="flex-column flex-md-row">
             <b-col class="codeMd-1__leftside">
               <h1 class="codeMd-1__leftside-head">
-                The New Standard.
-                Custom Scheduling.
-                Smart Automation.
+                The New Standard.<br>
+                Custom Scheduling.<br>
+                Smart Automation.<br>
                 Tailored Algorithms.<br>
               </h1>
               <p class="codeMd-1__leftside-text">
@@ -113,35 +113,35 @@
           <b-row class="codeMd-3__bar">
             <b-col sm>
               <el-progress 
-                :width="220" 
+                :width="200" 
                 :height="200" 
                 class="codeMd-3__bar-circle" 
                 type="circle" 
                 :percentage="percentage_leftbar" 
                 color="#58f86e">
-              </el-progress>
+              </el-progress><br>
               <span class="codeMd-3__bar-text">Adherence to Schedule Rules & Requirements</span>
             </b-col>
             <b-col sm>
               <el-progress 
-                :width="220" 
+                :width="200" 
                 :height="200" 
                 class="codeMd-3__bar-circle" 
                 type="circle" 
                 :percentage="percentage_middlebar" 
                 color="#58f86e">
-              </el-progress>
+              </el-progress><br>
               <span class="codeMd-3__bar-text">Reducation in Time to Create Schedules</span>
             </b-col>
             <b-col sm>
               <el-progress 
-                :width="220" 
+                :width="200" 
                 :height="200" 
                 class="codeMd-3__bar-circle" 
                 type="circle" 
                 :percentage="percentage_rightbar" 
                 color="#58f86e">
-              </el-progress>
+              </el-progress><br>
               <span class="codeMd-3__bar-text">Reducation in Time Changing Schedules</span>
             </b-col>
           </b-row>
@@ -165,10 +165,10 @@
         <!-- section 5 -->
         <div class="codeMd-5">
           <b-row class="flex-column-reverse flex-md-row">
-            <b-col cols="7" class="codeMd-5__leftside">
+            <b-col md="7" sm="4" class="codeMd-5__leftside">
               <img class="codeMd-5__leftside-img" src="../img/code_md/codemd_app.png"/>
             </b-col>
-            <b-col class="codeMd-5__rightside">
+            <b-col md="5" sm="8" class="codeMd-5__rightside">
               <h1 class="codeMd-5__rightside-head">Get the CodeMD App</h1>
               <p class="codeMd-5__rightside-text">
                 Visualize your data. Modify your schedule.<br>
