@@ -55,6 +55,11 @@ const router = new Router({
       path: 'legalInfo',
       name: 'LegalInfo',
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/LegalInfo')
+    },
+    {
+      path: 'supplyChain',
+      name: 'SupplyChain',
+      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/SupplyChain')
     }
   ]
 })

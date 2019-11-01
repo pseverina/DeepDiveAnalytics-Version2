@@ -106,6 +106,7 @@
            </slide>
         </carousel> 
         <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox> -->
+        
         <!-- Fourth Section -->
         <div class="homepage-4">
           <h1 class="homepage-4__head">Agile Project Management</h1>
