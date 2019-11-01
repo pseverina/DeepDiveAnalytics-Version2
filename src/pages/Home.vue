@@ -17,25 +17,17 @@
        </div>
         <!--  Second Section -->
         <div class="homepage-2">
-          <b-row class="flex-column-reverse flex-md-row">
-            <b-col>
-              <img class="homepage-2__leftside-img" src="../img/home_page_img/supplychain_1_original.png"/>
-            </b-col>
-            <b-col>
-              <div class="homepage-2__rightside">
-                <h1 class="homepage-2__rightside-head">Driving Performance for Supply Chain</h1>
-                <p class="homepage-2__rightside-text">
-                  Make the system smarter with Deep Dive Analytics.
-                  End-to-End supply chain solutions.
-                  Data-drive.Custom.<br>
-                </p>
-                <span class="homepage-2__rightside-btn">
-                  <router-link to="/supplyChain" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
-                  <router-link to="/contact" class="link_home">Contact us ></router-link>
-                </span>
-              </div>
-            </b-col>
-          </b-row>
+          <h1 class="homepage-2__head">Driving Performance for Supply Chain</h1>
+          <p class="homepage-2__text">
+            Make the system smarter with Deep Dive Analytics.<br>
+            End-to-End supply chain solutions.<br>
+            Data-drive.Custom.<br>
+          </p>
+          <span class="homepage-2__btn">
+            <router-link to="/supplyChain" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
+            <router-link to="/contact" class="link_home">Contact us ></router-link>
+          </span><br>
+          <img class="homepage-2__img" src="../img/home_page_img/supplychain_homev2.png" />
         </div>
         <!-- Third Section -->
         <div class="homepage-3">
