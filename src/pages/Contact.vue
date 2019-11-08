@@ -1,95 +1,99 @@
 <template>
   <div class="container-fluid stars font">
     <div class="twinkling">
-      <b-row>
-        <b-col md="6">
-          <form
-            ref="contactInfo"
-            class="contact__form"
-            :model="form" 
-            >
-            <h3 class="contact__form-header">Let's go on this journey together!</h3>
-            <b-row>
-              <b-col lg="6">
-                <label for="input__first-name">First Name <span style="color:red">*</span></label>
-                <b-form-input 
-                  v-model="form.first_name" 
-                  placeholder="First Name" 
-                  class="contact__form-input"
-                  required
-                ></b-form-input>
-              </b-col>
-              <b-col lg="6">
-                <label for="input__last-name">Last Name <span style="color:red">*</span></label>
-                <b-form-input 
-                  v-model="form.last_name"
-                  placeholder="Last Name"
-                  class="contact__form-input"
-                  required
-                ></b-form-input>
-              </b-col>
-            </b-row>
-             <b-row>
-               <b-col lg="6">
-                <label for="input__email">Email <span style="color:red">*</span></label>
-                <b-form-input 
-                  v-model="form.email"
-                  placeholder="name@example.com"
-                  class="contact__form-input"
-                  type="email"
-                  required
-                ></b-form-input>
-               </b-col>
+      <div class="contact">
+        <b-row class="flex-column-reverse flex-md-row"> 
+          <b-col md="6">
+            <form
+              ref="contactInfo"
+              class="contact__form"
+              :model="form" 
+              >
+              <b-row>
                 <b-col lg="6">
-                  <label for="input__company">Company <span style="color:red">*</span></label>
+                  <label for="input__first-name">First Name <span style="color:red">*</span></label>
                   <b-form-input 
-                    v-model="form.company"
-                    placeholder="Google.com" 
+                    v-model="form.first_name" 
+                    placeholder="First Name" 
                     class="contact__form-input"
                     required
                   ></b-form-input>
-               </b-col>
-             </b-row>
-            <b-form-group>
-              <label for="input__textarea">Message</label>
-              <b-form-textarea 
-                v-model="form.text" 
-                rows="6" 
-                class="contact__form-input"
-                required
-              >
-              </b-form-textarea>
-            </b-form-group>
-            <b-form-group class="form-group">
+                </b-col>
+                <b-col lg="6">
+                  <label for="input__last-name">Last Name <span style="color:red">*</span></label>
+                  <b-form-input 
+                    v-model="form.last_name"
+                    placeholder="Last Name"
+                    class="contact__form-input"
+                    required
+                  ></b-form-input>
+                </b-col>
+              </b-row>
               <b-row>
-                <b-button 
-                  class="contact__form-btn" 
-                  size="lg"
-                  variant="outline-light"
-                  @click="submitForm('contactInfo')"
+                <b-col lg="6">
+                  <label for="input__email">Email <span style="color:red">*</span></label>
+                  <b-form-input 
+                    v-model="form.email"
+                    placeholder="name@example.com"
+                    class="contact__form-input"
+                    type="email"
+                    required
+                  ></b-form-input>
+                </b-col>
+                  <b-col lg="6">
+                    <label for="input__company">Company <span style="color:red">*</span></label>
+                    <b-form-input 
+                      v-model="form.company"
+                      placeholder="Google.com" 
+                      class="contact__form-input"
+                      required
+                    ></b-form-input>
+                </b-col>
+              </b-row>
+              <b-form-group>
+                <label for="input__textarea">Message</label>
+                <b-form-textarea 
+                  v-model="form.text" 
+                  rows="6" 
+                  class="contact__form-input contact__form-textarea"
+                  required
                 >
-                  Submit
-                </b-button>
-                <b-button 
-                  class="contact__form-btn" 
-                  size="lg"
-                  variant="outline-light"
-                  @click="clearForm('contactInfo')"
-                >
-                  Clear form
-                </b-button>
-              </b-row>   
-            </b-form-group>
-          </form> 
-        </b-col>
-        <b-col md="6">
-          <div class="contact__info">
-            <img src="../img/logo_img/helmet.png" alt="logo" class="contact__info-brand"/><br>
-            <span class="contact__info-header">Partner with DeepDiveAnalytics</span><br>
-            <span class="contact__info-details">Enter your details & we'll be in touch with you to discuss your project</span>
-          </div>
-        </b-col>
-      </b-row>
+                </b-form-textarea>
+              </b-form-group>
+              <b-form-group class="form-group">
+                <b-row class="justify-content-md-center">
+                  <b-button 
+                    class="contact__form-btn" 
+                    style="margin-right: 20px"
+                    size="lg"
+                    variant="outline-light"
+                    @click="submitForm('contactInfo')"
+                  >
+                    Submit
+                  </b-button>
+                  <b-button 
+                    class="contact__form-btn" 
+                    size="lg"
+                    variant="outline-light"
+                    @click="clearForm('contactInfo')"
+                  >
+                    Clear
+                  </b-button>
+                </b-row>   
+              </b-form-group>
+            </form> 
+          </b-col>
+          <b-col md="6">
+            <div class="contact__info">
+              <span class="contact__info-header">Deep Dive into your Data</span><br>
+              <span class="contact__info-details">Let's go on this jorney together.</span>
+              <img class="contact__info-blackhole" src="../img/bg_img/black_hole.png"/>
+              <img class="contact__info-spaceman" src="../img/home_page_img/blackhole_spaceman.png"/>
+            </div>
+          </b-col>
+        </b-row>
+      </div>
+
     </div>
   </div>
 </template>

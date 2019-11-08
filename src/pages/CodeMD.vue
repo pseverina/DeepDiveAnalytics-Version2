@@ -35,7 +35,7 @@
           <!-- Rules-Based Scheduling -->
           <b-row class="codeMd-2__info flex-column flex-md-row">
             <b-col>
-              <img class="codeMd-2__info-img" src="../img/code_md/schedule_rules.png"/>
+              <img class="codeMd-2__info-img__first" src="../img/code_md/schedule_rules.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="codeMd-2__info-text-head">Rules-Based Scheduling</span>
@@ -49,7 +49,7 @@
           <!-- Balanced Schedules -->
           <b-row class="codeMd-2__info flex-column flex-md-row">
             <b-col>
-              <img class="codeMd-2__info-img" src="../img/code_md/balanced.png"/>
+              <img class="codeMd-2__info-img__second" src="../img/code_md/balanced.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="codeMd-2__info-text-head">Balanced Schedules</span>
@@ -63,7 +63,7 @@
           <!-- Automated, Reuseable, Scientific -->
           <b-row class="codeMd-2__info flex-column flex-md-row">
             <b-col>
-              <img class="codeMd-2__info-img" src="../img/code_md/reuseable_scientific.png"/>
+              <img class="codeMd-2__info-img__third" src="../img/code_md/reuseable_scientific.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="codeMd-2__info-text-head">Automated, Reuseable, Scientific</span>
@@ -77,7 +77,7 @@
           <!-- Comprehensive Scheduling -->
           <b-row class="codeMd-2__info flex-column flex-md-row">
             <b-col>
-              <img class="codeMd-2__info-img" src="../img/code_md/codemd_comprehensive.png"/>
+              <img class="codeMd-2__info-img__fourth" src="../img/code_md/codemd_comprehensive.png"/>
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="codeMd-2__info-text-head">Comprehensive Scheduling</span>
@@ -91,7 +91,7 @@
           <!-- Improved Service to Patients -->
           <b-row class="codeMd-2__info flex-column flex-md-row">
             <b-col>
-              <img class="codeMd-2__info-img" src="../img/code_md/patient_impact.png" />
+              <img class="codeMd-2__info-img__fifth" src="../img/code_md/patient_impact.png" />
             </b-col>
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="codeMd-2__info-text-head">Improved Service to Patients</span>
@@ -119,8 +119,8 @@
                 type="circle" 
                 :percentage="percentage_leftbar" 
                 color="#58f86e">
-              </el-progress><br>
-              <span class="codeMd-3__bar-text">Adherence to Schedule Rules & Requirements</span>
+              </el-progress><br><br>
+              <span class="codeMd-3__bar-text">Adherence to Schedule <br> Rules & Requirements</span>
             </b-col>
             <b-col sm>
               <el-progress 
@@ -130,8 +130,8 @@
                 type="circle" 
                 :percentage="percentage_middlebar" 
                 color="#58f86e">
-              </el-progress><br>
-              <span class="codeMd-3__bar-text">Reducation in Time to Create Schedules</span>
+              </el-progress><br><br>
+              <span class="codeMd-3__bar-text">Reducation in Time <br> to Create Schedules</span>
             </b-col>
             <b-col sm>
               <el-progress 
@@ -141,8 +141,8 @@
                 type="circle" 
                 :percentage="percentage_rightbar" 
                 color="#58f86e">
-              </el-progress><br>
-              <span class="codeMd-3__bar-text">Reducation in Time Changing Schedules</span>
+              </el-progress><br><br>
+              <span class="codeMd-3__bar-text">Reducation in Time <br> Changing Schedules</span>
             </b-col>
           </b-row>
           <p class="codeMd-3__btn">
@@ -181,14 +181,13 @@
           </b-row>
         </div>
         <!-- section 6 -->
-        <div class="codeMd-6">
+        <div class="codeMd-6" style="background-image: url('../img/code_md/codemd_testimonial_background.jpg');"> 
           <b-carousel
             id="carousel-fade"
             fade
             indicators
           >
             <b-carousel-slide>
-              <img class="d-block w-100" src="../img/code_md/codemd_testimonial_background.jpg" alt="First slide">
               <div class="carousel-caption d-md-block">
                 <h1 class="codeMd-6__header">What CodeMD customers are saying</h1>
                 <h3 class="codeMd-6__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
@@ -211,7 +210,6 @@
               </div>  
             </b-carousel-slide>
             <b-carousel-slide>
-              <img class="d-block w-100" src="../img/code_md/codemd_testimonial_background.jpg" alt="Second slide">
               <div class="carousel-caption d-md-block">
                 <h1 class="codeMd-6__header">What CodeMD customers are saying</h1>
                 <h3 class="codeMd-6__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
@@ -242,9 +240,9 @@ export default {
   name: 'CodeMD',
   data() {
     return {
-      percentage_leftbar: 30,
-      percentage_middlebar: 50,
-      percentage_rightbar: 70
+      percentage_leftbar: 0,
+      percentage_middlebar: 0,
+      percentage_rightbar: 0
     }
   },
   created() {
@@ -252,26 +250,25 @@ export default {
   },
   methods: {
     async automatedCircles() {
-      setInterval(() => {
-        if (this.percentage_leftbar >= 100) {
-          this.percentage_leftbar = 0
-        } else {
+      let progressBar = setInterval(() => {
+        if (this.percentage_leftbar < 100) {
           this.percentage_leftbar += 1
         }
 
-        if (this.percentage_middlebar >= 100) {
-          this.percentage_middlebar = 0
-        } else {
+        if (this.percentage_middlebar < 84) {
           this.percentage_middlebar += 1
         }
 
-        if (this.percentage_rightbar >= 100) {
-          this.percentage_rightbar = 0
-        } else {
+        if (this.percentage_rightbar < 87) {
           this.percentage_rightbar += 1
         }
 
       }, 100)
+
+      setTimeout(() => { 
+        clearInterval(progressBar) 
+      }, 10500)
+
     }
   }
 }
