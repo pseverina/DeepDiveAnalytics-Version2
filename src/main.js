@@ -7,12 +7,15 @@ import VueCarousel from '@chenfengyuan/vue-carousel'
 import Lightbox from 'vue-easy-lightbox'
 import Viewer from 'v-viewer'
 import { Progress } from 'element-ui'
+import zircle from 'zircle'
  
 import 'element-ui/lib/theme-chalk/index.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'viewerjs/dist/viewer.css'
- 
+import 'zircle/dist/zircle.css'
+
+Vue.use(zircle) 
 Vue.use(BootstrapVue)
 Vue.use(EvaIcons)
 Vue.use(VueCarousel)

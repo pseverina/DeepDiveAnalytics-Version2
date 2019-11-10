@@ -181,9 +181,11 @@
           </b-row>
         </div>
         <!-- section 6 -->
-        <div class="codeMd-6" style="background-image: url('../img/code_md/codemd_testimonial_background.jpg');"> 
+        <div class="codeMd-6"> 
+          <img src='../img/code_md/codemd_testimonial_background.jpg' class="codeMd-6__img" />
           <b-carousel
             id="carousel-fade"
+            class="codeMd-6__carousel"
             fade
             indicators
           >

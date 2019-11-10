@@ -31,7 +31,7 @@
         High-level information for some of&nbsp;our projects.<br>
         Only information we&nbsp;have permission to&nbsp;share is&nbsp;provided.
       </p>
-      <p class="blue">Contact us ></p>
+      <router-link to="/contact"  class="blue">Contact us ></router-link>
       <carousel 
         :perPageCustom="[[600, 2], [830, 3], [1130, 4], [1430, 5]]"
         class="about-3__carousel"
