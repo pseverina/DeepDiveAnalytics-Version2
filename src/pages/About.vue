@@ -1,58 +1,138 @@
 <template>
  <div class="container-fluid stars font">
   <div class="twinkling">
-    <div class="about">
-      <b-row class="justify-content-md-center">
-        <b-col sm="3">
-          <img src="../img/aboutus_img/aboutus_methodical.png" alt="image" class="about__img"/><br>
-          <div class="about__text-hidden"><span style="color: #58F86F">Our expertise</span>
-            is&nbsp;in&nbsp;two main pillars of&nbsp;Advanced analytics&nbsp;&mdash; Prespective
-            and Predictive analytics. Our team is&nbsp;comprised of&nbsp;experienced digital and 
-            data science professionals that specialize in&nbsp;these key area&rsquo;s.
-          </div>
+    <div class="about-1">
+      <h1 class="header">Strategy, Innovation, & Data Science.</h1>
+      <p class="subtitle">Driving business advantage by delivering industry leading analytical capabilities.</p>
+      <p class="about-1__contact blue">Contact us ></p><br>
+      <img src="../img/aboutus_img/deepdive_logo_landing.png" class="about-1__img"/>
+    </div>
+    <div class="about-2">
+      <b-row class="no-gutters">
+        <b-col>
+          <img src="../img/aboutus_img/about_us_experienced.jpg" class="about-2__img"/>
         </b-col>
-        <b-col sm="3">
-          <img src="../img/aboutus_img/aboutus_analytical.png" alt="image" class="about__img"/><br>
-          <div class="about__text-hidden"><span style="color: #58F86F"> Our passion</span>
-            is&nbsp;being able to&nbsp;apply these advanced analytics methodologies towards 
-            your specific business problems, making a&nbsp;tangible impact and transforming 
-            your business.
-          </div>
-        </b-col>
-        <b-col sm="3">
-          <img src="../img/aboutus_img/aboutus_impactful.png" alt="image" class="about__img"/><br>
-          <div class="about__text-hidden"><span style="color: #58F86F"> Our focus</span> 
-            is&nbsp;on&nbsp;you, our customer. Our analytical solutions are buil custom towards
-            your specific business needs. Every business has unique problems and constraints, 
-            so&nbsp;our solutions are tailored specifically for you.
-          </div>
+        <b-col>
+          <img src="../img/aboutus_img/about_us_analytical.jpg" class="about-2__img"/>
         </b-col>
       </b-row>
-      <div class="about__text"><span style="color: #58F86F">Our expertise</span>
-        is&nbsp;in&nbsp;two main pillars of&nbsp;Advanced analytics&nbsp;&mdash; Prespective
-        and Predictive analytics. Our team is&nbsp;comprised of&nbsp;experienced digital and 
-        data science professionals that specialize in&nbsp;these key area&rsquo;s.
-      </div>
-      <div class="about__text"><span style="color: #58F86F"> Our passion</span>
-        is&nbsp;being able to&nbsp;apply these advanced analytics methodologies towards 
-        your specific business problems, making a&nbsp;tangible impact and transforming 
-        your business.
-      </div>
-      <div class="about__text"><span style="color: #58F86F"> Our focus</span> 
-        is&nbsp;on&nbsp;you, our customer. Our analytical solutions are buil custom towards
-        your specific business needs. Every business has unique problems and constraints, 
-        so&nbsp;our solutions are tailored specifically for you.
-      </div>
+      <b-row class="no-gutters">
+        <b-col>
+          <img src="../img/aboutus_img/about_us_impactful.jpg" class="about-2__img"/>
+        </b-col>
+        <b-col>
+          <img src="../img/aboutus_img/about_us_empowering.jpg" class="about-2__img"/>
+        </b-col>
+      </b-row>
+    </div>
+    <div class="about-3">
+      <h1 class="header">Success Stories</h1>
+      <p class="subtitle">
+        High-level information for some of&nbsp;our projects.<br>
+        Only information we&nbsp;have permission to&nbsp;share is&nbsp;provided.
+      </p>
+      <p class="blue">Contact us ></p>
+      <carousel 
+        :perPageCustom="[[600, 2], [830, 3], [1130, 4], [1430, 5]]"
+        class="about-3__carousel"
+        >
+        <slide>
+          <div class="about-3__imgstory"  @click="() => show(index + 1)"> 
+            <a target="_blank">
+              <img src="../img/aboutus_img/stories_capitalinvestment.jpg" class="about-3__imgstory-img" alt="cap_invest"/>
+              <h4 class="about-3__imgstory-label">Capital Investment Optimization</h4>
+            </a>
+          </div>
+        </slide>
+        <slide>
+          <div class="about-3__imgstory"  @click="() => show(index + 1)">
+            <a target="_blank">
+              <img src="../img/aboutus_img/stories_residentscheduling.jpg" class="about-3__imgstory-img" alt="inventory"/>
+              <h4 class="about-3__imgstory-label">Healthcare Provider Scheduling</h4>
+            </a>
+          </div>
+        </slide>
+        <slide>
+          <div class="about-3__imgstory" @click="() => show(index + 2)">
+            <a target="_blank">
+              <img src="../img/aboutus_img/stories_socialmedia.jpg" class="about-3__imgstory-img" alt="common_parts"/>
+              <h4 class="about-3__imgstory-label" style="width: 99%">Social Media Analytics</h4>
+            </a>
+          </div>
+        </slide>
+        <slide>
+          <div class="about-3__imgstory" @click="() => show(index + 3)">
+            <a target="_blank">
+              <img src="../img/aboutus_img/stories_productionsched.jpg" class="about-3__imgstory-img" alt="production_sched"/>
+              <h4 class="about-3__imgstory-label" style="margin-top: -85px">Automated Producation Scheduling</h4>
+            </a>
+          </div> 
+        </slide>
+        <slide>
+          <div class="about-3__imgstory" @click="() => show(index + 4)">
+            <a target="_blank"> 
+              <img src="../img/aboutus_img/stories_inventoyopt.jpg" class="about-3__imgstory-img" alt="rads_scheduling"/>
+              <h4 class="about-3__imgstory-label">Inventory Optimization</h4>
+            </a>
+          </div> 
+        </slide>
+        <slide>
+          <div class="about-3__imgstory" @click="() => show(index + 5)">
+            <a target="_blank"> 
+              <img src="../img/aboutus_img/stories_abc.jpg" class="about-3__imgstory-img" alt="rads_scheduling"/>
+              <h4 class="about-3__imgstory-label">Inventory Criticality Segmentation</h4>
+            </a>
+          </div> 
+        </slide>
+        <slide>
+          <div class="about-3__imgstory" @click="() => show(index + 6)">
+            <a target="_blank"> 
+              <img src="../img/aboutus_img/stories_materialharmon.jpg" class="about-3__imgstory-img" alt="rads_scheduling"/>
+              <h4 class="about-3__imgstory-label">Material Harmonization</h4>
+            </a>
+          </div> 
+        </slide>
+      </carousel> 
+      <VueEasyLightbox :visible="visible" :imgs="images[index]" @hide="handleHide"></VueEasyLightbox> 
     </div>
   </div>
  </div>
 </template>
 
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
+import { Carousel, Slide } from 'vue-carousel'
+
 export default {
   name: 'About',
+  components: {
+    Carousel,
+    Slide,
+    VueEasyLightbox
+  },
   data() {
-    return { }
+    return { 
+      index: 0,
+      images: [
+        require('../img/aboutus_img/onepager_capitalinvest.jpg'),
+        require('../img/aboutus_img/onepager_capitalinvest.jpg'),
+        require('../img/aboutus_img/onepager_socialmedia.jpg'),
+        require('../img/aboutus_img/onepager_productionscheduling.jpg'),
+        require('../img/aboutus_img/onepager_invoptimization.jpg'),
+        require('../img/aboutus_img/onepager_residentscheduling.jpg'),
+        require('../img/aboutus_img/onepager_materialharmonization.jpg')
+      ]
+    }
+  },
+  methods: {
+    show(index) {
+      this.index = index 
+      this.visible = true
+    },
+    handleHide() {
+      this.visible = false
+      this.index = 0
+    }
   }
 }
 </script>

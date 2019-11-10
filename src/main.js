@@ -7,7 +7,7 @@ import VueCarousel from '@chenfengyuan/vue-carousel'
 import Lightbox from 'vue-easy-lightbox'
 import Viewer from 'v-viewer'
 import { Progress } from 'element-ui'
-
+ 
 import 'element-ui/lib/theme-chalk/index.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'

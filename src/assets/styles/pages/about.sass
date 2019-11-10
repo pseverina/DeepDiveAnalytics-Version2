@@ -1,44 +1,59 @@
-.about
+.about-1
   padding: 96px 0px
   width: 100%
   max-width: 1240px
   margin: auto
+  text-align: center
+
+  &__contact
+    font-size: 20px
 
   &__img
-    margin: 4% 3%
-    width: 100%
-    height: 90%
-  
-  &__text
-    font-size: 20px
-    margin: 2% auto
-    color: white
+    display: block
+    margin: auto
     width: 70%
 
-    &-hidden
-      display: none
+.about-2
+  padding: 96px 0px
+  width: 100%
+  max-width: 1240px
+  margin: auto
+  text-align: center
 
+  &__img
+    width: 100%
+
+.about-3
+  padding: 96px 0px
+  width: 100%
+  max-width: 1240px
+  margin: auto
+  text-align: center
+
+  &__imgstory
+    height: 100%
+    width: 95%
+    transition: 0.5s
+    position: relative
+
+    &-img 
+      width: 100%
+      height: 100%
+    
+    &-label
+      text-align: center
+      color: white
+      position: absolute
+      margin-top: -60px
+
+  &__imgstory:hover
+    border: 1px solid #57F86F
   // Adjust for Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8 
 @media screen and (max-width: 414px) and (max-height: 823px)
   .about
     &__header
       font-size: 18px
 
-    &__main
-      margin-bottom: 5%
-
-      &-img
-        width: 70%
-        height: 50%
-        margin: 5% 15%
-
-      &-text
-        display: none
-        
-        &-hidden
-          display: inline
-          color: white
-          font-size: 14px
 
           
 
