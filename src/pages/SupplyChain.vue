@@ -7,14 +7,14 @@
            Custom, Accurate, and Modular.<br>
            Establish a data-driven process with Deep Dive Analytics.
          </p>
-         <div class="supplychain-1__img1">
+         <!-- <div class="supplychain-1__img1">
            <z-canvas 
             :views="myViews" 
             class="canvas"
             style="width: 40%; height: 400px; border-radius: 50%"
             >Home</z-canvas>
-         </div>
-         <!-- <img src="../img/home_page_img/supplychain_homev2.png" class="supplychain-1__img"/> -->
+         </div> -->
+         <img src="../img/home_page_img/supplychain_homev2.png" class="supplychain-1__img"/>
        </div>
        <div class="supplychain-2">
          <b-row>

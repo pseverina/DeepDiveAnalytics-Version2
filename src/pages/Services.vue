@@ -59,7 +59,7 @@
                 <transition name="slide-fade">
                   <div v-show="decision_support" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index)"> 
                     <a class="section-3__img-story__link" target="_blank">
-                      <img src="../img/services_img_2/capital_investment_thumbnail.jpg" class="services-carousel__img-story__img" alt="cap_invest"/>
+                      <img src="" class="services-carousel__img-story__img" alt="cap_invest"/>
                       <h4 class="services-carousel__img-story__label">Decision Support Tool for Capital Investment</h4>
                       <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
                       <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
@@ -72,7 +72,7 @@
                 <transition name="slide-fade">
                   <div v-show="inventory_optimization" md="4" offset-md="4" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 1)">
                     <a class="section-3__img-story__link" target="_blank">
-                      <img src="../img/services_img_2/inventory_thumbnail.jpg" class="services-carousel__img-story__img" alt="inventory"/>
+                      <img src="" class="services-carousel__img-story__img" alt="inventory"/>
                       <h4 class="services-carousel__img-story__label">Inventory Optimization<br>Support Tool</h4>
                       <h5 class="services-carousel__img-story__label-2">Technique: NLP Optimization Modeling</h5>
                       <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
@@ -85,7 +85,7 @@
                 <transition name="slide-fade">
                   <div v-show="material_harmonization" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 2)">
                     <a class="section-3__img-story__link" target="_blank">
-                      <img src="../img/services_img_2/common_parts_thumbnail.png" class="services-carousel__img-story__img" alt="common_parts"/>
+                      <img src="" class="services-carousel__img-story__img" alt="common_parts"/>
                       <h4 class="services-carousel__img-story__label">Material Harmonization<br>Matching Tool</h4>
                       <h5 class="services-carousel__img-story__label-2">Technique: Machine<br>Learning/Natural Language</h5>
                       <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
@@ -100,7 +100,7 @@
                 <transition name="slide-fade">
                   <div v-show="production_scheduling" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 3)"> 
                     <a class="section-3__img-story__link" target="_blank">
-                      <img src="../img/services_img_2/production_sched_thumbnail.jpg" class="services-carousel__img-story__img" alt="production_sched"/> 
+                      <img src="" class="services-carousel__img-story__img" alt="production_sched"/> 
                       <h4 class="services-carousel__img-story__label">Production Scheduling<br>Planning Tool</h4>
                       <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
                       <h5 class="services-carousel__img-story__label-2">Client: Confidential</h5>
@@ -113,7 +113,7 @@
                 <transition name="slide-fade">
                   <div v-show="radilogy_residency" class="services-carousel__img-story p-3 mb-5 rounded" @click="() => show(index + 4)">
                     <a class="section-3__img-story__link" target="_blank"> 
-                      <img src="../img/services_img_2/rads_scheduling_thumbnail.jpg" class="services-carousel__img-story__img" alt="rads_scheduling"/>
+                      <img src="" class="services-carousel__img-story__img" alt="rads_scheduling"/>
                       <h4 class="services-carousel__img-story__label">Radiology Residency Scheduling Solution</h4>
                       <h5 class="services-carousel__img-story__label-2">Technique: Optimization Modeling</h5>
                       <h5 class="services-carousel__img-story__label-2">Client: UM Hospital / Jackson<br>Memorial Hospital
