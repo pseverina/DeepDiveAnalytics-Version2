@@ -55,7 +55,7 @@
               <span class="codeMd-2__info-text-head">Balanced Schedules</span>
               <p class="codeMd-2__info-text-description">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;evenly distribute 
-                your schedule, while still taking into account all your custom rules 
+                your schedule while still taking into account all your custom rules 
                 and requirements. Let CodeMD manage the spread using advanced analytics.
               </p>
             </b-col>
@@ -82,9 +82,9 @@
             <b-col cols="10" class="codeMd-2__info-text">
               <span class="codeMd-2__info-text-head">Comprehensive Scheduling</span>
               <p class="codeMd-2__info-text-description">
-                CodeMD&nbsp;is for all healthcare institutions, staff, and specialties. From 
-                private groups to&nbsp;large health systems, CodeMD can successfully create 
-                your schedule. It&nbsp;can even generate your on-call schedule.
+                CodeMD&nbsp;is for all healthcare institutions, specialties and staff. From private groups 
+                to&nbsp;large health systems, CodeMD can successfully create your schedule(s). It&nbsp;can even 
+                help with automating vacation request decisions.
               </p>
             </b-col>
           </b-row>

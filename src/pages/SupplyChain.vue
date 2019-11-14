@@ -7,14 +7,14 @@
            Custom, Accurate, and Modular.<br>
            Establish a data-driven process with Deep Dive Analytics.
          </p>
-         <!-- <div class="supplychain-1__img">
+         <div class="supplychain-1__img1">
            <z-canvas 
             :views="myViews" 
             class="canvas"
             style="width: 40%; height: 400px; border-radius: 50%"
             >Home</z-canvas>
-         </div> -->
-         <img src="../img/home_page_img/supplychain_homev2.png" class="supplychain-1__img"/>
+         </div>
+         <!-- <img src="../img/home_page_img/supplychain_homev2.png" class="supplychain-1__img"/> -->
        </div>
        <div class="supplychain-2">
          <b-row>
@@ -28,7 +28,7 @@
                analytics to evaluate end-to-end tradeoffs for<br>
                all nodes simultanesouly.
              </p>
-             <p class="text">
+             <p class="subtitle">
                Where to open or close a DC?<br>
                Where to open or close a plant?<br>
                Which customer base will each DC serve?<br>
@@ -57,7 +57,7 @@
          </b-row>
        </div>
        <div class="supplychain-4">
-         <b-row class="no-gutters">
+         <b-row>
            <b-col>
              <img src="../img/supplychain_img/decisive_confident.jpg" class="supplychain-4__img"/>
            </b-col>
@@ -65,7 +65,8 @@
              <img src="../img/supplychain_img/analytical_process.jpg" class="supplychain-4__img"/>
            </b-col>
          </b-row>
-         <b-row class="no-gutters">
+         <br>
+         <b-row>
            <b-col>
              <img src="../img/supplychain_img/lead_team.jpg" class="supplychain-4__img"/>
            </b-col>

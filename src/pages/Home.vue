@@ -3,10 +3,10 @@
      <div class="twinkling">
        <!-- First section -->
        <div class="homepage-1">
-         <h1 class="homepage-1__head">CodeMD is here.</h1>
+         <h1 class="homepage-1__head">CodeMD is Transformational.</h1>
          <p class="homepage-1__text">
             Advanced analytics for health care providers.<br>
-            Automated provider scheduling solution based on&nbsp;unique rules and requirerements.<br>
+            Automated provider scheduling solution based on&nbsp;unique rules and requirements.<br>
             Custom, Accurate, and Modular.<br>
          </p>
          <span class="homepage-1__btn">
@@ -21,7 +21,7 @@
           <p class="homepage-2__text">
             Make the system smarter with Deep Dive Analytics.<br>
             End-to-End supply chain solutions.<br>
-            Data-drive.Custom.<br>
+            Data-driven. Custom.<br>
           </p>
           <span class="homepage-2__btn">
             <router-link to="/supplyChain" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
@@ -35,7 +35,7 @@
           <p class="homepage-3__text">
             Any industry. Any business.<br>
             We&nbsp;drive business advantage by delivering<br>
-            cutting edge analytical capabilities and technologies.<br>
+            cutting-edge analytical capabilities and technologies.<br>
           </p>
           <span class="homepage-3__btn">
             <router-link to="/customServices" class="link_home">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
