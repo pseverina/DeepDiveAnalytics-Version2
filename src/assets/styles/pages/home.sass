@@ -108,15 +108,16 @@
     padding: 0px 150px
   
   &__col
-    max-width: 300px !important
+    max-width: 280px !important
+    height: 315px
     border: 3px solid #1C75BC
     background-color: black
     padding-top: 2%
-    margin: 20px 10px
+    display: block
+    margin: auto
 
   &__img
     margin-top: 5%
-    border-color: yellow
 
     &-left
       width: 100%
@@ -127,9 +128,9 @@
         font-weight: bold
 
       &-img
-        margin-left: 20%
-        margin-right: 20%
-        width: 55%
+        display: block
+        margin: auto
+        width: 50%
 
       &-text
         color: white
@@ -145,10 +146,9 @@
         font-weight: bold
 
       &-img
+        display: block
+        margin: auto
         width: 60%
-        margin-left: 20%
-        margin-right: 20%
-        margin-top: 5%
 
       &-text
         color: white
@@ -165,7 +165,8 @@
 
       &-img
         width: 50%
-        margin: 2% 20%
+        display: block
+        margin: auto
 
       &-text
         color: white
@@ -179,7 +180,7 @@
   padding: 96px 25px
 
   &__head
-    font-size: 40px
+    font-size: 42px
     font-weight: bold
     margin-top: 5%
     margin-left: 2%
@@ -204,15 +205,15 @@
     position: relative
     height: 150%
     width: 90%
-    margin-left: 20%
+    margin-left: 10%
     margin-top: -30%
-    z-index: 1
+    z-index: 0
     -webkit-animation: rotation 20s infinite linear
 
   &__spaceman
-    position:  relative
-    height: 220px
-    margin-top: -45%
+    position: relative
+    height: 230px
+    margin-top: -55%
     margin-left: 55%
     margin-bottom: 10%
     z-index: 2
@@ -237,14 +238,14 @@
     padding-bottom: 0px
     
     &__head
-      font-size: 22px
+      font-size: 26px
 
     &__text
-      font-size: 16px
+      font-size: 14px
       margin: auto
 
     &__img
-      width: 70%
+      width: 80%
       margin: 5% auto 0%
 
   .homepage-2
@@ -252,18 +253,13 @@
     padding-bottom: 0px
 
     &__head
-      font-size: 22px
-
-    &__text
-      font-size: 16px
+      font-size: 26px
+      width: 80%
       margin: auto
 
-
-    &__head
-      font-size: 22px
-
     &__text
-      font-size: 16px
+      font-size: 14px
+      margin: auto
     
     &__img
       width: 100%
@@ -274,7 +270,7 @@
 
     &__head
       margin-top: 10%
-      font-size: 22px
+      font-size: 26px
   
     &__text
       font-size: 14px
@@ -289,25 +285,29 @@
     
     &__head
       margin-top: 10%
-      font-size: 22px
+      font-size: 26px
 
     &__text
-      font-size: 16px
+      font-size: 14px
       width: 70%
     
     &__row
       padding: 0px
+
+    &__col
+      width: 240px !important
   
   .homepage-5
     padding-top: 52px
     padding-bottom: 0px
 
     &__head
-      width: 90%
+      width: 100%
       margin-top: 10%
-      margin-left: auto
-      margin-right: auto
-      font-size: 22px
+      display: block
+      margin: auto
+      font-size: 26px
+      margin-left: 5%
 
     &__text
       width: 90%
@@ -326,9 +326,9 @@
       margin-bottom: 5%
     
     &__black_hole
-      width: 100%
-      height: 110%
-      margin-top: -15%
+      width: 90%
+      height: 100%
+      margin-top: 0%
       margin-bottom: 5%
       margin-left: 0%
 
@@ -407,6 +407,26 @@
     &__text
       font-size: 17px
       width: 80%
+
+    &__img
+
+      &-left
+        &-head
+          font-size: 16px
+        &-text
+          font-size: 12px
+
+      &-middle
+        &-head
+          font-size: 16px
+        &-text
+          font-size: 12px
+
+      &-right
+        &-head
+          font-size: 16px
+        &-text
+          font-size: 12px
   
   .homepage-5
     padding: 96px 0
@@ -425,6 +445,9 @@
       height: 100%
       margin-left: 0%
       margin-top: -35%
+
+  .link_home 
+    margin-left: 5%
     
 
 // Adjust for resposive website

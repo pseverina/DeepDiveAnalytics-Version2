@@ -17,18 +17,18 @@
          <img src="../img/home_page_img/supplychain_homev2.png" class="supplychain-1__img"/>
        </div>
        <div class="supplychain-2">
-         <b-row>
+         <b-row class="flex-column-reverse flex-md-row">
            <b-col>
              <img src="../img/supplychain_img/world.png" class="supplychain-2__img"/>
            </b-col>
            <b-col>
              <h1 class="header supplychain-2__header">Optimize the Network</h1>
-             <p class="subtitle">
+             <p class="subtitle supplychain-2__subtitle">
                Make the system smarter by using data driven<br>
                analytics to evaluate end-to-end tradeoffs for<br>
                all nodes simultanesouly.
              </p>
-             <p class="subtitle">
+             <p class="subtitle supplychain-2__subtitle">
                Where to open or close a DC?<br>
                Where to open or close a plant?<br>
                Which customer base will each DC serve?<br>
@@ -42,13 +42,13 @@
          </b-row>
        </div>
        <div class="supplychain-3">
-         <b-row>
+         <b-row class="flex-column-reverse flex-md-row">
            <b-col>
              <img src="../img/supplychain_img/deepdive_app.png" class="supplychain-3__img" />
            </b-col>
            <b-col>
              <h1 class="header supplychain-3__header">Get your Custom App</h1>
-             <p class="subtitle">
+             <p class="subtitle supplychain-3__subtitle">
                Run your custom algorithms on demand.<br>
                Own your analytical solution. Visualize your data.
              </p>

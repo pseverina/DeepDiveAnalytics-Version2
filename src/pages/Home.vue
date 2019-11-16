@@ -17,7 +17,7 @@
        </div>
         <!--  Second Section -->
         <div class="homepage-2">
-          <h1 class="homepage-2__head">Driving Performance for Supply Chain</h1>
+          <h1 class="header-small homepage-2__head">Driving Performance for Supply Chain</h1>
           <p class="homepage-2__text">
             Make the system smarter with Deep Dive Analytics.<br>
             End-to-End supply chain solutions.<br>

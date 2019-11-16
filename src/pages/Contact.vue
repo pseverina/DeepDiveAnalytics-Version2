@@ -2,7 +2,11 @@
   <div class="container-fluid stars font">
     <div class="twinkling">
       <div class="contact">
-        <b-row class="flex-column-reverse flex-md-row"> 
+        <div class="contact__header">
+          <span class="contact__header-main">Deep Dive into your Data</span><br>
+          <span class="contact__header-subtitle">Let's go on this jorney together.</span>
+        </div>
+        <b-row> 
           <b-col md="6">
             <form
               ref="contactInfo"
@@ -85,8 +89,6 @@
           </b-col>
           <b-col md="6">
             <div class="contact__info">
-              <span class="contact__info-header">Deep Dive into your Data</span><br>
-              <span class="contact__info-details">Let's go on this jorney together.</span>
               <img class="contact__info-blackhole" src="../img/bg_img/black_hole.png"/>
               <img class="contact__info-spaceman" src="../img/home_page_img/blackhole_spaceman.png"/>
             </div>

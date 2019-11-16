@@ -24,6 +24,10 @@
             </b-col>
           </b-row>
         </div>
+        <!-- additional section -->
+        <div class="codeMd-addSection">
+          <img src="../img/code_md/codemd_hero_image.jpg" class="codeMd-addSection-img" />
+        </div>
         <!-- section 2 -->
         <div class="codeMd-2">
           <h1 class="codeMd-2__head">Revolutionize your Scheduling</h1>
@@ -151,11 +155,11 @@
         </div>
         <!-- section 4 -->
         <div class="codeMd-4">
-          <h1 class="codeMd-4__head">Simplify your Workflow</h1>
+          <h1 class="codeMd-4__head">Establish an Analytical Workflow</h1>
           <p class="codeMd-4__text">
-            Customize to&nbsp;your needs beyond scheduling. 
-            Add tailored modules to&nbsp;reduce manual tasks, 
-            driving efficiency across your organization.<br>
+            Customize to&nbsp;your needs beyond scheduling.<br>
+            Add tailored modules with cutting-edge technology<br>
+            to&nbsp;dive efficiency across your organization
           </p>
           <p class="codeMd-4__btn">
             <router-link to="/contact" class="link_codeMd">Contact us ></router-link>

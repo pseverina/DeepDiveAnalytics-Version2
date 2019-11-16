@@ -2,13 +2,13 @@
  <div class="container-fluid stars font">
   <div class="twinkling">
     <div class="about-1">
-      <h1 class="header">Strategy, Innovation, & Data Science.</h1>
-      <p class="subtitle">Driving business advantage by delivering industry leading analytical capabilities.</p>
+      <h1 class="header about-1__header" >Strategy, Innovation, & Data Science.</h1>
+      <p class="subtitle about-1__subtitle">Driving business advantage by delivering industry leading analytical capabilities.</p>
       <p class="about-1__contact blue">Contact us ></p><br>
       <img src="../img/aboutus_img/deepdive_logo_landing.png" class="about-1__img"/>
     </div>
     <div class="about-2">
-      <b-row class="no-gutters">
+      <b-row>
         <b-col>
           <img src="../img/aboutus_img/about_us_experienced.jpg" class="about-2__img"/>
         </b-col>
@@ -16,7 +16,8 @@
           <img src="../img/aboutus_img/about_us_analytical.jpg" class="about-2__img"/>
         </b-col>
       </b-row>
-      <b-row class="no-gutters">
+      <br><br>
+      <b-row>
         <b-col>
           <img src="../img/aboutus_img/about_us_impactful.jpg" class="about-2__img"/>
         </b-col>

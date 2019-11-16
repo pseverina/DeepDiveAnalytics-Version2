@@ -37,11 +37,6 @@ const router = new Router({
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/CodeMD')
     },
     {
-      path: '/supplyChain',
-      name: 'SupplyChain',
-      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/SupplyChain')
-    },
-    {
       path: '/customServices',
       name: 'CustomServices',
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/CustomServices')
@@ -57,7 +52,7 @@ const router = new Router({
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/LegalInfo')
     },
     {
-      path: 'supplyChain',
+      path: '/supplyChain',
       name: 'SupplyChain',
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/SupplyChain')
     }
