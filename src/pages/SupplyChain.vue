@@ -58,19 +58,19 @@
        </div>
        <div class="supplychain-4">
          <b-row>
-           <b-col>
+           <b-col sm="6">
              <img src="../img/supplychain_img/decisive_confident.jpg" class="supplychain-4__img"/>
            </b-col>
-           <b-col>
+           <b-col sm="6">
              <img src="../img/supplychain_img/analytical_process.jpg" class="supplychain-4__img"/>
            </b-col>
          </b-row>
          <br>
          <b-row>
-           <b-col>
+           <b-col sm="6">
              <img src="../img/supplychain_img/lead_team.jpg" class="supplychain-4__img"/>
            </b-col>
-           <b-col>
+           <b-col sm="6">
              <img src="../img/supplychain_img/impact_customers.jpg" class="supplychain-4__img"/>
            </b-col>
          </b-row>

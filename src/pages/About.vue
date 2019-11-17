@@ -6,22 +6,24 @@
       <p class="subtitle about-1__subtitle">Driving business advantage by delivering industry leading analytical capabilities.</p>
       <p class="about-1__contact blue">Contact us ></p><br>
       <img src="../img/aboutus_img/deepdive_logo_landing.png" class="about-1__img"/>
+      <p class="about-1__divein">DIVE IN</p>
+      <img src="../img/aboutus_img/icon_arrow_down.png" class="about-1__arrow" /> 
     </div>
     <div class="about-2">
       <b-row>
-        <b-col>
+        <b-col sm="6">
           <img src="../img/aboutus_img/about_us_experienced.jpg" class="about-2__img"/>
         </b-col>
-        <b-col>
+        <b-col sm="6">
           <img src="../img/aboutus_img/about_us_analytical.jpg" class="about-2__img"/>
         </b-col>
       </b-row>
-      <br><br>
+      <br>
       <b-row>
-        <b-col>
+        <b-col sm="6">
           <img src="../img/aboutus_img/about_us_impactful.jpg" class="about-2__img"/>
         </b-col>
-        <b-col>
+        <b-col sm="6">
           <img src="../img/aboutus_img/about_us_empowering.jpg" class="about-2__img"/>
         </b-col>
       </b-row>

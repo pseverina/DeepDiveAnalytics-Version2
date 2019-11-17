@@ -3,7 +3,7 @@
      <div class="twinkling">
        <!-- First section -->
        <div class="homepage-1">
-         <h1 class="homepage-1__head">CodeMD is Transformational.</h1>
+         <h1 class="homepage-1__head">CodeMD is Transformational</h1>
          <p class="homepage-1__text">
             Advanced analytics for health care providers.<br>
             Automated provider scheduling solution based on&nbsp;unique rules and requirements.<br>
@@ -96,7 +96,7 @@
         <div class="homepage-5">
           <div class="homepage-5__head">
             <span class="homepage-5__head-green">Deep Dive </span>
-            <span class="homepage-5__head-white">into your data <br> to make </span>
+            <span class="homepage-5__head-white">into your data to make </span>
             <span class="homepage-5__head-green">Smarter Decisions</span>.
           </div> 
           <b-row>

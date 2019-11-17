@@ -159,7 +159,7 @@
           <p class="codeMd-4__text">
             Customize to&nbsp;your needs beyond scheduling.<br>
             Add tailored modules with cutting-edge technology<br>
-            to&nbsp;dive efficiency across your organization
+            to&nbsp;drive efficiency across your organization
           </p>
           <p class="codeMd-4__btn">
             <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
@@ -175,8 +175,8 @@
             <b-col md="5" sm="8" class="codeMd-5__rightside">
               <h1 class="codeMd-5__rightside-head">Get the CodeMD App</h1>
               <p class="codeMd-5__rightside-text">
-                Visualize your data. Modify your schedule.<br>
-                Run your custom functions on&nbsp;demand.<br>
+                Run your custom algorithms on&nbsp;demand.<br>
+                Own your analytical solution. Visualize your data.
               </p>
               <p class="codeMd-5__rightside-btn">
                 <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
