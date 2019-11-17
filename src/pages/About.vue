@@ -6,6 +6,11 @@
       <p class="subtitle about-1__subtitle">Driving business advantage by delivering industry leading analytical capabilities.</p>
       <p class="about-1__contact blue">Contact us ></p><br>
       <img src="../img/aboutus_img/deepdive_logo_landing.png" class="about-1__img"/>
+      <div class="about-1__img-mobile">
+        <img src="../img/logo_img/helmet.png" class="about-1__img-mobile-helmet"/>
+        <br>
+        <img src="../img/logo_img/dt.png" class="about-1__img-mobile-logo"/>
+      </div>
       <p class="about-1__divein">DIVE IN</p>
       <img src="../img/aboutus_img/icon_arrow_down.png" class="about-1__arrow" /> 
     </div>
