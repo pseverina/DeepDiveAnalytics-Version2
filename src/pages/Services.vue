@@ -161,8 +161,8 @@
             <div class="section-3__header"> Our clients </div> 
           </b-col>
           <b-col sm="8">
-            <img class="section-3__clients" alt="client" src="../img/clients_img/jackson_health.png"/> 
-            <img class="section-3__clients" alt="client_2" src="../img/clients_img/uhealth.png"/>
+            <img class="section-3__clients" alt="client" src="../assets/styles/img/clients_img/jackson_health.png"/> 
+            <img class="section-3__clients" alt="client_2" src="../assets/styles/img/clients_img/uhealth.png"/>
           </b-col>
         </b-row>
       </div>
@@ -203,11 +203,11 @@ export default {
       visible: false,
       index: 0,
       images: [
-        require('../img/services_img/capital_ investment.jpg'),
-        require('../img/services_img/Inventory_Optimization.jpg'),
-        require('../img/services_img/Materials_Harmonization.jpg'),
-        require('../img/services_img/Production_Scheduling.jpg'),
-        require('../img/services_img/Radiology_Scheduling.jpg')
+        require('../assets/styles/img/services_img/capital_ investment.jpg'),
+        require('../assets/styles/img/services_img/Inventory_Optimization.jpg'),
+        require('../assets/styles/img/services_img/Materials_Harmonization.jpg'),
+        require('../assets/styles/img/services_img/Production_Scheduling.jpg'),
+        require('../assets/styles/img/services_img/Radiology_Scheduling.jpg')
         ]
     }
   },

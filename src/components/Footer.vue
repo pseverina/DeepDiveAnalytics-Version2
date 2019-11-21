@@ -5,7 +5,7 @@
         <div class="footer__container">
           <ul class="footer__mainlist">
             <li class="footer__mainlist-leftside"> 
-              <img class="footer__mainlist-leftside-img" src="../img/footer/deepdive.png"/><br>
+              <img class="footer__mainlist-leftside-img" src="../assets/styles/img/footer/deepdive.png"/><br>
               <span class="footer__mainlist-leftside-text">Deep Dive Analytics is&nbsp;an&nbsp;advanced analytics compnay that specializes in&nbsp;strategy, innovation, &amp;&nbsp;deployement. We&nbsp;provide custom software services for enabling automation of&nbsp;advanced analytics capabilities across all industries.</span>
             </li>
             <li class="footer__mainlist-products">

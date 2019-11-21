@@ -1,9 +1,9 @@
 <template>
    <div class="container-fluid stars font">
      <div class="twinkling">
-       <div class="supplychain-1">
-         <h1 class="supplychain-1__head">Digital Supply Chain</h1>
-         <p class="supplychain-1__text">
+       <div class="supplyChain">
+         <h1 class="supplyChain__head">Digital Supply Chain</h1>
+         <p class="supplyChain__text">
            Custom, Accurate, and Modular.<br>
            Establish a data-driven process with Deep Dive Analytics.
          </p>
@@ -14,21 +14,21 @@
             style="width: 40%; height: 400px; border-radius: 50%"
             >Home</z-canvas>
          </div> -->
-         <img src="../img/home_page_img/supplychain_homev2.png" class="supplychain-1__img"/>
+         <img src="../assets/styles/img/home_page_img/supplychain_homev2.png" class="supplyChain__img"/>
        </div>
-       <div class="supplychain-2">
+       <div class="optimizeNetwork">
          <b-row class="flex-column-reverse flex-md-row">
            <b-col>
-             <img src="../img/supplychain_img/world.png" class="supplychain-2__img"/>
+             <img src="../assets/styles/img/supplychain_img/world.png" class="optimizeNetwork__img"/>
            </b-col>
            <b-col>
-             <h1 class="header supplychain-2__header">Optimize the Network</h1>
-             <p class="subtitle supplychain-2__subtitle">
+             <h1 class="header optimizeNetwork__header">Optimize the Network</h1>
+             <p class="subtitle optimizeNetwork__subtitle">
                Make the system smarter by using data driven<br>
                analytics to evaluate end-to-end tradeoffs for<br>
                all nodes simultanesouly.
              </p>
-             <p class="subtitle supplychain-2__subtitle">
+             <p class="subtitle optimizeNetwork__subtitle">
                Where to open or close a DC?<br>
                Where to open or close a plant?<br>
                Which customer base will each DC serve?<br>
@@ -41,53 +41,55 @@
            </b-col>
          </b-row>
        </div>
-       <div class="supplychain-3">
-         <b-row class="flex-column-reverse flex-md-row">
-           <b-col>
-             <img src="../img/supplychain_img/deepdive_app.png" class="supplychain-3__img" />
-           </b-col>
-           <b-col>
-             <h1 class="header supplychain-3__header">Get your Custom App</h1>
-             <p class="subtitle supplychain-3__subtitle">
-               Run your custom algorithms on demand.<br>
-               Own your analytical solution. Visualize your data.
-             </p>
-             <span class="blue">Contacts us ></span>
-           </b-col>
-         </b-row>
-       </div>
-       <div class="supplychain-4">
+      <div class="codeMdApp">
+        <b-row class="flex-column-reverse flex-md-row">
+          <b-col md="7" sm="4" class="codeMdApp__leftside">
+            <img class="codeMdApp__leftside-img" src="../assets/styles/img/code_md/codemd_app.png"/>
+          </b-col>
+          <b-col md="5" sm="8" class="codeMdApp__rightside">
+            <h1 class="codeMdApp__rightside-head">Get the CodeMD App</h1>
+            <p class="codeMdApp__rightside-text">
+              Run your custom algorithms on&nbsp;demand.<br>
+              Own your analytical solution. Visualize your data.
+            </p>
+            <p class="codeMdApp__rightside-btn">
+              <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
+            </p>
+          </b-col>
+        </b-row>
+      </div>
+       <div class="imageSection">
          <b-row>
            <b-col sm="6">
-             <img src="../img/supplychain_img/decisive_confident.jpg" class="supplychain-4__img"/>
+             <img src="../assets/styles/img/supplychain_img/decisive_confident.jpg" class="imageSection__img"/>
            </b-col>
            <b-col sm="6">
-             <img src="../img/supplychain_img/analytical_process.jpg" class="supplychain-4__img"/>
+             <img src="../assets/styles/img/supplychain_img/analytical_process.jpg" class="imageSection__img"/>
            </b-col>
          </b-row>
          <br>
          <b-row>
            <b-col sm="6">
-             <img src="../img/supplychain_img/lead_team.jpg" class="supplychain-4__img"/>
+             <img src="../assets/styles/img/supplychain_img/lead_team.jpg" class="imageSection__img"/>
            </b-col>
            <b-col sm="6">
-             <img src="../img/supplychain_img/impact_customers.jpg" class="supplychain-4__img"/>
+             <img src="../assets/styles/img/supplychain_img/impact_customers.jpg" class="imageSection__img"/>
            </b-col>
          </b-row>
        </div>
-        <div class="supplychain-5">
-          <img src="../img/supplychain_img/sc_testimonial.jpg" class="supplychain-5__img" />
+        <div class="carousel">
+          <img src="../assets/styles/img/supplychain_img/sc_testimonial.jpg" class="carousel__img" />
           <b-carousel
             id="carousel-fade"
-            class="supplychain-5__carousel"
+            class="carousel__carousel"
             fade
             indicators
           >
             <b-carousel-slide>
               <div class="carousel-caption d-md-block">
-                <h1 class="supplychain-5__header">What CodeMD customers are saying</h1>
-                <h3 class="supplychain-5__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
-                <p class="supplychain-5__text">
+                <h1 class="carousel__header">What CodeMD customers are saying</h1>
+                <h3 class="carousel__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+                <p class="carousel__text">
                     &laquo;With CodeMD, Deep Dive Analytics brought a&nbsp;degree of&nbsp;service 
                     to&nbsp;our department&rsquo;s complex schedule which was very obviously 
                     on&nbsp;an&nbsp;engineering level. CodeMD took historical data and 
@@ -100,16 +102,16 @@
                     firms. &mdash;&nbsp;Dr. Edilberto Alvarez Neuroradiology at&nbsp;the University 
                     of&nbsp;Miami Hospital.&raquo;
                   </p>
-                  <span class="supplychain-5__author">
+                  <span class="carousel__author">
                     - Dr. Edilberto Alvarez <br> Neuroradiology at the University of Miami Hospital
                   </span>
               </div>  
             </b-carousel-slide>
             <b-carousel-slide>
               <div class="carousel-caption d-md-block">
-                <h1 class="supplychain-5__header">What CodeMD customers are saying</h1>
-                <h3 class="supplychain-5__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
-                <p class="supplychain-5__text">
+                <h1 class="carousel__header">What CodeMD customers are saying</h1>
+                <h3 class="carousel__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+                <p class="carousel__text">
                     &laquo;CodeMD was able to&nbsp;quickly and accurately provide a&nbsp;solution 
                     to&nbsp;an&nbsp;extremely complex problem that had become too complex for our 
                     group to&nbsp;solve in&nbsp;a&nbsp;reasonable time. The Deep Dive Analytics 
@@ -119,7 +121,7 @@
                     and professional; whereas other companies had set false expectations and had 
                     mislead our team. I&nbsp;can recommend CodeMD without reserve.&raquo;
                   </p>
-                  <span class="supplychain-5__author">
+                  <span class="carousel__author">
                     - Dr. Mohammed Ezuddin <br> Vascular & Interventional Radiology the University of Miami Hospital
                   </span>
               </div> 

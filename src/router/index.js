@@ -27,11 +27,6 @@ const router = new Router({
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/Services')
     },
     {
-      path: '/productsServices',
-      name: 'ProdServPage',
-      component: () => import(/* webpackChunkName: 'Home' */ '@/pages/Products_Services')
-    },
-    {
       path: '/codeMd',
       name: 'CodeMD',
       component: () => import(/* webpackChunkName: 'Home' */ '@/pages/CodeMD')

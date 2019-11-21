@@ -3,8 +3,8 @@
     <div class="twinkling">
       <div class="contact">
         <div class="contact__header">
-          <span class="contact__header-main">Deep Dive into your Data</span><br>
-          <span class="contact__header-subtitle">Let's go on this jorney together.</span>
+          <h1 class="contact__header-main">Deep Dive into your Data</h1>
+          <div class="contact__header-subtitle">Let's go on this jorney together.</div>
         </div>
         <b-row> 
           <b-col md="6">
@@ -12,6 +12,9 @@
               ref="contactInfo"
               class="contact__form"
               :model="form" 
+              action="https://mailthis.to/pseverina1@cougars.ccis.edu" 
+              method="POST"
+              encType="multipart/form-data"
               >
               <b-row>
                 <b-col lg="6">
@@ -20,6 +23,8 @@
                     v-model="form.first_name" 
                     placeholder="First Name" 
                     class="contact__form-input"
+                    name="name"
+                    type="name"
                     required
                   ></b-form-input>
                 </b-col>
@@ -29,6 +34,8 @@
                     v-model="form.last_name"
                     placeholder="Last Name"
                     class="contact__form-input"
+                    name="lastname"
+                    type="lastname"
                     required
                   ></b-form-input>
                 </b-col>
@@ -41,6 +48,7 @@
                     placeholder="name@example.com"
                     class="contact__form-input"
                     type="email"
+                    name="email"
                     required
                   ></b-form-input>
                 </b-col>
@@ -50,6 +58,8 @@
                       v-model="form.company"
                       placeholder="Google.com" 
                       class="contact__form-input"
+                      type="message"
+                      name="_replyto"
                       required
                     ></b-form-input>
                 </b-col>
@@ -60,6 +70,8 @@
                   v-model="form.text" 
                   rows="6" 
                   class="contact__form-input contact__form-textarea"
+                  type="message"
+                  name="message"
                   required
                 >
                 </b-form-textarea>
@@ -71,7 +83,7 @@
                     style="margin-right: 20px"
                     size="lg"
                     variant="outline-light"
-                    @click="submitForm('contactInfo')"
+                    type="submit"
                   >
                     Submit
                   </b-button>
@@ -89,8 +101,8 @@
           </b-col>
           <b-col md="6">
             <div class="contact__info">
-              <img class="contact__info-blackhole" src="../img/bg_img/black_hole.png"/>
-              <img class="contact__info-spaceman" src="../img/home_page_img/blackhole_spaceman.png"/>
+              <img class="contact__info-blackhole" src="../assets/styles/img/bg_img/black_hole.png"/>
+              <img class="contact__info-spaceman" src="../assets/styles/img/home_page_img/blackhole_spaceman.png"/>
             </div>
           </b-col>
         </b-row>
@@ -112,11 +124,6 @@ export default {
         company: '',
         text: 'I am interested  to learn more about your services. We have a particular business problem where we need help getting insights and answers from our data. Can we schedule a call to discuss further?'
       }
-    }
-  },
-  asyncMethods: {
-    async submitForm (formName) {
-      this.clearForm()
     }
   },
   methods: {
