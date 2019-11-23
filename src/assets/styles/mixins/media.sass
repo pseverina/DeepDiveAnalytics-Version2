@@ -1,0 +1,9 @@
+$breakpoints: ('xs': 480px, 's': 767px, 'm': 990px, 'l': 1200px, 'xl': 1600px)
+
+=media($breakpoint)
+  @if map-has-key($breakpoints, $breakpoint)
+    @media (max-width: map-get($breakpoints, $breakpoint))
+      @content
+
+  @else
+    @error 'Не задано значение для `#{$breakpoint}`'

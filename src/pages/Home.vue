@@ -18,11 +18,9 @@
         <!--  Second Section -->
         <div class="supplyChain">
           <h2 class="supplyChain__title">Driving Performance for Supply Chain</h2>
-          <p class="supplyChain__text">
-            Make the system smarter with Deep Dive Analytics.<br>
-            End-to-End supply chain solutions.<br>
-            Data-driven. Custom.<br>
-          </p>
+          <p class="supplyChain__text">Make the system smarter with Deep Dive Analytics.</p>
+          <p class="supplyChain__text">End-to-End supply chain solutions.</p>
+          <p class="supplyChain__text">Data-driven. Custom.</p>
           <div class="supplyChain__btn">
             <router-link to="/supplyChain" class="homelink">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
             <router-link to="/contact" class="homelink">Contact us ></router-link>
@@ -46,18 +44,18 @@
         </div>
         <!-- Fourth Section -->
         <div class="agileManagement">
-          <h2 class="agileManagement__title">Agile Project Management</h2>
-          <p class="agileManagement__text">
-            Innovate and deliver faster with Deep Dive Analytics.<br>
-            Experience a&nbsp;professional and effecient working engagement.<br>
-          </p>
-          <div class="agileManagement__btn">
-            <router-link to="/contact" class="homelink">Contact us ></router-link>
+          <div class="agileManagement__content">
+            <h2 class="agileManagement__title">Agile Project Management</h2>
+            <p class="agileManagement__text">
+              Innovate and deliver faster with Deep Dive Analytics.<br>
+              Experience a&nbsp;professional and effecient working engagement.<br>
+            </p>
+            <router-link to="/contact" class="homelink agileManagement__btn">Contact us ></router-link>
           </div>
           <b-row class="agileManagement__row">
             <b-col class="agileManagement__col agileManagement__col-left" sm>
               <div class="agileManagement__card">
-                <img src="../assets/styles/img/home_page_img/strategy.png" class="agileManagement__left-img"/><br>
+                <img src="../assets/styles/img/home_page_img/strategy.png" class="agileManagement__side-img"/><br>
                 <span class="agileManagement__card-title">Define a Strategy</span>
                 <p class="agileManagement__card-text">
                   Assess the opportunity, 
@@ -69,6 +67,7 @@
             </b-col>
             <b-col class="agileManagement__col agileManagement__col-middle" sm>
               <div class="agileManagement__card">
+                <img src="../assets/styles//img/home_page_img/iterative_development.png" class="agileManagement__middle-img"/><br>
                 <span class="agileManagement__card-title">Iterative Development</span>
                 <p class="agileManagement__card-text">
                   Working in&nbsp;agile sprints to&nbsp;define, 
@@ -79,6 +78,7 @@
             </b-col>
             <b-col class="agileManagement__col agileManagement__col-right" sm>
               <div class="agileManagement__card">
+                <img src="../assets/styles//img/home_page_img/business_impact.png" class="agileManagement__side-img" /><br>
                 <span class="agileManagement__card-title">Deliver Business Impact</span>
                 <p class="agileManagement__card-text">
                   Driving performance and
