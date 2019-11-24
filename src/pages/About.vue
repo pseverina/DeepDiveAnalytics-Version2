@@ -2,9 +2,9 @@
  <div class="container-fluid stars font">
   <div class="twinkling">
     <div class="drivingBusiness">
-      <h1 class="header drivingBusiness" >Strategy, Innovation, & Data Science.</h1>
-      <p class="subtitle drivingBusiness__subtitle">Driving business advantage by delivering industry leading analytical capabilities.</p>
-      <p class="drivingBusiness__contact blue">Contact us ></p><br>
+      <h1 class="drivingBusiness__title" >Strategy, Innovation, & Data Science.</h1>
+      <p class="drivingBusiness__text">Driving business advantage by delivering industry leading analytical capabilities.</p>
+      <router-link to="/contact" class="drivingBusiness__btn aboutlink">Contact us ></router-link>
       <img src="../assets/styles/img/aboutus_img/deepdive_logo_landing.png" class="drivingBusiness__img"/>
       <div class="drivingBusiness__img-mobile">
         <img src="../assets/styles/img/logo_img/helmet.png" class="drivingBusiness__img-mobile-helmet"/>

@@ -2,15 +2,15 @@
   <div class="container-fluid stars font">
     <div class="twinkling">
       <div class="contact">
-        <div class="contact__header">
-          <h1 class="contact__header-main">Deep Dive into your Data</h1>
-          <div class="contact__header-subtitle">Let's go on this jorney together.</div>
+        <div class="contact__content">
+          <h1 class="contact__title">Deep Dive into your Data</h1>
+          <div class="contact__text">Let's go on this jorney together.</div>
         </div>
         <b-row> 
           <b-col md="6">
             <form
               ref="contactInfo"
-              class="contact__form"
+              class="form"
               :model="form" 
               action="https://mailthis.to/pseverina1@cougars.ccis.edu" 
               method="POST"
@@ -22,7 +22,7 @@
                   <b-form-input 
                     v-model="form.first_name" 
                     placeholder="First Name" 
-                    class="contact__form-input"
+                    class="form__input"
                     name="name"
                     type="name"
                     required
@@ -33,7 +33,7 @@
                   <b-form-input 
                     v-model="form.last_name"
                     placeholder="Last Name"
-                    class="contact__form-input"
+                    class="form__input"
                     name="lastname"
                     type="lastname"
                     required
@@ -46,7 +46,7 @@
                   <b-form-input 
                     v-model="form.email"
                     placeholder="name@example.com"
-                    class="contact__form-input"
+                    class="form__input"
                     type="email"
                     name="email"
                     required
@@ -57,7 +57,7 @@
                     <b-form-input 
                       v-model="form.company"
                       placeholder="Google.com" 
-                      class="contact__form-input"
+                      class="form__input"
                       type="message"
                       name="_replyto"
                       required
@@ -69,7 +69,7 @@
                 <b-form-textarea 
                   v-model="form.text" 
                   rows="6" 
-                  class="contact__form-input contact__form-textarea"
+                  class="form__textarea"
                   type="message"
                   name="message"
                   required
@@ -79,7 +79,7 @@
               <b-form-group class="form-group">
                 <b-row class="justify-content-md-center">
                   <b-button 
-                    class="contact__form-btn" 
+                    class="form__btn" 
                     style="margin-right: 20px"
                     size="lg"
                     variant="outline-light"
@@ -88,7 +88,7 @@
                     Submit
                   </b-button>
                   <b-button 
-                    class="contact__form-btn" 
+                    class="form__btn" 
                     size="lg"
                     variant="outline-light"
                     @click="clearForm('contactInfo')"
@@ -100,9 +100,9 @@
             </form> 
           </b-col>
           <b-col md="6">
-            <div class="contact__info">
-              <img class="contact__info-blackhole" src="../assets/styles/img/bg_img/black_hole.png"/>
-              <img class="contact__info-spaceman" src="../assets/styles/img/home_page_img/blackhole_spaceman.png"/>
+            <div class="contact-info">
+              <img class="contact-info__blackhole" src="../assets/styles/img/bg_img/black_hole.png"/>
+              <img class="contact-info__spaceman" src="../assets/styles/img/home_page_img/blackhole_spaceman.png"/>
             </div>
           </b-col>
         </b-row>

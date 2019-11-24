@@ -55,7 +55,7 @@
           <b-row class="agileManagement__row">
             <b-col class="agileManagement__col agileManagement__col-left" sm>
               <div class="agileManagement__card">
-                <img src="../assets/styles/img/home_page_img/strategy.png" class="agileManagement__side-img"/><br>
+                <img src="../assets/styles/img/home_page_img/agile_strategy.png" class="agileManagement__side-img"/><br>
                 <span class="agileManagement__card-title">Define a Strategy</span>
                 <p class="agileManagement__card-text">
                   Assess the opportunity, 
@@ -67,7 +67,7 @@
             </b-col>
             <b-col class="agileManagement__col agileManagement__col-middle" sm>
               <div class="agileManagement__card">
-                <img src="../assets/styles//img/home_page_img/iterative_development.png" class="agileManagement__middle-img"/><br>
+                <img src="../assets/styles//img/home_page_img/agile_iterative_development.png" class="agileManagement__middle-img"/><br>
                 <span class="agileManagement__card-title">Iterative Development</span>
                 <p class="agileManagement__card-text">
                   Working in&nbsp;agile sprints to&nbsp;define, 
@@ -78,7 +78,7 @@
             </b-col>
             <b-col class="agileManagement__col agileManagement__col-right" sm>
               <div class="agileManagement__card">
-                <img src="../assets/styles//img/home_page_img/business_impact.png" class="agileManagement__side-img" /><br>
+                <img src="../assets/styles//img/home_page_img/agile_business_impact.png" class="agileManagement__side-img" /><br>
                 <span class="agileManagement__card-title">Deliver Business Impact</span>
                 <p class="agileManagement__card-text">
                   Driving performance and
@@ -92,27 +92,35 @@
         </div>
         <!--  Fifth Section -->
         <div class="deepDive">
-          <div class="deepDive__content">
-            <div class="deepDive__title">
-              <span class="deepDive__title-green">Deep Dive </span>
-              <span class="deepDive__title-white"> into your data to make </span>
-              <span class="deepDive__title-green">Smarter Decisions</span>.
-            </div> 
-            <p class="deepDive__text">
-              We&nbsp;combine business knowledge with advanced 
-              analytics, building custom analytical solutions based 
-              on&nbsp;your unique business needs. We&nbsp;have a&nbsp;proven 
-              track record of&nbsp;delivering business value.
-            </p>
-            <p class="deepDive__text">
-              Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.<br>
-            </p>
-            <p class="deepDive__btn">
-              <router-link to="/contact" class="homelink">Contact us ></router-link>
-            </p>
-            <!-- <img class="deepDive__blackhole" alt="blackhole" src="../assets/styles/img/bg_img/black_hole.png"/> 
-              <img class="deepDive__spaceman" alt="spaceman" src="../assets/styles/img/home_page_img/blackhole_spaceman.png"/> -->
-          </div>
+          <b-row>
+            <b-col sm="6">
+              <div class="deepDive__content">
+                <div class="deepDive__title">
+                  <span class="deepDive__title-green">Deep Dive </span>
+                  <span class="deepDive__title-white"> into your data to make </span>
+                  <span class="deepDive__title-green">Smarter Decisions</span>.
+                </div> 
+                <p class="deepDive__text">
+                  We&nbsp;combine business knowledge with advanced 
+                  analytics, building custom analytical solutions based 
+                  on&nbsp;your unique business needs. We&nbsp;have a&nbsp;proven 
+                  track record of&nbsp;delivering business value.
+                </p>
+                <p class="deepDive__text">
+                  Let&rsquo;s Deep Dive into the black hole of&nbsp;your data.<br>
+                </p>
+                <p class="deepDive__btn">
+                  <router-link to="/contact" class="homelink">Contact us ></router-link>
+                </p>
+              </div>
+            </b-col>
+            <b-col sm="6">
+              <div class="deepDive__img">
+                <img class="deepDive__blackhole" alt="blackhole" src="../assets/styles/img/bg_img/black_hole.png"/> 
+                <img class="deepDive__spaceman" alt="spaceman" src="../assets/styles/img/home_page_img/blackhole_spaceman.png"/>
+              </div>
+            </b-col>
+          </b-row>
         </div>
       </div>
     </div>

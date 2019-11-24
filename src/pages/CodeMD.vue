@@ -5,32 +5,38 @@
         <div class="newStandard">
           <b-row class="flex-column flex-md-row">
             <b-col class="newStandard__leftside">
-              <h1 class="newStandard__leftside-head">
+              <h1 class="newStandard__title">
                 The New Standard.<br>
                 Custom Scheduling.<br>
                 Smart Automation.<br>
                 Tailored Algorithms.<br>
               </h1>
-              <p class="newStandard__leftside-text">
+              <p class="newStandard__text">
                 Industry leading advanced analytics<br>
                 for health care providers.<br>
               </p>
-              <p class="newStandard__leftside-btn">
-                <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
+              <p class="newStandard__btn">
+                <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
               </p>
             </b-col>
-            <b-col class="newStandard__rightside">
-              <img class="newStandard__rightside-img" src="../assets/styles/img/home_page_img/codemd_logo.png" />
+            <b-col>
+              <img class="newStandard__img" src="../assets/styles/img/home_page_img/codemd_logo.png" />
             </b-col>
           </b-row>
         </div>
-        <!-- additional section -->
-        <div class="codeMd-addSection">
-          <img src="../assets/styles/img/code_md/codemd_hero_image.jpg" class="codeMd-addSection-img" />
-        </div>
         <!-- section 2 -->
+        <div class="transformOrganization">
+          <div class="transformOrganization__content">
+            <h2 class="transformOrganization__title"> Transform your Organization</h2>
+            <p class="transformOrganization__text">Establish an analytical mindset and process. Improve & simplify your workflow.</p>
+            <p class="transformOrganization__text">CodeMD is a built with cutting-edge technology to drive efficiency across your organization.</p>
+            <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
+          </div>
+          <img src="../assets/styles/img/code_md/codemd_transform.png" class="transformOrganization__img" />
+        </div>
+        <!-- section 3 -->
         <div class="revolutionizeSchedule">
-          <h1 class="revolutionizeSchedule__head">Revolutionize your Scheduling</h1>
+          <h1 class="revolutionizeSchedule__title">Revolutionize your Scheduling</h1>
           <p class="revolutionizeSchedule__text">
             Simplify your scheduling process and generate the most accurate schedule <br>
             to&nbsp;drive performance and efficiency across your organization.
@@ -39,11 +45,11 @@
           <!-- Rules-Based Scheduling -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
             <b-col>
-              <img class="revolutionizeSchedule__info-img__first" src="../assets/styles/img/code_md/schedule_rules.png"/>
+              <img class="revolutionizeSchedule__img-schedule-rules" src="../assets/styles/img/code_md/schedule_rules.png"/>
             </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-text">
-              <span class="revolutionizeSchedule__info-text-head">Rules-Based Scheduling</span>
-              <p class="revolutionizeSchedule__info-text-description">
+            <b-col cols="10" class="revolutionizeSchedule__info-content">
+              <span class="revolutionizeSchedule__info-title">Rules-Based Scheduling</span>
+              <p class="revolutionizeSchedule__info-text">
                 CodeMD&rsquo;s automated scheduling algorithm can be&nbsp;customized around
                 your rules and requirements with high accuracy and performance. The
                 framework is&nbsp;flexible, allowing CodeMD to&nbsp;tailor to&nbsp;your needs.
@@ -53,11 +59,11 @@
           <!-- Balanced Schedules -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
             <b-col>
-              <img class="revolutionizeSchedule__info-img__second" src="../assets/styles/img/code_md/balanced.png"/>
+              <img class="revolutionizeSchedule__img-balanced" src="../assets/styles/img/code_md/balanced.png"/>
             </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-text">
-              <span class="revolutionizeSchedule__info-text-head">Balanced Schedules</span>
-              <p class="revolutionizeSchedule__info-text-description">
+            <b-col cols="10" class="revolutionizeSchedule__info-content">
+              <span class="revolutionizeSchedule__info-title">Balanced Schedules</span>
+              <p class="revolutionizeSchedule__info-text">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;evenly distribute 
                 your schedule while still taking into account all your custom rules 
                 and requirements. Let CodeMD manage the spread using advanced analytics.
@@ -67,11 +73,11 @@
           <!-- Automated, Reuseable, Scientific -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
             <b-col>
-              <img class="revolutionizeSchedule__info-img__third" src="../assets/styles/img/code_md/reuseable_scientific.png"/>
+              <img class="revolutionizeSchedule__img-reuseable-scientific" src="../assets/styles/img/code_md/reuseable_scientific.png"/>
             </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-text">
-              <span class="revolutionizeSchedule__info-text-head">Automated, Reuseable, Scientific</span>
-              <p class="revolutionizeSchedule__info-text-description">
+            <b-col cols="10" class="revolutionizeSchedule__info-content">
+              <span class="revolutionizeSchedule__info-title">Automated, Reuseable, Scientific</span>
+              <p class="revolutionizeSchedule__info-text">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;generate new &amp;&nbsp;
                 updated schedules quickly. Need to&nbsp;refresh your schedule? No&nbsp;problem. 
                 Make smarter decisions using CodeMD when you need to&nbsp;pivot and adapt.
@@ -81,11 +87,11 @@
           <!-- Comprehensive Scheduling -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
             <b-col>
-              <img class="revolutionizeSchedule__info-img__fourth" src="../assets/styles/img/code_md/codemd_comprehensive.png"/>
+              <img class="revolutionizeSchedule__img-comprehensive" src="../assets/styles/img/code_md/codemd_comprehensive.png"/>
             </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-text">
-              <span class="revolutionizeSchedule__info-text-head">Comprehensive Scheduling</span>
-              <p class="revolutionizeSchedule__info-text-description">
+            <b-col cols="10" class="revolutionizeSchedule__info-content">
+              <span class="revolutionizeSchedule__info-title">Comprehensive Scheduling</span>
+              <p class="revolutionizeSchedule__info-text">
                 CodeMD&nbsp;is for all healthcare institutions, specialties and staff. From private groups 
                 to&nbsp;large health systems, CodeMD can successfully create your schedule(s). It&nbsp;can even 
                 help with automating vacation request decisions.
@@ -95,11 +101,11 @@
           <!-- Improved Service to Patients -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
             <b-col>
-              <img class="revolutionizeSchedule__info-img__fifth" src="../assets/styles/img/code_md/patient_impact.png" />
+              <img class="revolutionizeSchedule__img-patient-impact" src="../assets/styles/img/code_md/patient_impact.png" />
             </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-text">
-              <span class="revolutionizeSchedule__info-text-head">Improved Service to Patients</span>
-              <p class="revolutionizeSchedule__info-text-description">
+            <b-col cols="10" class="revolutionizeSchedule__info-content">
+              <span class="revolutionizeSchedule__info-title">Improved Service to Patients</span>
+              <p class="revolutionizeSchedule__info-text">
                 CodeMD dramatically improves your organization&rsquo;s efficiency. Reduce the 
                 time and side-effects of&nbsp;inefficient scheduling. Dedicate more time to&nbsp;your 
                 patients while also improving your work-life balance.
@@ -107,9 +113,9 @@
             </b-col>
           </b-row>
         </div>
-        <!-- section 3 -->
+        <!-- section 4 -->
         <div class="industryLeading">
-          <h1 class="industryLeading__head">Industry Leading Performance and Accuracy.</h1>
+          <h1 class="industryLeading__title">Industry Leading Performance and Accuracy.</h1>
           <p class="industryLeading__text">
             CodeMD&rsquo;s analytical capabilites differentiate it&nbsp;from the competition.<br>
             Don&rsquo;t settle for less. Get more productive with CodeMD.
@@ -119,68 +125,54 @@
               <el-progress 
                 :width="200" 
                 :height="200" 
-                class="industryLeading__bar-circle" 
                 type="circle" 
                 :percentage="percentage_leftbar" 
                 color="#58f86e">
               </el-progress><br><br>
-              <span class="industryLeading__bar-text">Adherence to Schedule <br> Rules & Requirements</span>
+              <span class="industryLeading__subtitle">Adherence to Schedule <br> Rules & Requirements</span>
             </b-col>
             <b-col sm>
               <el-progress 
                 :width="200" 
                 :height="200" 
-                class="industryLeading__bar-circle" 
                 type="circle" 
                 :percentage="percentage_middlebar" 
                 color="#58f86e">
               </el-progress><br><br>
-              <span class="industryLeading__bar-text">Reducation in Time <br> to Create Schedules</span>
+              <span class="industryLeading__subtitle">Reducation in Time <br> to Create Schedules</span>
             </b-col>
             <b-col sm>
               <el-progress 
                 :width="200" 
-                :height="200" 
-                class="industryLeading__bar-circle" 
+                :height="200"  
                 type="circle" 
                 :percentage="percentage_rightbar" 
                 color="#58f86e">
               </el-progress><br><br>
-              <span class="industryLeading__bar-text">Reducation in Time <br> Changing Schedules</span>
+              <span class="industryLeading__subtitle">Reducation in Time <br> Changing Schedules</span>
             </b-col>
           </b-row>
           <p class="industryLeading__btn">
-            <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
+            <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
           </p>
-        </div>
-        <!-- section 4 -->
-        <div class="analyticalWorkflow">
-          <h1 class="analyticalWorkflow__head">Establish an Analytical Workflow</h1>
-          <p class="analyticalWorkflow__text">
-            Customize to&nbsp;your needs beyond scheduling.<br>
-            Add tailored modules with cutting-edge technology<br>
-            to&nbsp;drive efficiency across your organization
-          </p>
-          <p class="analyticalWorkflow__btn">
-            <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
-          </p>
-          <img class="analyticalWorkflow__img" src="../assets/styles/img/code_md/codemd_ai.png"/>
         </div>
         <!-- section 5 -->
         <div class="codeMdApp">
           <b-row class="flex-column-reverse flex-md-row">
-            <b-col md="7" sm="4" class="codeMdApp__leftside">
-              <img class="codeMdApp__leftside-img" src="../assets/styles/img/code_md/codemd_app.png"/>
+            <b-col>
+              <img class="codeMdApp__img" src="../assets/styles/img/code_md/codemd_app.png"/>
             </b-col>
-            <b-col md="5" sm="8" class="codeMdApp__rightside">
-              <h1 class="codeMdApp__rightside-head">Get the CodeMD App</h1>
-              <p class="codeMdApp__rightside-text">
-                Run your custom algorithms on&nbsp;demand.<br>
-                Own your analytical solution. Visualize your data.
-              </p>
-              <p class="codeMdApp__rightside-btn">
-                <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
-              </p>
+            <b-col>
+              <div class="codeMdApp__content"> 
+                <h1 class="codeMdApp__title">Get the CodeMD App</h1>
+                <p class="codeMdApp__text">
+                  Run your custom algorithms on&nbsp;demand.<br>
+                  Own your analytical solution. Visualize your data.
+                </p>
+                <p class="codeMdApp__btn">
+                  <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
+                </p>
+              </div>
             </b-col>
           </b-row>
         </div>
@@ -195,8 +187,8 @@
           >
             <b-carousel-slide>
               <div class="carousel-caption d-md-block">
-                <h1 class="carousel__header">What CodeMD customers are saying</h1>
-                <h3 class="carousel__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+                <h1 class="carousel__title">What CodeMD customers are saying</h1>
+                <h3 class="carousel__title-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
                 <p class="carousel__text">
                     &laquo;With CodeMD, Deep Dive Analytics brought a&nbsp;degree of&nbsp;service 
                     to&nbsp;our department&rsquo;s complex schedule which was very obviously 
@@ -217,8 +209,8 @@
             </b-carousel-slide>
             <b-carousel-slide>
               <div class="carousel-caption d-md-block">
-                <h1 class="carousel__header">What CodeMD customers are saying</h1>
-                <h3 class="carousel__header-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+                <h1 class="carousel__title">What CodeMD customers are saying</h1>
+                <h3 class="carousel__title-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
                 <p class="carousel__text">
                     &laquo;CodeMD was able to&nbsp;quickly and accurately provide a&nbsp;solution 
                     to&nbsp;an&nbsp;extremely complex problem that had become too complex for our 

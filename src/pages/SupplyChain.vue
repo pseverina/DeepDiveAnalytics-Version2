@@ -1,21 +1,26 @@
 <template>
    <div class="container-fluid stars font">
      <div class="twinkling">
-       <div class="supplyChain">
-         <h1 class="supplyChain__head">Digital Supply Chain</h1>
-         <p class="supplyChain__text">
-           Custom, Accurate, and Modular.<br>
-           Establish a data-driven process with Deep Dive Analytics.
-         </p>
-         <!-- <div class="supplychain-1__img1">
-           <z-canvas 
-            :views="myViews" 
-            class="canvas"
-            style="width: 40%; height: 400px; border-radius: 50%"
-            >Home</z-canvas>
-         </div> -->
-         <img src="../assets/styles/img/home_page_img/supplychain_homev2.png" class="supplyChain__img"/>
-       </div>
+       <!-- section 1 -->
+      <div class="supplyChain">
+        <h2 class="supplyChain__title">Driving Performance for Supply Chain</h2>
+        <p class="supplyChain__text">Make the system smarter with Deep Dive Analytics.</p>
+        <p class="supplyChain__text">End-to-End supply chain solutions.</p>
+        <p class="supplyChain__text">Data-driven. Custom.</p>
+        <div class="supplyChain__btn">
+          <router-link to="/supplyChain" class="homelink">Learn more >&nbsp;&nbsp;&nbsp;</router-link>
+          <router-link to="/contact" class="homelink">Contact us ></router-link>
+        </div><br>
+        <img class="supplyChain__img" src="../assets/styles/img/home_page_img/supplychain_homev2.png" />
+        <!-- <div class="supplychain-1__img1">
+          <z-canvas 
+          :views="myViews" 
+          class="canvas"
+          style="width: 40%; height: 400px; border-radius: 50%"
+          >Home</z-canvas>
+        </div> -->
+      </div>
+       <!-- section 2 -->
        <div class="optimizeNetwork">
          <b-row class="flex-column-reverse flex-md-row">
            <b-col>
@@ -41,23 +46,27 @@
            </b-col>
          </b-row>
        </div>
+       <!-- section 3 -->
       <div class="codeMdApp">
         <b-row class="flex-column-reverse flex-md-row">
-          <b-col md="7" sm="4" class="codeMdApp__leftside">
-            <img class="codeMdApp__leftside-img" src="../assets/styles/img/code_md/codemd_app.png"/>
+          <b-col>
+            <img class="codeMdApp__img" src="../assets/styles/img/code_md/codemd_app.png"/>
           </b-col>
-          <b-col md="5" sm="8" class="codeMdApp__rightside">
-            <h1 class="codeMdApp__rightside-head">Get the CodeMD App</h1>
-            <p class="codeMdApp__rightside-text">
-              Run your custom algorithms on&nbsp;demand.<br>
-              Own your analytical solution. Visualize your data.
-            </p>
-            <p class="codeMdApp__rightside-btn">
-              <router-link to="/contact" class="link_codeMd">Contact us ></router-link>
-            </p>
+          <b-col>
+            <div class="codeMdApp__content"> 
+              <h1 class="codeMdApp__title">Get the CodeMD App</h1>
+              <p class="codeMdApp__text">
+                Run your custom algorithms on&nbsp;demand.<br>
+                Own your analytical solution. Visualize your data.
+              </p>
+              <p class="codeMdApp__btn">
+                <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
+              </p>
+            </div>
           </b-col>
         </b-row>
       </div>
+      <!-- section 4 -->
        <div class="imageSection">
          <b-row>
            <b-col sm="6">
@@ -77,6 +86,7 @@
            </b-col>
          </b-row>
        </div>
+       <!-- section 5 -->
         <div class="carousel">
           <img src="../assets/styles/img/supplychain_img/sc_testimonial.jpg" class="carousel__img" />
           <b-carousel
