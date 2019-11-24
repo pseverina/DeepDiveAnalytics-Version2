@@ -178,52 +178,83 @@
         </div>
         <!-- section 6 -->
         <div class="carousel"> 
-          <img src='../assets/styles/img/code_md/codemd_testimonial_background.jpg' class="carousel__img" />
           <b-carousel
             id="carousel-fade"
-            class="carousel__carousel"
+            class="carousel"
             fade
             indicators
           >
             <b-carousel-slide>
-              <div class="carousel-caption d-md-block">
-                <h1 class="carousel__title">What CodeMD customers are saying</h1>
-                <h3 class="carousel__title-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+              <div class="carousel-caption text-left d-md-block">
+                <h2 class="carousel__title">What customers are saying</h2>
+                <b-row>
+                  <b-col cols="2">
+                    <img src="../assets/styles/img/code_md/quotation_1.png" class="carousel__img-quote-open"/>
+                  </b-col>
+                  <b-col style="border-bottom: 1px solid grey; padding: 0">
+                    <img src="../assets/styles/img/code_md/codedm_just-logo.png" class="carousel__img-logo"/>
+                  </b-col>
+                </b-row>
                 <p class="carousel__text">
-                    &laquo;With CodeMD, Deep Dive Analytics brought a&nbsp;degree of&nbsp;service 
-                    to&nbsp;our department&rsquo;s complex schedule which was very obviously 
-                    on&nbsp;an&nbsp;engineering level. CodeMD took historical data and 
-                    the complex educational requirements for residents into account, 
-                    intelligently producing a&nbsp;schedule which was far beyond what a&nbsp;human 
-                    could produce. What really stood out though was Deep Dive&rsquo;s commitment 
-                    to&nbsp;tailor every aspect to&nbsp;the nuances of&nbsp;our department 
-                    and the professionalism with which they did&nbsp;it. It&nbsp;seems 
-                    that CodeMD&nbsp;is a&nbsp;generation beyond what is&nbsp;offered by&nbsp;other 
-                    firms. &mdash;&nbsp;Dr. Edilberto Alvarez Neuroradiology at&nbsp;the University 
-                    of&nbsp;Miami Hospital.&raquo;
-                  </p>
-                  <span class="carousel__author">
-                    - Dr. Edilberto Alvarez <br> Neuroradiology at the University of Miami Hospital
-                  </span>
+                  &laquo;With CodeMD, Deep Dive Analytics brought a&nbsp;degree of&nbsp;service 
+                  to&nbsp;our department&rsquo;s complex schedule which was very obviously 
+                  on&nbsp;an&nbsp;engineering level. CodeMD took historical data and 
+                  the complex educational requirements for residents into account, 
+                  intelligently producing a&nbsp;schedule which was far beyond what a&nbsp;human 
+                  could produce. What really stood out though was Deep Dive&rsquo;s commitment 
+                  to&nbsp;tailor every aspect to&nbsp;the nuances of&nbsp;our department 
+                  and the professionalism with which they did&nbsp;it. It&nbsp;seems 
+                  that CodeMD&nbsp;is a&nbsp;generation beyond what is&nbsp;offered by&nbsp;other 
+                  firms. &mdash;&nbsp;Dr. Edilberto Alvarez Neuroradiology at&nbsp;the University 
+                  of&nbsp;Miami Hospital.&raquo;
+                </p>
+                <b-row>
+                  <b-col cols="2">
+                    <img src="../assets/styles/img/code_md/codemd_logo_brain.png" class="carousel__img-brain"/>
+                  </b-col>
+                  <b-col>
+                    <span class="carousel__author">- DR. EDILBERTO ALVAREZ</span><br>
+                    <span class="carousel__contact">Neuroradiology at the University of Miami Hospital</span>
+                  </b-col>
+                  <b-col cols="1">
+                    <img src="../assets/styles/img/code_md/quotation.png" class="carousel__img-quote-end"/>
+                  </b-col>
+                </b-row>
               </div>  
             </b-carousel-slide>
             <b-carousel-slide>
-              <div class="carousel-caption d-md-block">
-                <h1 class="carousel__title">What CodeMD customers are saying</h1>
-                <h3 class="carousel__title-subtext">Our analytical capabilities differentiate us from our competitors.</h3>
+              <div class="carousel-caption text-left d-md-block">
+                <h2 class="carousel__title">What customers are saying</h2>
+                <b-row>
+                  <b-col cols="2">
+                    <img src="../assets/styles/img/code_md/quotation_1.png" class="carousel__img-quote-open"/>
+                  </b-col>
+                  <b-col style="border-bottom: 1px solid grey; padding: 0">
+                    <img src="../assets/styles/img/code_md/codedm_just-logo.png" class="carousel__img-logo"/>
+                  </b-col>
+                </b-row>
                 <p class="carousel__text">
-                    &laquo;CodeMD was able to&nbsp;quickly and accurately provide a&nbsp;solution 
-                    to&nbsp;an&nbsp;extremely complex problem that had become too complex for our 
-                    group to&nbsp;solve in&nbsp;a&nbsp;reasonable time. The Deep Dive Analytics 
-                    team was able to&nbsp;program a&nbsp;better, more tailored, solution that was 
-                    even better than the industry standard. It&nbsp;ultimately consolidated months 
-                    of&nbsp;work into a&nbsp;weekend. During the development, the staff was timely 
-                    and professional; whereas other companies had set false expectations and had 
-                    mislead our team. I&nbsp;can recommend CodeMD without reserve.&raquo;
-                  </p>
-                  <span class="carousel__author">
-                    - Dr. Mohammed Ezuddin <br> Vascular & Interventional Radiology the University of Miami Hospital
-                  </span>
+                  &laquo;CodeMD was able to&nbsp;quickly and accurately provide a&nbsp;solution 
+                  to&nbsp;an&nbsp;extremely complex problem that had become too complex for our 
+                  group to&nbsp;solve in&nbsp;a&nbsp;reasonable time. The Deep Dive Analytics 
+                  team was able to&nbsp;program a&nbsp;better, more tailored, solution that was 
+                  even better than the industry standard. It&nbsp;ultimately consolidated months 
+                  of&nbsp;work into a&nbsp;weekend. During the development, the staff was timely 
+                  and professional; whereas other companies had set false expectations and had 
+                  mislead our team. I&nbsp;can recommend CodeMD without reserve.&raquo;
+                </p>
+                <b-row>
+                  <b-col cols="2">
+                    <img src="../assets/styles/img/code_md/codemd_logo_brain.png" class="carousel__img-brain"/>
+                  </b-col>
+                  <b-col>
+                    <span class="carousel__author">- DR. MOHAMMED EZUDDIN</span><br>
+                    <span class="carousel__contact">Vascular & Interventional Radiology the University of Miami Hospital</span>
+                  </b-col>
+                  <b-col cols="1">
+                     <img src="../assets/styles/img/code_md/quotation.png" class="carousel__img-quote-end"/>
+                  </b-col>
+                </b-row>
               </div> 
             </b-carousel-slide>
           </b-carousel>

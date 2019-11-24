@@ -54,7 +54,7 @@
         <slide>
           <div class="successStories__imgstory"  @click="() => show(index + 1)">
             <a target="_blank">
-              <img src="../assets/styles/img/aboutus_img/stories_residentscheduling.jpg" class="successStories__imgstory-img" alt="inventory"/>
+              <img src="../assets/styles/img/aboutus_img/stories_residentsched.jpg" class="successStories__imgstory-img" alt="inventory"/>
               <h4 class="successStories__imgstory-label">Healthcare Provider Scheduling</h4>
             </a>
           </div>
@@ -78,7 +78,7 @@
         <slide>
           <div class="successStories__imgstory" @click="() => show(index + 4)">
             <a target="_blank"> 
-              <img src="../assets/styles/img/aboutus_img/stories_inventoyopt.jpg" class="successStories__imgstory-img" alt="rads_scheduling"/>
+              <img src="../assets/styles/img/aboutus_img/stories_inventoryopt.jpg" class="successStories__imgstory-img" alt="rads_scheduling"/>
               <h4 class="successStories__imgstory-label">Inventory Optimization</h4>
             </a>
           </div> 
@@ -94,7 +94,7 @@
         <slide>
           <div class="successStories__imgstory" @click="() => show(index + 6)">
             <a target="_blank"> 
-              <img src="../assets/styles/img/aboutus_img/stories_materialharmon.jpg" class="successStories__imgstory-img" alt="rads_scheduling"/>
+              <img src="../assets/styles/img/aboutus_img/stories_commonmatch.jpg" class="successStories__imgstory-img" alt="rads_scheduling"/>
               <h4 class="successStories__imgstory-label">Material Harmonization</h4>
             </a>
           </div> 
