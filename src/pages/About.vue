@@ -2,11 +2,11 @@
  <div class="container-fluid stars font">
   <div class="twinkling">
     <div class="drivingBusiness">
-      <h1 class="drivingBusiness__title" >Strategy, Innovation, & Data Science.</h1>
-      <p class="drivingBusiness__text">Driving business advantage by delivering industry leading analytical capabilities.</p>
-      <router-link to="/contact" class="drivingBusiness__btn aboutlink">Contact us ></router-link>
-      <img src="../assets/styles/img/aboutus_img/deepdive_logo_landing.png" class="drivingBusiness__img"/>
-      <div class="drivingBusiness__img-mobile">
+      <div class="drivingBusiness__content">
+        <img src="../assets/styles/img/logo_img/dt.png" class="drivingBusiness__img"/>
+        <h1 class="drivingBusiness__title" >Strategy, Innovation, & Data Science.</h1>
+        <p class="drivingBusiness__text">Driving business advantage by delivering industry leading analytical capabilities.</p>
+        <router-link to="/contact" class="drivingBusiness__btn aboutlink">Contact us ></router-link><br>
         <img src="../assets/styles/img/logo_img/helmet.png" class="drivingBusiness__img-mobile-helmet"/>
         <img src="../assets/styles/img/logo_img/dt.png" class="drivingBusiness__img-mobile-logo"/>
       </div>
@@ -14,7 +14,7 @@
       <img src="../assets/styles/img/aboutus_img/icon_arrow_down.png" class="drivingBusiness__arrow" /> 
     </div>
     <div class="imageSection">
-      <b-row>
+      <b-row class="imageSection__row top-buffer mx-auto">
         <b-col sm="6">
           <img src="../assets/styles/img/aboutus_img/about_us_experienced.jpg" class="imageSection__img"/>
         </b-col>
@@ -22,8 +22,7 @@
           <img src="../assets/styles/img/aboutus_img/about_us_analytical.jpg" class="imageSection__img"/>
         </b-col>
       </b-row>
-      <br>
-      <b-row>
+      <b-row class="imageSection__row top-buffer mx-auto">
         <b-col sm="6">
           <img src="../assets/styles/img/aboutus_img/about_us_impactful.jpg" class="imageSection__img"/>
         </b-col>
@@ -33,12 +32,14 @@
       </b-row>
     </div>
     <div class="successStories">
-      <h1 class="header">Success Stories</h1>
-      <p class="subtitle">
-        High-level information for some of&nbsp;our projects.<br>
-        Only information we&nbsp;have permission to&nbsp;share is&nbsp;provided.
-      </p>
-      <router-link to="/contact"  class="blue">Contact us ></router-link>
+      <div class="successStories__content">
+        <h1 class="successStories__title">Success Stories</h1>
+        <p class="successStories__text">
+          High-level information for some of&nbsp;our projects.<br>
+          Only information we&nbsp;have permission to&nbsp;share is&nbsp;provided.
+        </p>
+        <router-link to="/contact"  class="successStories__btn">Contact us ></router-link>
+      </div>
       <carousel 
         :perPageCustom="[[600, 2], [830, 3], [1130, 4], [1430, 5]]"
         class="successStories__carousel"

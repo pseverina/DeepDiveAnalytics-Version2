@@ -27,13 +27,13 @@
              <img src="../assets/styles/img/supplychain_img/world.png" class="optimizeNetwork__img"/>
            </b-col>
            <b-col>
-             <h1 class="header optimizeNetwork__header">Optimize the Network</h1>
-             <p class="subtitle optimizeNetwork__subtitle">
+             <h1 class="optimizeNetwork__title">Optimize the Network</h1>
+             <p class="optimizeNetwork__text">
                Make the system smarter by using data driven<br>
                analytics to evaluate end-to-end tradeoffs for<br>
                all nodes simultanesouly.
              </p>
-             <p class="subtitle optimizeNetwork__subtitle">
+             <p class="optimizeNetwork__text" style="margin-bottom: 0">
                Where to open or close a DC?<br>
                Where to open or close a plant?<br>
                Which customer base will each DC serve?<br>
@@ -42,7 +42,7 @@
                What is the optimal product to line allocation?<br>
                What is the optimal batch sizing and sequencing?
              </p>
-             <span class="blue">Contact us ></span>
+             <span class="optimizeNetwork__btn">Contact us ></span>
            </b-col>
          </b-row>
        </div>
@@ -68,7 +68,7 @@
       </div>
       <!-- section 4 -->
        <div class="imageSection">
-         <b-row>
+         <b-row class="imageSection__row top-buffer mx-auto">
            <b-col sm="6">
              <img src="../assets/styles/img/supplychain_img/decisive_confident.jpg" class="imageSection__img"/>
            </b-col>
@@ -76,8 +76,7 @@
              <img src="../assets/styles/img/supplychain_img/analytical_process.jpg" class="imageSection__img"/>
            </b-col>
          </b-row>
-         <br>
-         <b-row>
+         <b-row class="imageSection__row top-buffer mx-auto">
            <b-col sm="6">
              <img src="../assets/styles/img/supplychain_img/lead_team.jpg" class="imageSection__img"/>
            </b-col>
@@ -87,7 +86,6 @@
          </b-row>
        </div>
        <!-- section 5 -->
-        <!-- section 6 -->
         <div class="carousel"> 
           <b-carousel
             id="carousel-fade"

@@ -6,7 +6,7 @@
   text-align: center
   color: white
 
-  +media(xs)
+  +media(s)
     padding: 48px 0px
 
   &__title
@@ -45,19 +45,23 @@
   color: white
   text-align: center
 
-  +media(xs)
+  +media(s)
     padding: 48px 0px
   
   &__title
     font-size: 40px
     font-weight: bold
 
-    +media(xs)
+    +media(s)
+      padding: 0 40px
       font-size: 30px
   
   &__text
     font-size: 20px
     margin: auto
+
+    +media(s)
+      font-size: 14px
 
     +media(xs)
       font-size: 12px
@@ -66,15 +70,21 @@
     font-size: 16px
     margin: auto
     margin-bottom: 20px
+
+    +media(xs)
+      font-size: 14px
   
   &__img
     max-width: 720px
     margin: auto
 
+    +media(m)
+      max-width: 680px 
+
     +media(s)
       max-width: 480px 
 
-    +media(s)
+    +media(xs)
       max-width: 300px   
 
 .industryAgnostic
@@ -85,7 +95,7 @@
   text-align: center
   color: white
 
-  +media(xs)
+  +media(s)
     padding: 48px 0px
 
   &__title
@@ -123,7 +133,7 @@
   padding: 96px 0px
   color: white
 
-  +media(xs)
+  +media(s)
     padding: 48px 0px
 
   &__content
@@ -217,7 +227,7 @@
   margin: auto 
   padding: 96px 25px
 
-  +media(xs)
+  +media(s)
     padding: 48px 0px 120px
 
   &__content

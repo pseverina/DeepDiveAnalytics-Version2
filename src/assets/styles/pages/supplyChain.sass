@@ -4,13 +4,44 @@
   max-width: 1240px
   margin: auto
   padding: 96px 0px
+  color: white
+
+  +media(s)
+    padding: 48px 0px
 
   &__img
-    width: 90%
+    max-width: 440px
     margin: auto
+
+    +media(s)
+      width: 380px
+      padding-top: 25px
+
+    +media(xs)
+      max-width: 300px
   
-  &__header
-    margin-top: 15%
+  &__title
+    margin-top: 60px
+    font-weight: 900
+
+    +media(xs)
+      margin-top: 0
+      font-size: 30px
+  
+  &__text
+    +media(m)
+      font-size: 14px
+
+    +media(xs)
+      margin-top: 0
+      font-size: 12px
+  
+  &__btn
+    font-size: 16px
+    color: #1C75BC
+
+    +media(xs)
+      font-size: 12px
 
 .canvas
   position: relative !important
