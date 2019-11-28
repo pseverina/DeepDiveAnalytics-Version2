@@ -18,12 +18,21 @@
     font-weight: 900
     margin: 40px auto 10px
 
+    +media(l)
+      font-size: 48px
+    
+    +media(m)
+      font-size: 38px
+
     +media(s)
       font-size: 30px
     
   &__text
     font-size: 26px
     margin-bottom: 0
+
+    +media(m)
+      font-size: 18px
 
     +media(s)
       font-size: 12px
@@ -38,6 +47,10 @@
     margin-top: 20px auto 0
     width: 100%
     max-width: 550px
+
+    +media(l)
+      margin-top: 30px
+      max-width: 430px
 
     +media(s)
       max-width: 320px
@@ -70,17 +83,41 @@
     font-size: 20px
     margin: auto
 
+    +media(m)
+      font-size: 18px
+
     +media(s)
       padding: 0 20px
       font-size: 12px
+    
+    +media(xs)
+      padding: 0 40px
 
   &__img
     width: 1000px
     display: block
     margin: auto
 
+    +media(l)
+      width: 950px
+    
+    +media(m)
+      width: 737px
+    
     +media(s)
-      max-width: 310px
+      display: none
+    
+  &__img-mobile
+    display: none
+
+    +media(s)
+      display: block
+      margin: auto
+      max-width: 440px
+    
+    +media(xs)
+      max-width: 280px
+
 
 .revolutionizeSchedule
   padding: 96px 0px
@@ -119,6 +156,9 @@
     margin: 10px auto 0 !important
     background-color: black
 
+    +media(m)
+       width: 737px
+
     +media(s)
       width: 246px
        
@@ -130,12 +170,18 @@
       font-size: 26px
       font-weight: 900
 
+      +media(m)
+        font-size: 20px
+
       +media(s)
         font-size: 18px
     
     &-text
       font-size: 20px
       color: white
+
+      +media(m)
+        font-size: 14px
 
       +media(s)
         font-size: 12px
@@ -144,12 +190,19 @@
     max-width: 120px
     margin: 10px 0 0 10px
 
+    +media(m)
+      max-width: 70px
+
     +media(s)
       max-width: 90px
     
   &__img-balanced
     max-width: 115px
     margin: 5px 0 0 10px
+
+    +media(m)
+      max-width: 80px
+      margin: 0
 
     +media(s)
       max-width: 90px
@@ -158,6 +211,9 @@
     max-width: 131px
     margin-top: 7px
 
+    +media(m)
+      max-width: 89px
+
     +media(s)
       max-width: 90px
   
@@ -165,12 +221,19 @@
     max-width: 131px
     margin-top: 15px
 
+    +media(m)
+      max-width: 89px
+
     +media(s)
       max-width: 90px
   
   &__img-patient-impact
     max-width: 125px
     margin: 10px 0 0 5px
+
+    +media(m)
+      max-width: 89px
+      margin: 10px 0 0 0
 
     +media(s)
       max-width: 90px
@@ -216,7 +279,7 @@
   
   &__btn
     text-align: center
-    font-size: 16px
+    font-size: 18px
 
 .el-progress
   background-color: black
@@ -238,7 +301,12 @@
     max-width: 760px
     margin: auto
 
+    +media(l)
+      max-width: 550px
+      margin: 60px auto 0
+
     +media(m)
+      margin: 0 auto 
       max-width: 700px
 
     +media(s)
@@ -278,14 +346,30 @@
     text-align: center
     font-size: 16px
 
-.carousel
-  padding: 48px 0px
+.carouselSection
+  padding: 14px 0px 96px
   width: 100%
   max-width: 1240px
   margin: auto
 
+  +media(m)
+    max-width: 737px
+
   +media(s)
-    padding: 48px 0px
+    max-width: 350px
+    height: 650px
+  
+  +media(xs)
+    height: 760px
+
+.carousel  
+  color: white
+
+  +media(s)
+    width: 480px
+  
+  +media(xs)
+    width: 305px
 
   &__title
     font-size: 36px
@@ -293,12 +377,21 @@
     margin: 0px auto
     text-align: center
 
+    +media(m)
+      font-size: 34px
+
     +media(xs)
-      font-size: 24px
+      font-size: 20px
   
   &__text
     margin: 20px auto
     font-size: 18px
+
+    +media(m)
+      font-size: 16px
+    
+    +media(s)
+      font-size: 14px
 
     +media(xs)
       text-align: justify
@@ -308,14 +401,14 @@
     font-size: 18px
     font-weight: 900
 
-    +media(xs)
-      font-size: 12px
+    +media(s)
+      display: none
   
   &__contact
     font-size: 14px
 
-    +media(xs)
-      font-size: 12px
+    +media(s)
+      display: none
 
   &__img-brain
     height: 60px
@@ -328,12 +421,20 @@
     height: 70px
     width: 80px
 
+    +media(m)
+      height: 50px
+      width: 50px
+
     +media(xs)
       display: none
   
   &__img-quote-end
     height: 60px
     width: 60px
+
+    +media(m)
+      height: 50px
+      width: 50px
 
     +media(xs)
       display: none
@@ -343,18 +444,27 @@
     height: 60px
     width: 160px
     padding-bottom: 10px
+    
+    +media(m)
+      height: 50px
 
     +media(xs)
       display: none
 
-.carousel-item
-  height: 560px
+  &__border
+    border-bottom: 1px solid grey
+    padding: 0
 
+    +media(s)
+      border-bottom: none
+
+.carousel-item
+  height: 690px
+
+.carousel-caption
   +media(s)
-    height: 820px
-  
-  .w-100
-    height: 100% 
+    left: 10%
+    right: 10%
 
 .codeMdLink
   color: #1C75BC !important

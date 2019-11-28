@@ -50,7 +50,7 @@
       <div class="codeMdApp">
         <b-row class="flex-column-reverse flex-md-row">
           <b-col>
-            <img class="codeMdApp__img" src="../assets/styles/img/code_md/codemd_app.png"/>
+            <img class="codeMdApp__img" src="../assets/styles/img/supplychain_img/codemd_app.png"/>
           </b-col>
           <b-col>
             <div class="codeMdApp__content"> 

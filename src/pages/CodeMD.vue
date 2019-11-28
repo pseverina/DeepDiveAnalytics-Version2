@@ -33,6 +33,7 @@
             <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
           </div>
           <img src="../assets/styles/img/code_md/codemd_transform.png" class="transformOrganization__img" />
+          <img src="../assets/styles/img/code_md/codemd_transform_mobile.png" class="transformOrganization__img-mobile" />
         </div>
         <!-- section 3 -->
         <div class="revolutionizeSchedule">
@@ -177,21 +178,22 @@
           </b-row>
         </div>
         <!-- section 6 -->
-        <div class="carousel"> 
+        <div class="carouselSection"> 
           <b-carousel
             id="carousel-fade"
+            :interval="4000"
             class="carousel"
             fade
             indicators
           >
-            <b-carousel-slide>
-              <div class="carousel-caption text-left d-md-block">
+           <b-carousel-slide>
+              <div class="carousel-caption text-left">
                 <h2 class="carousel__title">What customers are saying</h2>
                 <b-row>
                   <b-col cols="2">
                     <img src="../assets/styles/img/code_md/quotation_1.png" class="carousel__img-quote-open"/>
                   </b-col>
-                  <b-col style="border-bottom: 1px solid grey; padding: 0">
+                  <b-col class="carousel__border">
                     <img src="../assets/styles/img/code_md/codedm_just-logo.png" class="carousel__img-logo"/>
                   </b-col>
                 </b-row>
@@ -223,13 +225,13 @@
               </div>  
             </b-carousel-slide>
             <b-carousel-slide>
-              <div class="carousel-caption text-left d-md-block">
+              <div class="carousel-caption text-left">
                 <h2 class="carousel__title">What customers are saying</h2>
                 <b-row>
                   <b-col cols="2">
                     <img src="../assets/styles/img/code_md/quotation_1.png" class="carousel__img-quote-open"/>
                   </b-col>
-                  <b-col style="border-bottom: 1px solid grey; padding: 0">
+                  <b-col class="carousel__border">
                     <img src="../assets/styles/img/code_md/codedm_just-logo.png" class="carousel__img-logo"/>
                   </b-col>
                 </b-row>
@@ -301,7 +303,6 @@ export default {
     }
   }
 }
-
 </script>
 
 

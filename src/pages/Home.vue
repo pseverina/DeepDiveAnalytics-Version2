@@ -55,7 +55,7 @@
           <b-row class="agileManagement__row">
             <b-col class="agileManagement__col agileManagement__col-left" sm>
               <div class="agileManagement__card">
-                <img src="../assets/styles/img/home_page_img/agile_strategy.png" class="agileManagement__side-img"/><br>
+                <img src="../assets/styles/img/home_page_img/agile_strategy.png" class="agileManagement__left-img"/><br>
                 <span class="agileManagement__card-title">Define a Strategy</span>
                 <p class="agileManagement__card-text">
                   Assess the opportunity, 
@@ -78,7 +78,7 @@
             </b-col>
             <b-col class="agileManagement__col agileManagement__col-right" sm>
               <div class="agileManagement__card">
-                <img src="../assets/styles//img/home_page_img/agile_business_impact.png" class="agileManagement__side-img" /><br>
+                <img src="../assets/styles//img/home_page_img/agile_business_impact.png" class="agileManagement__right-img" /><br>
                 <span class="agileManagement__card-title">Deliver Business Impact</span>
                 <p class="agileManagement__card-text">
                   Driving performance and
