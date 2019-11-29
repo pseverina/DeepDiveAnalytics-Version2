@@ -34,7 +34,7 @@
       <div class="successStories__content">
         <h1 class="successStories__title">Success Stories</h1>
         <p class="successStories__text">
-          High-level information for some of&nbsp;our projects.<br>
+          Click to&nbsp;view high-level information for some of&nbsp;our projects.<br>
           Only information we&nbsp;have permission to&nbsp;share is&nbsp;provided.
         </p>
         <router-link to="/contact"  class="successStories__btn">Contact us ></router-link>

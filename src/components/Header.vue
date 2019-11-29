@@ -12,13 +12,6 @@
         <b-navbar-brand><router-link to="/"><img class="logo-brand" src="../assets/styles/img/footer/deepdive.png"></router-link></b-navbar-brand>
         <b-navbar-brand><router-link to="/" class="link-home">Home</router-link></b-navbar-brand>
         <b-nav-item><router-link to="/codeMd">CodeMD</router-link></b-nav-item>
-        <!-- <b-nav-item-dropdown class="dropdownLabel" text="Our Work" right>
-          <b-dropdown-item><router-link to="/services">Success Stories</router-link></b-dropdown-item>
-          <b-dropdown-item><router-link to="/prescriptiveAnalytics">Prescriptive Analytics</router-link></b-dropdown-item>
-          <b-dropdown-item><router-link to="/predictiveAnalytics">Predictive Analytics</router-link></b-dropdown-item>
-          <b-dropdown-item><router-link to="/customSolutionDeployment">Custom Solution Deployment</router-link></b-dropdown-item>
-        </b-nav-item-dropdown> -->
-        <!-- <b-nav-item><router-link to="/productsServices">Products & Services</router-link></b-nav-item> -->
         <b-nav-item><router-link to="/supplyChain">Supply Chain</router-link></b-nav-item>
         <b-nav-item><router-link to="/customServices">Custom Services</router-link></b-nav-item>
         <b-nav-item><router-link to="/about">About</router-link></b-nav-item>

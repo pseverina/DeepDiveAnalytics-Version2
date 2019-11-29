@@ -4,10 +4,12 @@
       <div class="contact">
         <div class="contact__content">
           <h1 class="contact__title">Deep Dive into your Data</h1>
+          <h1 class="contact__title contact__title-mobile">Deep Dive<br>into your Data</h1>
           <div class="contact__text">Let's go on this jorney together.</div>
+          <div class="contact__text contact__text-mobile">Contact us today to learn more.</div>
         </div>
         <b-row> 
-          <b-col md="6">
+          <b-col sm="6">
             <form
               ref="contactInfo"
               class="form"
@@ -79,8 +81,7 @@
               <b-form-group class="form-group">
                 <b-row class="justify-content-md-center">
                   <b-button 
-                    class="form__btn" 
-                    style="margin-right: 20px"
+                    class="form__btn form__btn-submit" 
                     size="lg"
                     variant="outline-light"
                     type="submit"
@@ -88,7 +89,7 @@
                     Submit
                   </b-button>
                   <b-button 
-                    class="form__btn" 
+                    class="form__btn form__btn-clear"
                     size="lg"
                     variant="outline-light"
                     @click="clearForm('contactInfo')"
@@ -99,7 +100,7 @@
               </b-form-group>
             </form> 
           </b-col>
-          <b-col md="6">
+          <b-col sm="6">
             <div class="contact-info">
               <img class="contact-info__blackhole" src="../assets/styles/img/bg_img/black_hole.png"/>
               <img class="contact-info__spaceman" src="../assets/styles/img/home_page_img/blackhole_spaceman.png"/>

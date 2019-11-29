@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Home view
+    Manufactoring view
   </z-view>
 </template>
 

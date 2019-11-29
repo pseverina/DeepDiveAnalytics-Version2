@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Home view
+    Sourcing view
   </z-view>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Home view
+    Distribution view
   </z-view>
 </template>
 

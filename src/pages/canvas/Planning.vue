@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Home view
+    Planning view
   </z-view>
 </template>
 <script>

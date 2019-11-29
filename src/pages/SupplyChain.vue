@@ -12,13 +12,13 @@
           <router-link to="/contact" class="homelink">Contact us ></router-link>
         </div><br>
         <img class="supplyChain__img" src="../assets/styles/img/home_page_img/supplychain_homev2.png" />
-        <!-- <div class="supplychain-1__img1">
-          <z-canvas 
-          :views="myViews" 
+        <!-- <div class="supplychain-1__img1"> -->
+        <!-- <z-canvas 
+          :views="$options.components" 
           class="canvas"
-          style="width: 40%; height: 400px; border-radius: 50%"
-          >Home</z-canvas>
-        </div> -->
+          style="width: 40%; height: 500px; border-radius: 50%"
+          >Home</z-canvas> -->
+        </div>  
       </div>
        <!-- section 2 -->
        <div class="optimizeNetwork">
@@ -168,7 +168,6 @@
               </div> 
             </b-carousel-slide>
           </b-carousel>
-        </div>
       </div>
     </div>
 </template>
@@ -183,26 +182,27 @@ import Sourcing from './canvas/Sourcing'
 
 export default {
   name: 'SupplyChain',
+  components: {
+    Customers,
+    Distribution,
+    Manufacturing,
+    Planning,
+    Quality,
+    Sourcing
+  },
   data () {
     return {
-      myViews: {
-        Customers,
-        Distribution,
-        Manufacturing,
-        Planning,
-        Quality,
-        Sourcing
-      }
     }
   },
   mounted () {
+    this.$zircle.setView('Customers')
     this.$zircle.config({
+      mode: 'mixed',
       style: {
         theme: 'black',
-        mode: 'dark'
       }
     })
-  },
+  }
 }
 
 </script>

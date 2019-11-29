@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Home view
+    Quality view
   </z-view>
 </template>
 

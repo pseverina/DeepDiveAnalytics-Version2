@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Home view
+    <div class="background-color: red">Customers view!</div>
   </z-view>
 </template>
 
