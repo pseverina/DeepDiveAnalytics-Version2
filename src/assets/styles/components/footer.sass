@@ -6,20 +6,23 @@
   max-width: 1240px
   padding: 25px 0 20px
   margin: auto
+  text-align: center
 
   +media(s)
     font-size: 12px
     
   &-list
-    list-style: non
+    display: flex
+    justify-content: center
+    list-style: none
 
     +media(l)
       max-width: 990px
 
     &__leftside
+      flex: 3
       vertical-align: top
       display: inline-block
-      max-width: 400px
 
       +media(l)
         max-width: 360px
@@ -37,6 +40,7 @@
         color: #808080
 
     &__products
+      flex: 1
       vertical-align: top
       display: inline-block
 
@@ -55,6 +59,7 @@
         color: #808080
     
     &__info
+      flex: 1
       vertical-align: top
       display: inline-block
 
@@ -74,6 +79,7 @@
         padding-left: 0
 
     &__follow
+      flex: 1
       vertical-align: top
       display: inline-block
 

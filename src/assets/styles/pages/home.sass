@@ -158,26 +158,25 @@
 
     +media(xs)
       font-size: 14px
-  
+
   &__row
-    padding: 0 150px
-
-    +media(xs)
-      display: block
-      padding: 0 60px
-  
-  &__col
-    border: 3px solid #1C75BC
-    background: black
-    display: block
-    margin: auto
-
-    +media(m)
-      max-height: 400px
-      margin-bottom: 15px
+    display: flex
+    justify-content: center
 
     +media(s)
-      max-height: 800px
+      flex-direction: column
+  
+  &__card
+    border: 3px solid #1C75BC
+    background: black
+    max-width: 225px
+    padding: 10px
+    margin: 0 20px
+
+    +media(s)
+      margin-bottom: 15px
+      margin-left: auto
+      margin-right: auto
   
   &__left-img
     display: block

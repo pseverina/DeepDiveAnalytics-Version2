@@ -52,8 +52,39 @@
             </p>
             <router-link to="/contact" class="homelink agileManagement__btn">Contact us ></router-link>
           </div>
-          <b-row class="agileManagement__row">
-            <b-col class="agileManagement__col agileManagement__col-left" sm>
+          <div class="agileManagement__row">
+             <div class="agileManagement__card">
+                <img src="../assets/styles/img/home_page_img/agile_strategy.png" class="agileManagement__left-img"/><br>
+                <span class="agileManagement__card-title">Define a Strategy</span>
+                <p class="agileManagement__card-text">
+                  Assess the opportunity, 
+                  thinking strategically and
+                  holistically when defining the plan
+                  to&nbsp;help your organization.
+                </p>
+              </div>
+              <div class="agileManagement__card">
+                <img src="../assets/styles//img/home_page_img/agile_iterative_development.png" class="agileManagement__middle-img"/><br>
+                <span class="agileManagement__card-title">Iterative Development</span>
+                <p class="agileManagement__card-text">
+                  Working in&nbsp;agile sprints to&nbsp;define, 
+                  build, and deploy your solution so&nbsp;your 
+                  business can reap the benefits quickly.
+                </p>
+              </div>
+              <div class="agileManagement__card">
+                <img src="../assets/styles//img/home_page_img/agile_business_impact.png" class="agileManagement__right-img" /><br>
+                <span class="agileManagement__card-title">Deliver Business Impact</span>
+                <p class="agileManagement__card-text">
+                  Driving performance and
+                  efficiency across your
+                  organization through advanced
+                  analytics and automation.
+                </p>
+              </div>
+          </div>
+          <!-- <b-row>
+            <b-col class="justify-content-center agileManagement__col agileManagement__col-left" sm>
               <div class="agileManagement__card">
                 <img src="../assets/styles/img/home_page_img/agile_strategy.png" class="agileManagement__left-img"/><br>
                 <span class="agileManagement__card-title">Define a Strategy</span>
@@ -65,7 +96,7 @@
                 </p>
               </div>
             </b-col>
-            <b-col class="agileManagement__col agileManagement__col-middle" sm>
+            <b-col class="justify-content-center agileManagement__col agileManagement__col-middle" sm>
               <div class="agileManagement__card">
                 <img src="../assets/styles//img/home_page_img/agile_iterative_development.png" class="agileManagement__middle-img"/><br>
                 <span class="agileManagement__card-title">Iterative Development</span>
@@ -76,7 +107,7 @@
                 </p>
               </div>
             </b-col>
-            <b-col class="agileManagement__col agileManagement__col-right" sm>
+            <b-col class="justify-content-center agileManagement__col agileManagement__col-right" sm>
               <div class="agileManagement__card">
                 <img src="../assets/styles//img/home_page_img/agile_business_impact.png" class="agileManagement__right-img" /><br>
                 <span class="agileManagement__card-title">Deliver Business Impact</span>
@@ -88,7 +119,7 @@
                 </p>
               </div>
             </b-col>
-          </b-row>
+          </b-row> -->
         </div>
         <!--  Fifth Section -->
         <div class="deepDive">
