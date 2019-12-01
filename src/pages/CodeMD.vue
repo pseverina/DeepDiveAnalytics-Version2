@@ -44,75 +44,75 @@
           </p>
           <!-- Description boxes-->
           <!-- Rules-Based Scheduling -->
-          <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col cols="2">
+          <div class="revolutionizeSchedule__info">
+            <div class="revolutionizeSchedule__info-img">
               <img class="revolutionizeSchedule__img-schedule-rules" src="../assets/styles/img/code_md/schedule_rules.png"/>
-            </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-content">
+            </div>
+            <div class="revolutionizeSchedule__info-content">
               <span class="revolutionizeSchedule__info-title">Rules-Based Scheduling</span>
               <p class="revolutionizeSchedule__info-text">
                 CodeMD&rsquo;s automated scheduling algorithm can be&nbsp;customized around
                 your rules and requirements with high accuracy and performance. The
                 framework is&nbsp;flexible, allowing CodeMD to&nbsp;tailor to&nbsp;your needs.
               </p>
-            </b-col>
-          </b-row>
+            </div>
+          </div>
           <!-- Balanced Schedules -->
-          <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col cols="2">
+          <div class="revolutionizeSchedule__info">
+            <div class="revolutionizeSchedule__info-img">
               <img class="revolutionizeSchedule__img-balanced" src="../assets/styles/img/code_md/balanced.png"/>
-            </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-content">
+            </div>
+            <div cols="10" class="revolutionizeSchedule__info-content">
               <span class="revolutionizeSchedule__info-title">Balanced Schedules</span>
               <p class="revolutionizeSchedule__info-text">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;evenly distribute 
                 your schedule while still taking into account all your custom rules 
                 and requirements. Let CodeMD manage the spread using advanced analytics.
               </p>
-            </b-col>
-          </b-row>
+            </div>
+          </div>
           <!-- Automated, Reuseable, Scientific -->
-          <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col cols="2">
+          <div class="revolutionizeSchedule__info">
+            <div class="revolutionizeSchedule__info-img">
               <img class="revolutionizeSchedule__img-reuseable-scientific" src="../assets/styles/img/code_md/reuseable_scientific.png"/>
-            </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-content">
+            </div>
+            <div cols="10" class="revolutionizeSchedule__info-content">
               <span class="revolutionizeSchedule__info-title">Automated, Reuseable, Scientific</span>
               <p class="revolutionizeSchedule__info-text">
                 CodeMD&rsquo;s automated scheduling algorithm is&nbsp;designed to&nbsp;generate new &amp;&nbsp;
                 updated schedules quickly. Need to&nbsp;refresh your schedule? No&nbsp;problem. 
                 Make smarter decisions using CodeMD when you need to&nbsp;pivot and adapt.
               </p>
-            </b-col>
-          </b-row>
+            </div>
+          </div>
           <!-- Comprehensive Scheduling -->
-          <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col cols="2">
+          <div class="revolutionizeSchedule__info">
+            <div class="revolutionizeSchedule__info-img">
               <img class="revolutionizeSchedule__img-comprehensive" src="../assets/styles/img/code_md/codemd_comprehensive.png"/>
-            </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-content">
+            </div>
+            <div cols="10" class="revolutionizeSchedule__info-content">
               <span class="revolutionizeSchedule__info-title">Comprehensive Scheduling</span>
               <p class="revolutionizeSchedule__info-text">
                 CodeMD&nbsp;is for all healthcare institutions, specialties and staff. From private groups 
                 to&nbsp;large health systems, CodeMD can successfully create your schedule(s). It&nbsp;can even 
                 help with automating vacation request decisions.
               </p>
-            </b-col>
-          </b-row>
+            </div>
+          </div>
           <!-- Improved Service to Patients -->
-          <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col cols="2">
+          <div class="revolutionizeSchedule__info">
+            <div class="revolutionizeSchedule__info-img">
               <img class="revolutionizeSchedule__img-patient-impact" src="../assets/styles/img/code_md/patient_impact.png" />
-            </b-col>
-            <b-col cols="10" class="revolutionizeSchedule__info-content">
+            </div>
+            <div cols="10" class="revolutionizeSchedule__info-content">
               <span class="revolutionizeSchedule__info-title">Improved Service to Patients</span>
               <p class="revolutionizeSchedule__info-text">
                 CodeMD dramatically improves your organization&rsquo;s efficiency. Reduce the 
                 time and side-effects of&nbsp;inefficient scheduling. Dedicate more time to&nbsp;your 
                 patients while also improving your work-life balance.
               </p>
-            </b-col>
-          </b-row>
+            </div>
+          </div>
         </div>
         <!-- section 4 -->
         <div class="industryLeading">

@@ -152,7 +152,7 @@
 
   &__info
     width: 1000px
-    display: block
+    display: flex
     border: 3px solid #1C75BC
     padding-top: 15px
     padding-left: 15px
@@ -163,10 +163,14 @@
        width: 737px
 
     +media(s)
+      display: block
       width: 246px
+
+    &-img
+      flex: 1
        
     &-content
-      margin-left: 0%
+      flex: 5
 
     &-title
       color: #1C75BC
