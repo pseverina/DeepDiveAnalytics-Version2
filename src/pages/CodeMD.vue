@@ -29,7 +29,7 @@
           <div class="transformOrganization__content">
             <h2 class="transformOrganization__title"> Transform your Organization</h2>
             <p class="transformOrganization__text">Establish an analytical mindset and process. Improve & simplify your workflow.</p>
-            <p class="transformOrganization__text">CodeMD is a built with cutting-edge technology to drive efficiency across your organization.</p>
+            <p class="transformOrganization__text">CodeMD is built with cutting-edge technology to drive efficiency across your organization.</p>
             <router-link to="/contact" class="codeMdLink">Contact us ></router-link>
           </div>
           <img src="../assets/styles/img/code_md/codemd_transform.png" class="transformOrganization__img" />
@@ -45,7 +45,7 @@
           <!-- Description boxes-->
           <!-- Rules-Based Scheduling -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col>
+            <b-col cols="2">
               <img class="revolutionizeSchedule__img-schedule-rules" src="../assets/styles/img/code_md/schedule_rules.png"/>
             </b-col>
             <b-col cols="10" class="revolutionizeSchedule__info-content">
@@ -59,7 +59,7 @@
           </b-row>
           <!-- Balanced Schedules -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col>
+            <b-col cols="2">
               <img class="revolutionizeSchedule__img-balanced" src="../assets/styles/img/code_md/balanced.png"/>
             </b-col>
             <b-col cols="10" class="revolutionizeSchedule__info-content">
@@ -73,7 +73,7 @@
           </b-row>
           <!-- Automated, Reuseable, Scientific -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col>
+            <b-col cols="2">
               <img class="revolutionizeSchedule__img-reuseable-scientific" src="../assets/styles/img/code_md/reuseable_scientific.png"/>
             </b-col>
             <b-col cols="10" class="revolutionizeSchedule__info-content">
@@ -87,7 +87,7 @@
           </b-row>
           <!-- Comprehensive Scheduling -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col>
+            <b-col cols="2">
               <img class="revolutionizeSchedule__img-comprehensive" src="../assets/styles/img/code_md/codemd_comprehensive.png"/>
             </b-col>
             <b-col cols="10" class="revolutionizeSchedule__info-content">
@@ -101,7 +101,7 @@
           </b-row>
           <!-- Improved Service to Patients -->
           <b-row class="revolutionizeSchedule__info flex-column flex-md-row">
-            <b-col>
+            <b-col cols="2">
               <img class="revolutionizeSchedule__img-patient-impact" src="../assets/styles/img/code_md/patient_impact.png" />
             </b-col>
             <b-col cols="10" class="revolutionizeSchedule__info-content">
@@ -161,7 +161,7 @@
         <div class="codeMdApp">
           <b-row class="flex-column-reverse flex-md-row">
             <b-col>
-              <img class="codeMdApp__img" src="../assets/styles/img/supplychain_img/codemd_app.png"/>
+              <img class="codeMdApp__img" src="../assets/styles/img/code_md/codemd_app.png"/>
             </b-col>
             <b-col>
               <div class="codeMdApp__content"> 
@@ -169,6 +169,10 @@
                 <p class="codeMdApp__text">
                   Run your custom algorithms on&nbsp;demand.<br>
                   Own your analytical solution. Visualize your data.
+                </p>
+                <p class="codeMdApp__text codeMdApp__text-mobile">
+                  Visualize your data. Modify your schedule.<br>
+                  Run your custom functions on&nbsp;demand.
                 </p>
                 <p class="codeMdApp__btn">
                   <router-link to="/contact" class="codeMdLink">Contact us ></router-link>

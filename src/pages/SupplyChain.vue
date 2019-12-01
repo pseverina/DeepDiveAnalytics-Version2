@@ -21,6 +21,25 @@
         </div>  
       </div>
        <!-- section 2 -->
+      <div class="imageSection">
+         <b-row class="imageSection__row top-buffer mx-auto">
+           <b-col sm="6">
+             <img src="../assets/styles/img/supplychain_img/decisive_confident.jpg" class="imageSection__img"/>
+           </b-col>
+           <b-col sm="6">
+             <img src="../assets/styles/img/supplychain_img/analytical_process.jpg" class="imageSection__img"/>
+           </b-col>
+         </b-row>
+         <b-row class="imageSection__row top-buffer mx-auto">
+           <b-col sm="6">
+             <img src="../assets/styles/img/supplychain_img/lead_team.jpg" class="imageSection__img"/>
+           </b-col>
+           <b-col sm="6">
+             <img src="../assets/styles/img/supplychain_img/impact_customers.jpg" class="imageSection__img"/>
+           </b-col>
+         </b-row>
+       </div>
+       <!-- section 3 -->
        <div class="optimizeNetwork">
          <b-row class="flex-column-reverse flex-md-row">
            <b-col>
@@ -46,7 +65,7 @@
            </b-col>
          </b-row>
        </div>
-       <!-- section 3 -->
+       <!-- section 4 -->
       <div class="codeMdApp">
         <b-row class="flex-column-reverse flex-md-row">
           <b-col>
@@ -66,25 +85,6 @@
           </b-col>
         </b-row>
       </div>
-      <!-- section 4 -->
-       <div class="imageSection">
-         <b-row class="imageSection__row top-buffer mx-auto">
-           <b-col sm="6">
-             <img src="../assets/styles/img/supplychain_img/decisive_confident.jpg" class="imageSection__img"/>
-           </b-col>
-           <b-col sm="6">
-             <img src="../assets/styles/img/supplychain_img/analytical_process.jpg" class="imageSection__img"/>
-           </b-col>
-         </b-row>
-         <b-row class="imageSection__row top-buffer mx-auto">
-           <b-col sm="6">
-             <img src="../assets/styles/img/supplychain_img/lead_team.jpg" class="imageSection__img"/>
-           </b-col>
-           <b-col sm="6">
-             <img src="../assets/styles/img/supplychain_img/impact_customers.jpg" class="imageSection__img"/>
-           </b-col>
-         </b-row>
-       </div>
        <!-- section 5 -->
         <div class="carouselSection"> 
           <b-carousel
