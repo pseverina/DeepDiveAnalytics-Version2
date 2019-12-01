@@ -2,15 +2,11 @@
  <div class="container-fluid stars font">
   <div class="twinkling">
     <div class="drivingBusiness">
-      <div class="drivingBusiness__content">
-        <img src="../assets/styles/img/logo_img/dt.png" class="drivingBusiness__img"/>
-        <h1 class="drivingBusiness__title" >Strategy, Innovation, & Data Science.</h1>
-        <p class="drivingBusiness__text">Driving business advantage by delivering industry leading analytical capabilities.</p>
-        <router-link to="/contact" class="drivingBusiness__btn aboutlink">Contact us ></router-link><br>
-        <img src="../assets/styles/img/aboutus_img/deepdive_logo_all_vertical.png" class="drivingBusiness__img-mobile"/>
-      </div>
-      <p class="drivingBusiness__divein">DIVE IN</p>
-      <img src="../assets/styles/img/aboutus_img/icon_arrow_down.png" class="drivingBusiness__arrow" /> 
+      <img src="../assets/styles/img/aboutus_img/deepdive_logo_all_horizontal_large.png" class="drivingBusiness__img"/>
+      <h1 class="drivingBusiness__title" >Strategy, Innovation, & Data Science.</h1>
+      <p class="drivingBusiness__text">Driving business advantage by delivering industry leading analytical capabilities.</p>
+      <router-link to="/contact" class="drivingBusiness__btn aboutlink">Contact us ></router-link><br>
+      <img src="../assets/styles/img/aboutus_img/deepdive_logo_all_vertical.png" class="drivingBusiness__img-mobile"/>
     </div>
     <div class="imageSection">
       <b-row class="imageSection__row top-buffer mx-auto">

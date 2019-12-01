@@ -3,7 +3,7 @@
      <div class="twinkling">
        <!-- First section -->
        <div class="transforCodeMD">
-         <h1 class="transforCodeMD__title">CodeMD is Transformational</h1>
+         <h2 class="transforCodeMD__title">CodeMD is Transformational</h2>
          <p class="transforCodeMD__text">
             Advanced analytics for health care providers.<br>
             Automated provider scheduling solution based on&nbsp;unique rules and requirements.<br>
@@ -83,43 +83,6 @@
                 </p>
               </div>
           </div>
-          <!-- <b-row>
-            <b-col class="justify-content-center agileManagement__col agileManagement__col-left" sm>
-              <div class="agileManagement__card">
-                <img src="../assets/styles/img/home_page_img/agile_strategy.png" class="agileManagement__left-img"/><br>
-                <span class="agileManagement__card-title">Define a Strategy</span>
-                <p class="agileManagement__card-text">
-                  Assess the opportunity, 
-                  thinking strategically and
-                  holistically when defining the plan
-                  to&nbsp;help your organization.
-                </p>
-              </div>
-            </b-col>
-            <b-col class="justify-content-center agileManagement__col agileManagement__col-middle" sm>
-              <div class="agileManagement__card">
-                <img src="../assets/styles//img/home_page_img/agile_iterative_development.png" class="agileManagement__middle-img"/><br>
-                <span class="agileManagement__card-title">Iterative Development</span>
-                <p class="agileManagement__card-text">
-                  Working in&nbsp;agile sprints to&nbsp;define, 
-                  build, and deploy your solution so&nbsp;your 
-                  business can reap the benefits quickly.
-                </p>
-              </div>
-            </b-col>
-            <b-col class="justify-content-center agileManagement__col agileManagement__col-right" sm>
-              <div class="agileManagement__card">
-                <img src="../assets/styles//img/home_page_img/agile_business_impact.png" class="agileManagement__right-img" /><br>
-                <span class="agileManagement__card-title">Deliver Business Impact</span>
-                <p class="agileManagement__card-text">
-                  Driving performance and
-                  efficiency across your
-                  organization through advanced
-                  analytics and automation.
-                </p>
-              </div>
-            </b-col>
-          </b-row> -->
         </div>
         <!--  Fifth Section -->
         <div class="deepDive">

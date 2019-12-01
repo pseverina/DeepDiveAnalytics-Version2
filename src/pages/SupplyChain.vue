@@ -2,7 +2,7 @@
    <div class="container-fluid stars font">
      <div class="twinkling">
        <!-- section 1 -->
-      <div class="supplyChain">
+      <div class="supplyChain supplyChain__top">
         <h2 class="supplyChain__title">Driving Performance for Supply Chain</h2>
         <p class="supplyChain__text">Make the system smarter with Deep Dive Analytics.</p>
         <p class="supplyChain__text">End-to-End supply chain solutions.</p>
@@ -12,12 +12,6 @@
           <router-link to="/contact" class="homelink">Contact us ></router-link>
         </div><br>
         <img class="supplyChain__img" src="../assets/styles/img/home_page_img/supplychain_homev2.png" />
-        <!-- <div class="supplychain-1__img1"> -->
-        <!-- <z-canvas 
-          :views="$options.components" 
-          class="canvas"
-          style="width: 40%; height: 500px; border-radius: 50%"
-          >Home</z-canvas> -->
         </div>  
       </div>
        <!-- section 2 -->
@@ -43,9 +37,6 @@
        <div class="optimizeNetwork">
          <b-row class="flex-column-reverse flex-md-row">
            <b-col>
-             <img src="../assets/styles/img/supplychain_img/world.png" class="optimizeNetwork__img"/>
-           </b-col>
-           <b-col>
              <h1 class="optimizeNetwork__title">Optimize the Network</h1>
              <p class="optimizeNetwork__text">
                Make the system smarter by using data driven<br>
@@ -63,13 +54,16 @@
              </p>
              <span class="optimizeNetwork__btn">Contact us ></span>
            </b-col>
+          <b-col>
+             <img src="../assets/styles/img/supplychain_img/world.png" class="optimizeNetwork__img"/>
+           </b-col>
          </b-row>
        </div>
        <!-- section 4 -->
       <div class="codeMdApp">
         <b-row class="flex-column-reverse flex-md-row">
           <b-col>
-            <img class="codeMdApp__img" src="../assets/styles/img/supplychain_img/codemd_app.png"/>
+            <img class="codeMdApp__img" src="../assets/styles/img/code_md/codemd_app.png"/>
           </b-col>
           <b-col>
             <div class="codeMdApp__content"> 
@@ -173,36 +167,9 @@
 </template>
 
 <script>
-import Customers from './canvas/Customers'
-import Distribution from './canvas/Distribution'
-import Manufacturing from './canvas/Manufacturing'
-import Planning from './canvas/Planning'
-import Quality from './canvas/Quality'
-import Sourcing from './canvas/Sourcing'
 
 export default {
   name: 'SupplyChain',
-  components: {
-    Customers,
-    Distribution,
-    Manufacturing,
-    Planning,
-    Quality,
-    Sourcing
-  },
-  data () {
-    return {
-    }
-  },
-  mounted () {
-    this.$zircle.setView('Customers')
-    this.$zircle.config({
-      mode: 'mixed',
-      style: {
-        theme: 'black',
-      }
-    })
-  }
 }
 
 </script>
