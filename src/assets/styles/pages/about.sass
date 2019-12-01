@@ -15,7 +15,7 @@
     max-width: 780px
 
     +media(l)
-      max-width: 740px
+      max-width: 700px
 
     +media(m)
       max-width: 700px
@@ -27,18 +27,22 @@
     font-size: 48px
     font-weight: 900
 
+    +media(l)
+      font-size: 42px
+
     +media(m)
       padding: 0 50px
     
     +media(s)
-      padding: 0 20px
-
-    +media(xs)
       font-size: 30px
+      padding: 0 20px
 
   &__text
     font-size: 20px
     margin-bottom: 0
+
+    +media(l)
+      font-size: 18px
 
     +media(m)
       padding: 0 200px
@@ -51,7 +55,10 @@
       padding: 0 20px
 
   &__btn
-    font-size: 20px
+    font-size: 18px
+
+    +media(l)
+      font-size: 16px
 
     +media(xs)
       font-size: 16px
